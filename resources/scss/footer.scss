@@ -1,0 +1,62 @@
+footer {
+  position: relative;
+  z-index: 110;
+  background: black;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding:40px;
+  &:before {
+    content:'';
+    display:block;
+    width: calc(100% - 80px);
+    height:1px;
+    position: absolute;
+    top:20px;
+    left:40px;
+    background-color: $white;
+  }
+  p {
+    font-size:16px;
+    color:$white;
+  }
+  .social-wrapper {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    a {
+      display: block;
+      cursor: pointer;
+      margin-left:16px;
+      &:first-of-type {
+        margin-left:0;
+      }
+      span {
+        cursor: pointer;
+        display: block;
+        width:16px;
+        height:16px;
+        color:$white;
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        
+
+        &.linkedin {
+          background-image: url($linkedin);
+        }
+        &.facebook {
+          background-image: url($facebook);
+        }
+        &.instagram {
+          background-image: url($instagram);
+        }
+        &.twitter {
+          background-image: url($twitter);
+        }
+      }
+    }
+  }
+}

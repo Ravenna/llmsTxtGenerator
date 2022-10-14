@@ -1,0 +1,62 @@
+@import "~bootstrap/scss/bootstrap";
+@import 'mixins';
+@import 'vars';
+@import 'typography';
+@import 'carousel';
+@import 'form';
+@import 'footer';
+
+
+body{
+	font-family: sofia-pro, sans-serif;
+	font-style: normal;
+	scroll-behavior: smooth;
+	background-color: black;
+}
+
+
+
+#app{
+	position: relative;
+	overflow-y: hidden;
+	scroll-snap-type: y mandatory;
+	&.natural-scroll {
+		scroll-snap-align: start;
+	}
+	cursor: url("../assets/img/cursor.png") 13 7, auto !important;
+
+	a {
+		cursor: url("../assets/img/cursor.png") 64 12, auto !important; 
+	}
+}
+
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    transition: $args;
+}
+
+
+
+
+.teal{
+	color: $seafoam;
+}
+
+.ravenna-logo{
+	display: none;
+	width: 140px;
+	height: auto;
+	position: fixed;
+	top: 38px;
+	left: calc(50% - 70px);
+	z-index: 100000;
+	img{
+		max-width: 100%;
+	}
+}
+
+
+@import 'sections';
+

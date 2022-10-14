@@ -1,0 +1,26 @@
+h1{
+	font-weight: 700;
+	font-size: 24vw;
+}
+
+h2, h3{
+	color: white;
+}
+h2{
+    font-size: 8.125rem;
+    line-height: 1;
+    font-weight: 900;
+	@include respond-below(sm){
+		font-size: 4rem;
+	}
+}
+
+h3{
+	font-size: 3.75rem;
+	font-weight: 700;
+}
+p{
+	color: white;
+	font-size: 1.125rem;
+
+}

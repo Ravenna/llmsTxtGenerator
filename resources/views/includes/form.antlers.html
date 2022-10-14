@@ -1,0 +1,123 @@
+<div x-data="form" x-cloak>
+
+    {{ form:create 
+        in="contact"
+        id="form-contact"
+        csrf="false"
+        @submit.prevent="submit()"
+        js="alpine:dynamic_form"
+        x-ref="form"
+    }}
+
+        <div class="form-success" x-show="success">
+            <h3>Transmission Received</h3>
+            <p>We'll be in touch shortly.</p>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+                <h2 class="text-center">Lets Talk</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col form-name">
+                <div class="form-row">
+                    <label for="name">My Name Is</label>
+                    <div class="form-div"></div>
+                    <input class="form-control" name="name" id="name" name="name" x-bind:class="{'invalid':errors.includes('name')}" data-rules='["required"]'  maxlength="40" required>
+                </div>
+                <p class="error-message text-end text-danger" x-show="errors.includes('name')" x-transition:enter>Please input your name</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col form-contact-method">
+                <div class="form-row">
+                    <label for="contact_method">You Can Reach Me By</label>
+                    <div class="form-div"></div>
+                    <select name="you_can_reach_me_by" class="form-control" id="contact_method" x-model="contact_method" x-bind:class="{'invalid':errors.includes('contact_method')}" data-rules='["required"]' required>
+                        <option value="">Select One*</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                </div>
+                <p class="error-message text-end text-danger" x-show="errors.includes('contact_method')"  x-transition:enter>Please select a contact method</p>
+
+            </div>
+        </div>
+
+        <template  x-if="contact_method == 'phone'" >
+            <div class="row">
+                <div class="col form-phone" x-bind:class="{'invalid':errors.includes('phone')}" data-rules='["required"]'>
+                    <div class="form-row">
+                        <label for="phone">My Phone Number Is</label>
+                        <div class="form-div"></div>
+                        <input type="tel" name="phone" id="phone" class="form-control" required>
+                    </div>
+                </div>
+                <p class="error-message text-end text-danger" x-show="errors.includes('phone')" x-transition:enter>Please enter a phone number</p>
+            </div>
+        </template>
+
+        <template x-if="contact_method == 'email'">
+            <div class="row">
+                <div class="col form-email">
+                    <div class="form-row">
+                        <label for="email">My Email Is</label>
+                        <div class="form-div"></div>
+                        <input type="email" class="form-control" id="email" name="email" x-bind:class="{'invalid':errors.includes('email') }" data-rules='["required"]' required>
+                    </div>
+                </div>
+                <p class="error-message text-end text-danger" x-show="errors.includes('email')" x-text="errors['email']" x-transition:enter>Please enter your email address</p>
+            </div>
+        </template>
+
+        <div class="row">
+            <div class="col form-company">
+                <div class="form-row">
+                    <label for="company">I Work At</label>
+                    <div class="form-div"></div>
+                    <input class="form-control" id="company" name="company">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col form-budget">
+                <div class="form-row">
+                    <label for="budget">My Project Budget</label>
+                    <div class="form-div"></div>
+                    <select name="budget" class="form-control" id="budget"  x-bind:class="{'invalid': errors.includes('budget')}" data-rules='["required"]' required>
+                        <option value="">Select One*</option>
+                        <option value="Less than $10k">Less than $10k</option>
+                        <option value="20-50">$20k - $50k</option>
+                        <option value="50-100">$50k - $100k</option>
+                        <option value="100+">$100k+</option>
+                    </select>
+                </div>
+                <p class="error-message text-end text-danger" x-show="errors.includes('budget')" x-transition:enter>Please select a budget range</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col form-more-info">
+                <div class="form-row">
+                    <label for="more_info">You Should Also Know</label>
+                    <div class="form-div"></div>
+                    <textarea class="form-control" id="more_info" name="more_info"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <button type="submit" x-bind:disabled="loading">Fire Away</button>
+            </div>
+        </div>
+
+        <input type="text" class="hidden" name="{{ honeypot ?? 'honeypot' }}">
+{{ /form:create }}
+
+</div>

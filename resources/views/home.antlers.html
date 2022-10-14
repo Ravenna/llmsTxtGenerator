@@ -1,0 +1,59 @@
+<div id="app" class="wrapper">
+
+    <div class="ravenna-logo">
+        <img src="{{ config:app:url }}assets/img/ravenna.png" alt="Ravenna">
+    </div>
+
+
+    <section class="section-fixed" id="section-1" data-scroll="1.5" style="z-index: 80;">
+        <div class="section-one-inner">
+            <div class="ravenna-main"><img src="{{ config:app:url }}assets/img/ravenna.svg" alt="Ravenna"></div>
+            <div class="ghost" id="ghost-one"><img src="{{ config:app:url }}assets/img/ravenna-outline.svg" alt="Ravenna Outline"></div>
+            <div class="ghost" id="ghost-two">><img src="{{ config:app:url }}assets/img/ravenna-outline.svg" alt="Ravenna Outline"></div>
+            <div class="ghost" id="ghost-three"><img src="{{ config:app:url }}assets/img/ravenna-outline.svg" alt="Ravenna Outline"></div>
+            <div class="ghost" id="ghost-four"><img src="{{ config:app:url }}assets/img/ravenna-outline.svg" alt="Ravenna Outline"></div>
+            <div class="ghost" id="ghost-five"><img src="{{ config:app:url }}assets/img/ravenna-outline.svg" alt="Ravenna Outline"></div>
+
+            <div class="you-can-scroll">
+                <div class="arrow"></div>
+            </div>
+        </div>
+    
+    </section>
+
+    <section class="natural-scroll auto-height" id="section-2" data-scroll="1" style="z-index: 90;">
+        <div class="section-2-shape"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <h3><span class="teal">New Site</span> <br>Coming Soon</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-12 offset-md-8 col-md-4">
+                    <p>We are Ravenna. A Seattle, WA based Laravel and Statamic web development agency.  We have been in business for 15+ years and have worked with companies like Amazon, Microsoft, Eddie Bauer, MOD Pizza and more.  We have a new site in the works but in the meantime, fill out the form below and lets talk.</p>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="natural-scroll white-bg auto-height" id="section-3" data-scroll="1" style="z-index: 100;">
+        <div 
+            class="container-fluid form-wrapper" 
+      
+        >
+            {{ partial src="includes/form" }}
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; {{ now|format:Y }} Ravenna LLC. </p>
+        <span class="social-wrapper">
+            <a href="https://www.linkedin.com/company/ravenna-llc/" target="_blank"><span class="linkedin"></span></a>
+
+        </span>
+    </footer> 
+</div>

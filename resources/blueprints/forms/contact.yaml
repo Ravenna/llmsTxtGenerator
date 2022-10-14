@@ -1,0 +1,117 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          input_type: text
+          antlers: false
+          display: Name
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          validate:
+            - required
+      -
+        handle: you_can_reach_me_by
+        field:
+          options:
+            phone: Phone
+            email: Email
+          multiple: false
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: 'You can reach me by'
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          validate:
+            - required
+          instructions: 'You can reach me by'
+      -
+        handle: phone
+        field:
+          input_type: text
+          antlers: false
+          display: Phone
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          validate:
+            - 'required_if:you_can_reach_me_by,phone'
+          if:
+            you_can_reach_me_by: 'equals phone'
+      -
+        handle: email
+        field:
+          input_type: text
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          validate:
+            - 'required_if:you_can_reach_me_by,email'
+          if:
+            you_can_reach_me_by: 'equals email'
+      -
+        handle: company
+        field:
+          input_type: text
+          antlers: false
+          display: Company
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: budget
+        field:
+          options:
+            'Less than $10k': 'Less than $10k'
+            20-50: '$20k - $50k'
+            50-100: '$50k - $100k'
+            100+: $100k+
+          multiple: false
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: Budget
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          instructions: Budget
+      -
+        handle: more_info
+        field:
+          antlers: false
+          display: 'More Info'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
