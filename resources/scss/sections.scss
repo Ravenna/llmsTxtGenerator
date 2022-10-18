@@ -1,7 +1,11 @@
 // Generic section
-
+:root {
+    --app-height: 100%;
+ }
 .section, section {
 	height: 100vh;
+    height: var(--app-height);
+
 	width: 100%;
 	display: flex; 
 	flex-direction: column;
@@ -80,8 +84,11 @@
 		width: calc(100% + 64px);
 		margin:0 !important;
         left: -32px;
-        position: relative;
+    
         z-index: 20;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
 
         @include respond-below(sm){
             width: calc(100% + 32px);
@@ -100,7 +107,7 @@
 		opacity: 1; 
         background: black;
         padding: 10px 0;
-        transition: all 0.2s ease-in-out;
+        transition: all 0.1s ease-in-out;
         img{
             max-width:100%;
         }
@@ -155,7 +162,7 @@
 #section-2{
     position: relative;
     justify-content: initial;
-    margin-top: 180vh;
+    margin-top: 200vh;
     @include media-breakpoint-down(md){
         margin-top: 100vh;
     }

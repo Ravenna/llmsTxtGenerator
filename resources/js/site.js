@@ -23,7 +23,7 @@ Alpine.start()
 // Ghosts
 window.addEventListener('scroll', function(e){
     var scrolled = window.pageYOffset;
-    var hundred = window.innerHeight + window.innerHeight * .8;
+    var hundred = window.innerHeight + window.innerHeight ; //+ window.innerHeight * .4
 
     if(scrolled > hundred){
         resetParallax('ghost-one','one')
@@ -45,8 +45,9 @@ let oldScroll = 0;
 let newScroll = 0;
 function parallax(el,num) {
     let newVal = 0;
-    var scrolled = window.pageYOffset;
-    var ghost = document.getElementById(el);
+    let scrolled = window.pageYOffset;
+    let ghost = document.getElementById(el);
+    let windowHeight = window.innerHeight;
     
     newScroll = scrolled;
     newVal = scrolled * 0.3;
@@ -73,6 +74,12 @@ function parallax(el,num) {
 function resetParallax(el, num){
     var ghost = document.getElementById(el);
     ghost.style.marginTop = 0+ 'px';
+
 }
+
+function reverseNum(n) {
+    let r = n.toString().split('').reverse().join('');
+    return Math.sign(n) * parseInt(r);
+  }
 
   
