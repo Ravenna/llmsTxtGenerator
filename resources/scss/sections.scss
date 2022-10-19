@@ -66,7 +66,7 @@
 
 #section-1{
     overflow: hidden;
-    height: 180vh;
+    height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
     .section-one-inner{
@@ -100,23 +100,52 @@
     }
 	.ghost{
 		position: fixed;
-		top: 50%;
+		width: calc(100% + 64px);
+        top: 50%;
         transform: translateY(-50%);
-		left: 0;
-		width: 100%;
+        left: -32px;
 		opacity: 1; 
         background: black;
         padding: 14px 0;
-        transition: all 0.1s ease-in-out;
         img{
             max-width:100%;
         }
 
+        &#ghost-one{
+            animation: loopOne 8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+            z-index: 18;
+            @include respond-below(md){
+                animation: loopMobOne 8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+            }
+        }
+        &#ghost-two{
+            animation: loopTwo 8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+            z-index: 16;
+            @include respond-below(md){
+                animation: loopMobTwo 8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+            }
+        }
+        &#ghost-three{
+            animation: loopThree 8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+            z-index: 18;
+            @include respond-below(md){
+                animation: loopMobThree 8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+            }
+        }
+
         &#ghost-four{
-            z-index: 15;
+            z-index: 16;
+            animation: loopFour 8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+            @include respond-below(md){
+                animation: loopMobFour 8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+            }
         }
         &#ghost-five{
-            z-index: 10;
+            z-index: 14;
+            animation: loopFive 8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+            @include respond-below(md){
+                animation: loopMobFive 8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+            }
         }
 
 	}
@@ -124,15 +153,13 @@
     .you-can-scroll{
         width: 60px;
         height: 50px;
-        background: $seafoam;
+        //background: $seafoam;
         border-radius: 30px;
         position: absolute;
         bottom: 30px;
         left: calc(50% - 30px);
-
-        animation: shake 5s cubic-bezier(.36,.07,.19,.97) infinite;
-        transform: translate3d(0, 0, 0);
         backface-visibility: hidden;
+        z-index: 30;
         
         .arrow{
             &:before{
@@ -249,3 +276,244 @@
       transform: translate3d(4px, 0, 0);
     }
   }
+
+
+@keyframes loopOne {
+    0% {
+        margin-top: 0;
+    }
+    15% {
+        margin-top: -50px;
+    }
+    30% {
+        margin-top: -10px;
+    }
+    45% {
+        margin-top: -90px;
+    }
+    60% {
+        margin-top: -20px;
+    }
+    75% {
+        margin-top: -130px;
+    }
+
+    100%{
+        margin-top: 0;
+    }
+}
+@keyframes loopTwo {
+    0% {
+        margin-top: 0;
+    }
+    15% {
+        margin-top: -140px;
+    }
+    30% {
+        margin-top: -50px;
+    }
+    45% {
+        margin-top: -180px;
+    }
+    60% {
+        margin-top: -60px;
+    }
+    75% {
+        margin-top: -220px;
+    }
+
+    100%{
+        margin-top: 0;
+    }
+}
+@keyframes loopThree {
+    0% {
+        margin-top: 0;
+    }
+    15% {
+        margin-top: 60px;
+    }
+    30% {
+        margin-top: 10px;
+    }
+    45% {
+        margin-top: 100px;
+    }
+    60% {
+        margin-top: 20px;
+    }
+    75% {
+        margin-top: 140px;
+    }
+
+    100%{
+        margin-top: 0;
+    }
+}
+
+@keyframes loopFour {
+    0% {
+        margin-top: 0;
+    }
+    15% {
+        margin-top: 120px;
+    }
+    30% {
+        margin-top: 50px;
+    }
+    45% {
+        margin-top: 180px;
+    }
+    60% {
+        margin-top: 60px;
+    }
+    75% {
+        margin-top: 230px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+@keyframes loopFive{
+    0% {
+        margin-top: 0;
+    }
+    15% {
+        margin-top: 180px;
+    }
+    30% {
+        margin-top: 90px;
+    }
+    45% {
+        margin-top: 260px;
+    }
+    60% {
+        margin-top: 100px;
+    }
+    75% {
+        margin-top: 320px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
+
+// Responsive
+
+@keyframes loopMobOne {
+    0% {
+        margin-top: 0;
+    }
+    15% {
+        margin-top: -15px;
+    }
+    30% {
+        margin-top: -5px;
+    }
+    45% {
+        margin-top: -40px;
+    }
+    60% {
+        margin-top: -15px;
+    }
+    75% {
+        margin-top: -70px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+@keyframes loopMobTwo {
+    0% {
+        margin-top: 0;
+    }
+    15% {
+        margin-top: -40px;
+    }
+    30% {
+        margin-top: -15px;
+    }
+    45% {
+        margin-top: -90px;
+    }
+    60% {
+        margin-top: -30px;
+    }
+    75% {
+        margin-top: -140px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+@keyframes loopMobThree {
+    0% {
+        margin-top: 0;
+    }
+    15% {
+        margin-top: 15px;
+    }
+    30% {
+        margin-top: 5px;
+    }
+    45% {
+        margin-top: 30px;
+    }
+    60% {
+        margin-top: 15px;
+    }
+    75% {
+        margin-top: 64px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+
+@keyframes loopMobFour {
+    0% {
+        margin-top: 0;
+    }
+    15% {
+        margin-top: 40px;
+    }
+    30% {
+        margin-top: 10px;
+    }
+    45% {
+        margin-top: 70px;
+    }
+    60% {
+        margin-top: 30px;
+    }
+    75% {
+        margin-top: 120px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+@keyframes loopMobFive{
+    0% {
+        margin-top: 0;
+    }
+    15% {
+        margin-top: 70px;
+    }
+    30% {
+        margin-top: 20px;
+    }
+    45% {
+        margin-top: 110px;
+    }
+    60% {
+        margin-top: 50px;
+    }
+    75% {
+        margin-top: 170px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}

@@ -25,20 +25,20 @@ window.addEventListener('scroll', function(e){
     var scrolled = window.pageYOffset;
     var hundred = window.innerHeight + window.innerHeight ; //+ window.innerHeight * .4
 
-    if(scrolled > hundred){
-        resetParallax('ghost-one','one')
-        resetParallax('ghost-two','two')
-        resetParallax('ghost-three','three')
-        resetParallax('ghost-four','four')
-        resetParallax('ghost-five','five')
-
-    } else {
-        parallax('ghost-one','one')
-        parallax('ghost-two','two')
-        parallax('ghost-three','three')
-        parallax('ghost-four','four')
-        parallax('ghost-five','five')
-    }
+    //if(scrolled > hundred){
+    //    resetParallax('ghost-one','one')
+    //    resetParallax('ghost-two','two')
+    //    resetParallax('ghost-three','three')
+    //    resetParallax('ghost-four','four')
+    //    resetParallax('ghost-five','five')
+//
+    //} else {
+    //    parallax('ghost-one','one')
+    //    parallax('ghost-two','two')
+    //    parallax('ghost-three','three')
+    //    parallax('ghost-four','four')
+    //    parallax('ghost-five','five')
+    //}
 }); 
 
 let oldScroll = 0;
