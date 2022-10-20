@@ -1,0 +1,52 @@
+#section-2{
+    position: relative;
+    justify-content: space-around;
+    margin-top: 100vh;
+
+    .section-2-shape{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: calc(50% - 150px);
+        left: calc(50% - 150px);
+        background: rgb(101,179,195);
+        background: linear-gradient(41deg, rgba(101,179,195,1) 0%, rgba(224,255,31,1) 100%);
+        z-index: 1;
+        clip-path: polygon(50% 0%, 54% 17%, 63% 2%, 62% 19%, 74% 6%, 70% 23%, 84% 14%, 76% 29%, 92% 23%, 80% 36%, 97% 35%, 83% 44%, 100% 47%, 84% 52%, 99% 59%, 82% 61%, 96% 72%, 79% 68%, 88% 82%, 73% 75%, 79% 90%, 67% 80%, 69% 96%, 59% 83%, 57% 100%, 51% 84%, 44% 100%, 42% 83%, 32% 97%, 34% 80%, 21% 90%, 27% 75%, 12% 82%, 22% 68%, 6% 71%, 19% 60%, 1% 59%, 17% 52%, 1% 47%, 17% 44%, 3% 34%, 20% 36%, 8% 23%, 24% 29%, 16% 14%, 31% 23%, 26% 6%, 38% 19%, 38% 2%, 46% 17%);
+        @include media-breakpoint-down(lg) {
+            width:200px;
+            height:200px;
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+        }
+        @include media-breakpoint-down(md) {
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+        }
+        @include media-breakpoint-down(sm) {
+            opacity:.5;
+        }
+    }
+    .container-fluid{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 2;
+        .row, .col-12{
+            height: 100%;
+        }
+        .col-12{
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+            h3{
+                margin-top:-30px;
+            }
+        }
+        .intro-copy{
+            position: relative;
+            z-index: 10;
+        }
+    }
+}

@@ -20,66 +20,54 @@ window.Alpine = Alpine
 Alpine.start()
 
 
-// Ghosts
+window.addEventListener('load', (event) => {
+   startStopIntroAnim();
+
+    //
+    //
+    // Eyeball tracking
+    let eyeBalls = document.getElementsByClassName('eb')
+    document.onmousemove = (event) => {
+        var x = event.clientX * 100 / window.innerWidth / 2 + "%";
+        var y = event.clientY * 100 / window.innerHeight /  2 + "%";
+        for(var index=0;index < eyeBalls.length;index++){
+            eyeBalls[index].style.transition = "0s";
+            eyeBalls[index].style.left = x;
+            eyeBalls[index].style.top = y;
+        }
+    }
+    
+    document.onmouseout = (event) => {
+        for(var index=0;index < eyeBalls.length;index++){
+            eyeBalls[index].style.transition = "0.7s";
+            eyeBalls[index].style.left = "calc(50% - 15px)";
+            eyeBalls[index].style.top = "calc(50% - 15px)";
+        }
+    }
+});
+
 window.addEventListener('scroll', function(e){
-    var scrolled = window.pageYOffset;
-    var hundred = window.innerHeight + window.innerHeight ; //+ window.innerHeight * .4
+    startStopIntroAnim();
+});
 
-    //if(scrolled > hundred){
-    //    resetParallax('ghost-one','one')
-    //    resetParallax('ghost-two','two')
-    //    resetParallax('ghost-three','three')
-    //    resetParallax('ghost-four','four')
-    //    resetParallax('ghost-five','five')
-//
-    //} else {
-    //    parallax('ghost-one','one')
-    //    parallax('ghost-two','two')
-    //    parallax('ghost-three','three')
-    //    parallax('ghost-four','four')
-    //    parallax('ghost-five','five')
-    //}
-}); 
-
-let oldScroll = 0;
-let newScroll = 0;
-function parallax(el,num) {
-    let newVal = 0;
+function startStopIntroAnim(){
     let scrolled = window.pageYOffset;
-    let ghost = document.getElementById(el);
-    let windowHeight = window.innerHeight;
-    
-    newScroll = scrolled;
-    newVal = scrolled * 0.3;
+    let hundred = window.innerHeight
+    let sectionOne = document.getElementById('section-1');
+    let logo = document.getElementById('logo');
 
-    if(num === 'one'){
-        ghost.style.marginTop = 1.1 * newVal + 'px';
-    } 
-    else if(num === 'two'){
-        ghost.style.marginTop = .8 * newVal + 'px';
-    } 
-    else if(num === 'three'){
-        ghost.style.marginTop = .6 * newVal + 'px';
+    if(scrolled < (hundred - (hundred * 0.2))){
+        sectionOne.classList.add('animate');
+        logo.classList.remove('shown');
+    } else {
+        sectionOne.classList.remove('animate');
+        logo.classList.add('shown');
     }
-    else if(num === 'four'){
-        ghost.style.marginTop = '-'+ .7  * newVal + 'px';
-    }
-    else if(num === 'five'){
-        ghost.style.marginTop = '-'+ 1.1 * newVal + 'px';
-    } 
-    
-    oldScroll = newScroll;
-};
-
-function resetParallax(el, num){
-    var ghost = document.getElementById(el);
-    ghost.style.marginTop = 0+ 'px';
-
 }
 
-function reverseNum(n) {
-    let r = n.toString().split('').reverse().join('');
-    return Math.sign(n) * parseInt(r);
-  }
+
+
+
+
 
   

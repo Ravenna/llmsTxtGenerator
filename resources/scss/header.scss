@@ -1,0 +1,21 @@
+.header{
+    background: black;
+    text-align: center;
+    position: fixed;
+    padding: 10px 0;
+    z-index: 100000;
+    .ravenna-logo{
+        width: 160px;
+        height: auto;
+        margin: 0 auto;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        &.shown{
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+}

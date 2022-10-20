@@ -61,7 +61,6 @@ function form() {
 			let action = this.$el.getAttribute('action');
            
 			let body =  new FormData(this.$refs.form)
-			console.log(body);
 
             // Send request as long as one is not pending
             if (!this.submitting) {
