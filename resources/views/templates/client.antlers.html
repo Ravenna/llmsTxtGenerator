@@ -1,0 +1,70 @@
+
+<div class="container client-wrapper">
+
+    <div class="row mb-5">
+        <div class="col">
+            <h1 class="teal">{{ title }}</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-6 mb-5">
+            {{ about }}
+        </div>
+
+        <div class="col-12 col-lg-4 offset-lg-2">
+            {{ if cool_facts }}
+                <h4>Cool Facts</h4>
+                <ul>
+                    {{ cool_facts }}
+                        <li>{{ value }}</li>
+                    {{ /cool_facts }}
+                </ul>
+            {{ /if }}
+
+            {{ if apis_integrated }}
+                <h4>Connected APIs</h4>
+                <ul>
+                    {{ apis_integrated}}
+                        <li>{{ value }}</li>
+                    {{ /apis_integrated }}
+                </ul>
+            {{ /if }}
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="gallery mt-5 mb-5" x-data="gallery">
+            {{ if one_image }}
+                {{ gallery }}
+                    <img src="{{ url }}" alt="{{ alt }}" class="img-fluid">
+                {{ /gallery }}
+            {{ elseif gallery }}
+                {{ gallery }}
+                    <div class="gallery-image"  >
+                        <a href="#" @click.prevent="showLarge" data-image="{{ url }}">
+                            {{ if thumbnail }}
+                                <img src="{{ thumbnail }}" alt="{{ alt }}">
+
+                            {{ else }}
+                                <img src="{{ glide :src="url" w="200" }}" alt="{{ alt }}">
+                            {{ /if }}
+                        </a>
+                    </div>
+                {{ /gallery }}
+            {{ else }}
+                
+                    <p class="lead teal-bg px-2 py-1">Images coming soon!</p>
+            {{ /if }}
+
+            <div class="gallery-modal" x-show="open" x-transition>
+                <div class="close" @click="close">
+                    <img src="{{ config:app:url }}assets/xmark-solid.svg " alt="close modal">
+                </div>
+                <div class="gallery-modal-image" >
+                    <img src="" alt="" id="gallery-modal-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

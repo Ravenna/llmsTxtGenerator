@@ -1,36 +1,4 @@
 #section-3{
-    .brand-carousel{
-        display: inline-block;
-        width: 300px;
-        border: 1px solid white;
-        height: 80px;
-        border-radius: 40px;
-        margin-right: 20px;
-        position: relative;
-        @include respond-below(md){
-            margin-top: 14px;
-            width: 220px;
-            height: 70px;
-        }
-
-        .slide{
-            display: block;
-            position: absolute;
-            top: 6px;
-            left: 15%;
-            width: 70%;
-            height: calc(100% - 12px);
-            img{
-                width: 100%;
-                height: auto;
-                vertical-align: top;
-                position: relative;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-        }
-
-    }
     .eyes{
         display: inline-block;
         padding: 0 14px;
@@ -42,7 +10,6 @@
             display: inline-block;
             width: 70px;
             height: 40px;
-            //border-radius: 80% 0;
             background: white;
             position: relative;
             clip-path: ellipse(50% 38% at 50% 50%);
@@ -60,6 +27,41 @@
                 left:calc(50% - 15px);
             }
 
+        }
+    }
+
+    .client-boxes{
+        margin-top: 5rem;
+        justify-content: space-between;
+        @include respond-below(md){
+            justify-content: flex-start;
+        }
+        .client-box{
+            border: 0px;
+            height: auto;
+            width: 18%;
+            padding: 1%;
+            margin: 0;
+
+            @include respond-below(md){
+                margin-bottom: 40px;
+                width: 36%;
+                padding: 2%;
+            }
+            @include respond-below(sm){
+                width: 40%;
+                padding: 5%;
+            }
+
+        }
+    }
+
+    .more-clients{
+        position: absolute;
+        bottom: 40px;
+        text-align: center;
+        a{
+            margin: 0 auto;
         }
     }
 }

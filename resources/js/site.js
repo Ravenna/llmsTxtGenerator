@@ -1,5 +1,6 @@
 //imports
 import form from '../js/components/form'
+import gallery from '../js/components/gallery'
 import Alpine from 'alpinejs';
 
 // Global get CSRF token function (used by forms).
@@ -16,12 +17,17 @@ window.getToken = async () => {
 
 
 Alpine.data("form", form);
+Alpine.data("gallery", gallery);
 window.Alpine = Alpine
 Alpine.start()
 
 
 window.addEventListener('load', (event) => {
-   startStopIntroAnim();
+    let current = window.location.pathname;
+    if (current == '/') {
+        startStopIntroAnim();
+    }
+
 
     //
     //
@@ -47,7 +53,11 @@ window.addEventListener('load', (event) => {
 });
 
 window.addEventListener('scroll', function(e){
-    startStopIntroAnim();
+    let current = window.location.pathname;
+    if (current == '/') {
+        startStopIntroAnim();
+    }
+    
 });
 
 function startStopIntroAnim(){

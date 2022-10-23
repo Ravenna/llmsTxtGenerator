@@ -1,18 +1,7 @@
 <section class="section" id="section-3" data-scroll="1" style="z-index: 89;">
     <div class="container">
         <h2>Brands we work<br class="d-none d-lg-inline">
-            with <div class="brand-carousel " x-data="{ current: 1 }" x-init="autoLoop = setInterval(() => { current++; if ( current > 3 ) { current = 1;}}, 4000)">
-            <div class="slide" x-show="current == 1">
-                <img src="{{ config:app:url }}assets/img/blue-origin.svg" alt="Blue Origin">
-            </div>
-            <div class="slide" x-show="current == 2">
-                <img src="{{ config:app:url }}assets/img/amazon.png" alt="Amazon">
-            </div>
-            <div class="slide" x-show="current == 3">
-                <img src="{{ config:app:url }}assets/img/microsoft.png" alt="Microsoft">
-            </div>
-
-            </div>might <br>l<div class="eyes">
+            with might <br>l<div class="eyes">
             <div class="eye">
                 <div class="eb"></div>
             </div>
@@ -20,5 +9,28 @@
                 <div class="eb"></div>
             </div>
         </div>k familiar.</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="client-boxes" x-data="{
+                    rotate: [
+                        'rotate-one',
+                        'rotate-two',
+                        'rotate-three'
+                    ],
+                    random(){
+                        return this.rotate[(Math.random() * this.rotate.length) | 0];
+                    }
+            
+                }">
+                    {{ collection:clients }}
+                        <div class="client-box" :class="random">
+                            <a href="{{ url }}" title="{{ title }}">
+                                <img src="{{ logo }}" alt="{{ title }}">
+                            </a>
+                        </div>
+                    {{ /collection:clients }}
+                </div>
+            </div>
+        </div>
     </div>
 </section>

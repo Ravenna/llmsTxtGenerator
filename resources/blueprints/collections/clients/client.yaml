@@ -11,23 +11,85 @@ sections:
           validate:
             - required
       -
-        handle: project_objectives
+        handle: big_statement
         field:
+          input_type: text
           antlers: false
-          display: 'Project Objectives'
-          type: textarea
-          icon: textarea
+          display: 'Big Statement'
+          type: text
+          icon: text
           listable: hidden
           instructions_position: above
           visibility: visible
           always_save: false
       -
-        handle: what_we_did
+        handle: about
         field:
+          always_show_set_button: false
+          previews: true
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
           antlers: false
-          display: 'What We Did'
-          type: textarea
-          icon: textarea
+          remove_empty_nodes: false
+          display: About
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: result
+        field:
+          always_show_set_button: false
+          previews: true
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          remove_empty_nodes: false
+          display: Result
+          type: bard
+          icon: bard
           listable: hidden
           instructions_position: above
           visibility: visible
@@ -47,12 +109,63 @@ sections:
           instructions_position: above
           visibility: visible
           always_save: false
+          width: 75
       -
-        handle: apis_integrated
+        handle: one_image
         field:
-          display: 'Apis Integrated'
-          type: list
-          icon: list
+          default: false
+          display: 'One Image'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+          width: 25
+      -
+        handle: quote
+        field:
+          always_show_set_button: false
+          previews: true
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          remove_empty_nodes: false
+          display: Quote
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: quote_author
+        field:
+          input_type: text
+          antlers: false
+          display: 'Quote Author'
+          type: text
+          icon: text
           listable: hidden
           instructions_position: above
           visibility: visible
@@ -65,8 +178,44 @@ sections:
         field:
           type: slug
           localizable: true
-  seo:
-    display: SEO
+      -
+        handle: cool_facts
+        field:
+          display: 'Cool Facts'
+          type: list
+          icon: list
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: apis_integrated
+        field:
+          display: 'Apis Integrated'
+          type: list
+          icon: list
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: logo
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: Logo
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+  se:
+    display: SE
     fields:
       -
         handle: seo

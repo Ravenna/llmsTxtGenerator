@@ -2,3 +2,7 @@ name: 'TJ Sherrill'
 super: true
 id: 1d1068ab-208d-480d-a677-dda65fe0f490
 password_hash: $2y$10$BqUmNy6K.AMOuUCgaEvnLu.PN5WNPXxKipHQLofDZnqq.5B2rBch.
+preferences:
+  collections:
+    clients:
+      after_save: continue_editing
