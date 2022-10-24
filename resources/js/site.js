@@ -1,6 +1,7 @@
 //imports
 import form from '../js/components/form'
 import gallery from '../js/components/gallery'
+import nav from '../js/components/nav'
 import Alpine from 'alpinejs';
 
 // Global get CSRF token function (used by forms).
@@ -18,6 +19,7 @@ window.getToken = async () => {
 
 Alpine.data("form", form);
 Alpine.data("gallery", gallery);
+Alpine.data("nav", nav);
 window.Alpine = Alpine
 Alpine.start()
 
@@ -64,14 +66,14 @@ function startStopIntroAnim(){
     let scrolled = window.pageYOffset;
     let hundred = window.innerHeight
     let sectionOne = document.getElementById('section-1');
-    let logo = document.getElementById('logo');
+    let header = document.getElementById('header');
 
     if(scrolled < (hundred - (hundred * 0.2))){
         sectionOne.classList.add('animate');
-        logo.classList.remove('shown');
+        header.classList.remove('shown');
     } else {
         sectionOne.classList.remove('animate');
-        logo.classList.add('shown');
+        header.classList.add('shown');
     }
 }
 

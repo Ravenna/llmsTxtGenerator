@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e153073ddc079a9fe216ed39d0ace3a7",
+    "content-hash": "dc37d81370b4129ff4619b486ab5c4de",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -124,6 +124,81 @@
                 "source": "https://github.com/asm89/stack-cors/tree/v2.1.1"
             },
             "time": "2022-01-18T09:12:03+00:00"
+        },
+        {
+            "name": "box/spout",
+            "version": "v3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/box/spout.git",
+                "reference": "9bdb027d312b732515b884a341c0ad70372c6295"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/box/spout/zipball/9bdb027d312b732515b884a341c0ad70372c6295",
+                "reference": "9bdb027d312b732515b884a341c0ad70372c6295",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-xmlreader": "*",
+                "ext-zip": "*",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2",
+                "phpunit/phpunit": "^8"
+            },
+            "suggest": {
+                "ext-iconv": "To handle non UTF-8 CSV files (if \"php-intl\" is not already installed or is too limited)",
+                "ext-intl": "To handle non UTF-8 CSV files (if \"iconv\" is not already installed)"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Box\\Spout\\": "src/Spout"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Adrien Loison",
+                    "email": "adrien@box.com"
+                }
+            ],
+            "description": "PHP Library to read and write spreadsheet files (CSV, XLSX and ODS), in a fast and scalable way",
+            "homepage": "https://www.github.com/box/spout",
+            "keywords": [
+                "OOXML",
+                "csv",
+                "excel",
+                "memory",
+                "odf",
+                "ods",
+                "office",
+                "open",
+                "php",
+                "read",
+                "scale",
+                "spreadsheet",
+                "stream",
+                "write",
+                "xlsx"
+            ],
+            "support": {
+                "issues": "https://github.com/box/spout/issues",
+                "source": "https://github.com/box/spout/tree/v3.3.0"
+            },
+            "abandoned": true,
+            "time": "2021-05-14T21:18:09+00:00"
         },
         {
             "name": "brick/math",
@@ -4609,6 +4684,55 @@
             "time": "2022-06-11T20:38:16+00:00"
         },
         {
+            "name": "rias/statamic-redirect",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/riasvdv/statamic-redirect.git",
+                "reference": "1a8e97b3ae88e87936c10f9269012cab77a20336"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/riasvdv/statamic-redirect/zipball/1a8e97b3ae88e87936c10f9269012cab77a20336",
+                "reference": "1a8e97b3ae88e87936c10f9269012cab77a20336",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.4|^8.0",
+                "spatie/simple-excel": "^1.13",
+                "statamic/cms": "^3.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "3.8.0",
+                "orchestra/testbench": "^5.0|^6.0|^7.0",
+                "phpunit/phpunit": "9.5.21"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic Redirect",
+                    "description": "Statamic Redirect addon"
+                },
+                "laravel": {
+                    "providers": [
+                        "Rias\\StatamicRedirect\\RedirectServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rias\\StatamicRedirect\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "issues": "https://github.com/riasvdv/statamic-redirect/issues",
+                "source": "https://github.com/riasvdv/statamic-redirect/tree/2.4.0"
+            },
+            "time": "2022-07-22T17:13:19+00:00"
+        },
+        {
             "name": "seld/jsonlint",
             "version": "1.9.0",
             "source": {
@@ -4842,6 +4966,66 @@
                 }
             ],
             "time": "2022-01-05T09:38:04+00:00"
+        },
+        {
+            "name": "spatie/simple-excel",
+            "version": "1.15.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/simple-excel.git",
+                "reference": "c3afcaabf44f82c3948e005e1709e5e57f0a5c50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/simple-excel/zipball/c3afcaabf44f82c3948e005e1709e5e57f0a5c50",
+                "reference": "c3afcaabf44f82c3948e005e1709e5e57f0a5c50",
+                "shasum": ""
+            },
+            "require": {
+                "box/spout": "^3.0",
+                "illuminate/support": "^8.71|^9.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.4",
+                "spatie/phpunit-snapshot-assertions": "^4.0",
+                "spatie/temporary-directory": "^1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\SimpleExcel\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Read and write simple Excel and CSV files",
+            "homepage": "https://github.com/spatie/simple-excel",
+            "keywords": [
+                "simple-excel",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/simple-excel/issues",
+                "source": "https://github.com/spatie/simple-excel/tree/1.15.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-05-11T09:06:44+00:00"
         },
         {
             "name": "statamic/cms",

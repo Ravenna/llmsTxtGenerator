@@ -1,40 +1,29 @@
 <!doctype html>
 <html lang="{{ site:short_locale }}">
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         {{ seo_pro:meta }}
         <meta property="og:image" content="assets/ravenna-com-og-cover.png">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YF3J0TJRTM"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-        gtag('config', 'G-YF3J0TJRTM');
+            gtag('config', 'G-YF3J0TJRTM');
         </script>
 
-
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-      
         <link rel="stylesheet" href="https://use.typekit.net/yim3ewy.css">
-
         <script src="https://use.fontawesome.com/8ae0b96fce.js"></script>
-
         <link rel="stylesheet" href="{{ mix src='/css/site.css' }}">
     </head>
     <body class="{{ if !is_homepage }} not-homepage {{ /if }} {{ if collection == 'clients' }} client-template {{ /if }}">
         <div id="app" class="wrapper">
-
-            <div class="container-fluid header">
-                <div class="ravenna-logo" id="logo">
-                    <a href="{{ config:app:url }}">
-                        <img src="{{ config:app:url }}assets/img/ravenna.png" alt="Ravenna">
-                    </a>
-                </div>
-            </div>
+            {{ partial src="includes.header" }}
             
             {{ template_content }}
             
@@ -42,7 +31,6 @@
         </div>
 
         <script src="/vendor/statamic/frontend/js/helpers.js"></script>
-
         <script src="{{ mix src='/js/site.js' }}"></script>
     </body>
 </html>

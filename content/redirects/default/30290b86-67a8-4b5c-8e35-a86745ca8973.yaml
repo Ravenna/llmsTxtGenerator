@@ -1,0 +1,6 @@
+id: 30290b86-67a8-4b5c-8e35-a86745ca8973
+enabled: true
+source: /client/creative-retail-packaging/
+destination: /clients/
+type: '301'
+match_type: exact

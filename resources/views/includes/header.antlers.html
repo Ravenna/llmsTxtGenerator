@@ -1,0 +1,38 @@
+<div class="container-fluid header" id="header">
+    <div class="ravenna-logo" id="logo">
+        <a href="{{ config:app:url }}">
+            <img src="{{ config:app:url }}assets/img/ravenna.png" alt="Ravenna">
+        </a>
+    </div>
+
+    <div class="hamburglar-wrapper" x-data="nav">
+        <div class="hamburglar" @click="open = ! open" :class="open ? 'open' : 'closed'">
+            <div class="line burger-bun-top"></div>
+            <div class="line burger-filling"></div>
+            <div class="line burger-bun-bot"></div>
+        </div>
+
+        <div class="nav" :class="open ? 'open' : 'closed'">
+            <div class="nav-logo">
+                <a href="{{ config:app:url }}">
+                    <img src="{{ config:app:url }}assets/img/ravenna-black.png" alt="Ravenna">
+                </a>
+            </div>
+            <ul>
+                {{ nav:main_nav }}
+                    <li><a href="{{ url }}" title="{{ title }}">{{ title }}</a>
+                        {{ if children }}
+                            <ul>
+                                {{ children }}
+                                    <li>
+                                        <a href="{{ url }}" title="{{ title }}">{{ title }}</a>
+                                    </li>
+                                {{ /children }}
+                            </ul>
+                        {{ /if }}
+                    </li>
+                {{ /nav:main_nav }}
+            </ul>
+        </div>
+    </div>
+</div>
