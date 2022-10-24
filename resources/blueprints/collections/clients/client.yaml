@@ -214,12 +214,3 @@ sections:
           instructions_position: above
           visibility: visible
           always_save: false
-  se:
-    display: SE
-    fields:
-      -
-        handle: seo
-        field:
-          type: seo_pro
-          listable: false
-          display: SEO
