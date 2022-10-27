@@ -1,0 +1,29 @@
+#section-tech{
+    background: white;
+    z-index: 90;
+    color: black;
+    height: auto;
+    padding: 80px 0;
+    p{
+        color: black;
+    }
+
+    .home-feat-service{
+        color: black;
+        .hft-img{
+            position: relative;
+            
+            .certified{
+                background: $seafoam;
+                position: absolute;
+                bottom: 30px;
+                left: 0;
+                transform: rotate(-20deg);
+                padding: 2px;
+            }
+        }
+        p{
+            color: black;
+        }
+    }
+}

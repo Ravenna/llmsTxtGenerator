@@ -1,0 +1,31 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "mix",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.0",
+        "cross-env": "^7.0",
+        "css-loader": "^5.2.7",
+        "laravel-mix": "^6.0",
+        "postcss": "^8.4.5",
+        "postcss-import": "^14.0.1"
+    },
+    "dependencies": {
+        "@kingshott/iodine": "^7.0.2",
+        "alpinejs": "^3.10.3",
+        "axios": "^1.0.0",
+        "bootstrap": "^5.2.2",
+        "jquery": "^3.6.1",
+        "postcss-preset-env": "^7.8.2",
+        "sass": "^1.55.0",
+        "sass-loader": "^13.0.2",
+        "smoothscroll-polyfill": "^0.4.4"
+    }
+}

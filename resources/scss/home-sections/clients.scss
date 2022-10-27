@@ -1,0 +1,67 @@
+#section-3{
+    .eyes{
+        display: inline-block;
+        padding: 0 14px;
+        @include respond-below(md){
+            padding: 0 10px;
+        }   
+
+        .eye{
+            display: inline-block;
+            width: 70px;
+            height: 40px;
+            background: white;
+            position: relative;
+            clip-path: ellipse(50% 38% at 50% 50%);
+            @include respond-below(sm){
+                width: 50px;
+                height: 30px;
+            }
+            .eb{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: black;
+                position: absolute;
+                top: calc(50% - 15px);
+                left:calc(50% - 15px);
+            }
+
+        }
+    }
+
+    .client-boxes{
+        margin-top: 5rem;
+        justify-content: space-between;
+        @include respond-below(md){
+            justify-content: flex-start;
+        }
+        .client-box{
+            border: 0px;
+            height: auto;
+            width: 18%;
+            padding: 1%;
+            margin: 0;
+
+            @include respond-below(md){
+                margin-bottom: 40px;
+                width: 36%;
+                padding: 2%;
+            }
+            @include respond-below(sm){
+                width: 40%;
+                padding: 5%;
+            }
+
+        }
+    }
+
+    .more-clients{
+        position: absolute;
+        bottom: 40px;
+        text-align: center;
+        a{
+            margin: 0 auto;
+        }
+    }
+}

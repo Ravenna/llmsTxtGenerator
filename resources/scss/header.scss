@@ -1,0 +1,168 @@
+$animation: 0.6s;	// animation speed
+$scale: 1;	
+.header{
+    background: black;
+    text-align: center;
+    position: fixed;
+    padding: 10px 0;
+    z-index: 100000;
+    top: 1px;
+    opacity: 0;
+    &.shown{
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+    .ravenna-logo{
+        width: 160px;
+        height: auto;
+        margin: 0 auto;
+        transition: opacity 0.3s ease-in-out;
+        img{
+            max-width: 100%;
+        }
+    }
+
+    .hamburglar-wrapper{
+        position: absolute;
+        right: 16px;
+        top: 12px;
+        z-index: 10;
+        .hamburglar{
+            position: relative;
+            height: 23px;
+            width: 40px;
+            z-index: 10;
+            cursor: pointer;
+            .line{
+                position: absolute;
+                display: block;
+                height: 3px;
+                width: 40px;
+                background: $seafoam;
+                transition: color .3s cubic-bezier(.8, .5, .2, 1.4) .5s, transform 0.3s cubic-bezier(.8, .5, .2, 1.4);
+            }
+            &.open .line{
+                background: black;
+                transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+            }
+
+            .burger-bun-top{
+                top: 0;
+            }
+            .burger-filling{
+                top: 10px;
+            }
+            .burger-bun-bot{
+                bottom: 0;
+            }
+
+            &.open{    
+                .burger-bun-top {
+                   top: 10px;
+                }
+                .burger-filling{
+                    top: 10px;
+                }
+                .burger-bun-bot {
+                    top: 10px;
+                }
+            }
+
+            &:hover{
+                .burger-bun-top {
+                    transform: scaleX(0.8); 
+                }
+                .burger-filling{
+                    transform: scaleX(0.5); 
+                }
+                .burger-bun-bot {
+                    transform: scaleX(0.8); 
+                }
+            }
+        }
+    
+
+        //
+        //
+        // Nav wrapper box and uls
+        .nav{
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            z-index: 8;
+            width: 0px;
+            height: 0px;
+            transition: all 0.3s ease-in-out .3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: $seafoam;
+            overflow: hidden;
+            
+            &.open{
+                width: 100vw;
+                height: 100vh;
+                transition: all 0.3s ease-in-out;
+            }
+            .nav-logo{
+                position: absolute;
+                top: 10px;
+                width: 160px;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+                img{
+                    max-width: 100%;
+                }
+            }
+            ul{
+                padding-left: 0px;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+                li{
+                    list-style: none;
+                    a{
+                        font-size: 2rem;
+                        font-weight: 700;
+                        color: black;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        display: inline-block;
+                        position: relative;
+                        &:before{
+                            content: "";
+                            position: absolute;
+                            left: -25px;
+                            top: 16px;
+                            height: 20px;
+                            width: 20px;
+                            background-color: black;
+                            clip-path: polygon(50% 1%, 50% 1%, 50% 1%, 63% 20%, 63% 20%, 63% 20%, 63% 20%, 86% 15%, 86% 15%, 86% 15%, 81% 38%, 81% 38%, 81% 38%, 100% 50%, 100% 50%, 100% 50%, 81% 63%, 81% 63%, 81% 63%, 86% 86%, 86% 86%, 86% 86%, 63% 81%, 63% 81%, 63% 81%, 50% 100%, 50% 100%, 50% 100%, 37% 81%, 37% 81%, 37% 81%, 14% 86%, 14% 86%, 14% 86%, 19% 63%, 19% 63%, 19% 63%, 0% 50%, 0% 50%, 0% 50%, 19% 38%, 19% 38%, 19% 38%, 14% 15%, 14% 15%, 14% 15%, 37% 20%, 37% 20%, 37% 20%, 37% 20%);
+                            opacity: 0;
+                            transition: opacity 0.3s ease;
+
+                        }
+                        &:hover:before{
+                            opacity: 1;
+                            transition: opacity 0.3s ease;
+                        }
+                    }
+                    & > ul{
+                        border-top: 2px solid black;
+                    }
+                }
+            }
+
+            &.open{
+                .nav-logo{
+                    opacity: 1;
+                    transition: opacity 0.3s ease-in-out 0.5s;
+                }
+                ul{
+                    opacity: 1;
+                    transition: opacity 0.3s ease-in-out 0.5s;
+                }
+            }
+        }
+    }
+}

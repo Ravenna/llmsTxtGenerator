@@ -1,0 +1,62 @@
+
+{{ if type == 'text' }}
+    <template x-if="{{ show_field }}">
+
+        <div class="row">
+            <div class="col form-budget">
+                <div class="form-row">
+                    <label for="{{ handle }}" class="form-label">{{ display }}</label>
+                    <div class="form-div"></div>
+                    <input 
+                        type="{{ input_type }}" 
+                        class="form-control" 
+                        id="{{ handle }}" 
+                        placeholder="{{ display }}{{ if validate }}*{{/if}}"
+                        x-model="{{ handle }}"
+                    >
+
+                    {{ if error }}
+                        <p class="error">{{ error }}</p>
+                    {{ /if }}
+                </div>
+            </div>
+        </div>
+    </template>
+
+{{ elseif type == 'select' }}
+<div class="row">
+    <div class="col form-budget">
+        <div class="form-row">
+            <label for="{{ handle }}" class="form-label">{{ display }}</label>
+            <div class="form-div"></div>
+            <select class="form-select" name="{{handle}}" aria-label="{{ name }}" x-model="{{handle }}">
+                <option selected>{{ instructions }}{{ if validate }}*{{/if}}</option>
+
+                {{ foreach:options }}                
+                    <option value="{{ key }}">{{ value }}</option>
+                {{ /foreach:options }}
+            </select>
+        </div>
+    </div>
+</div>
+
+{{ elseif type == 'textarea'}}
+    <div class="row">
+        <div class="col form-budget">
+            <div class="form-row">
+                <label for="{{ handle }}" class="form-label">{{ display }}</label>
+                <div class="form-div"></div>
+                <textarea 
+                    class="form-control" 
+                    id="{{ handle }}" 
+                    placeholder="{{ display }}{{ if validate }}*{{/if}}"
+                    x-model="{{ handle }}"
+                ></textarea>
+
+                {{ if error }}
+                    <p class="error">{{ error }}</p>
+                {{ /if }}
+            </div>
+        </div>
+    </div>
+{{ /if }}

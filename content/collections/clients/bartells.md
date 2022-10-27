@@ -1,0 +1,58 @@
+---
+id: 1623f17e-59f6-4c41-b2fb-c3c5cf13c9c4
+blueprint: client
+title: Bartells
+big_statement: 'Online Pharmacy Experience and Mobile Applications'
+about:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Bartells is a northwest family-owned pharmacy with 80+ locations (until it recently sold to Rite Aid).'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Prior to working with Ravenna, they had two separate digital systems supporting customer pharmacy interactions.  One system handled the web, the other system handled mobile apps.  These two systems had separate databases, reporting, admin, and vendors.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Ravenna had been previously supporting the Bartell website and various other digital properties, so they approached us about building a pharmacy system. '
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'The architecture that we proposed was to build a single backend system that talked to the Bartells Pharmacy back-office software provided by McKesson, and then communicate with the web and mobile apps as a complete end-to-end system.  '
+  -
+    type: paragraph
+result:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "The result was successful on multiple levels.  First, we were able to bring all users into one database.  Merging the two third-party platform databases into a single point of management. Next, it brought a fully branded look and feel to the customer's experience."
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'This led to higher engagement levels, increased daily active users, and most importantly a system the Bartells could manage.'
+cool_facts:
+  - 'Tens of thousands of users'
+  - 'Merged disparate systems'
+apis_integrated:
+  - McKesson
+  - 'AWS SES'
+updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
+updated_at: 1666372605
+logo: btd-logo-horiz.png
+one_image: true
+gallery:
+  - bartells-cutout.png
+---

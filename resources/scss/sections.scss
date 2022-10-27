@@ -1,0 +1,72 @@
+// Generic section
+
+.section, section {
+	height: 100vh;
+	width: 100%;
+	display: flex; 
+	flex-direction: column;
+	justify-content: center;
+	background: black;
+    overflow:hidden;
+    position: relative;
+	top: 0;
+	@include transition(top .5s ease-in-out);
+
+    &.section-fixed{
+        position: fixed;
+    }
+    &.natural-scroll {
+        height: auto;
+        position: relative;
+        padding:40px;
+        min-height: 100vh;
+        @include media-breakpoint-down(md){
+            padding: 5px;
+        }
+    }
+    &.auto-height {
+        height:auto;
+    }
+    &.full-height {
+        height:100vh;
+    }
+    &.white-bg{
+        background-color: $white;
+    }
+    &.gray-bg {
+        background-color: $gray;
+    }
+    &.halftone-bg{
+        background: linear-gradient(180deg, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 50%);
+    }
+	&.finished{
+		top: -100vh;
+        opacity: 0;
+		@include transition(all .5s ease-in-out)
+	}
+	h1{
+		z-index: 10;
+		color: $seafoam;
+		text-align: center;
+		background: black;
+		width: calc(100% + 64px); 
+		text-align: center;
+        position: relative;
+        left: -64px;
+	}
+    &.white-bg, &.gray-bg{
+        h3, p{
+            color: black;
+        }
+    }
+}
+
+
+@import 'home-sections/hero.scss';
+@import 'home-sections/intro.scss';
+@import 'home-sections/clients.scss';
+@import 'home-sections/tech.scss';
+
+
+
+

@@ -1,0 +1,36 @@
+<section class="section" id="section-3" data-scroll="1" style="z-index: 89;">
+    <div class="container">
+        <h2>Brands we work<br class="d-none d-lg-inline">
+            with might <br>l<div class="eyes">
+            <div class="eye">
+                <div class="eb"></div>
+            </div>
+            <div class="eye">
+                <div class="eb"></div>
+            </div>
+        </div>k familiar.</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="client-boxes" x-data="{
+                    rotate: [
+                        'rotate-one',
+                        'rotate-two',
+                        'rotate-three'
+                    ],
+                    random(){
+                        return this.rotate[(Math.random() * this.rotate.length) | 0];
+                    }
+            
+                }">
+                    {{ collection:clients }}
+                        <div class="client-box" :class="random">
+                            <a href="{{ url }}" title="{{ title }}">
+                                <img src="{{ logo }}" alt="{{ title }}">
+                            </a>
+                        </div>
+                    {{ /collection:clients }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,125 @@
+.carousel-wrapper{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+
+    .shape-wrapper{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+
+
+    .shape{
+        height: 540px;
+        width: 540px;
+        clip-path: polygon(50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);
+        background: black;
+        position: initial;
+        transition: clip-path 0.5s ease-in-out;
+
+        &.medium{
+            clip-path: polygon(50% 1%, 50% 1%, 50% 1%, 63% 20%, 63% 20%, 63% 20%, 63% 20%, 86% 15%, 86% 15%, 86% 15%, 81% 38%, 81% 38%, 81% 38%, 100% 50%, 100% 50%, 100% 50%, 81% 63%, 81% 63%, 81% 63%, 86% 86%, 86% 86%, 86% 86%, 63% 81%, 63% 81%, 63% 81%, 50% 100%, 50% 100%, 50% 100%, 37% 81%, 37% 81%, 37% 81%, 14% 86%, 14% 86%, 14% 86%, 19% 63%, 19% 63%, 19% 63%, 0% 50%, 0% 50%, 0% 50%, 19% 38%, 19% 38%, 19% 38%, 14% 15%, 14% 15%, 14% 15%, 37% 20%, 37% 20%, 37% 20%, 37% 20%);
+            transition: clip-path 0.5s ease-in-out;
+        }
+        &.large{
+            clip-path: polygon(50% 0%, 54% 17%, 63% 2%, 62% 19%, 74% 6%, 70% 23%, 84% 14%, 76% 29%, 92% 23%, 80% 36%, 97% 35%, 83% 44%, 100% 47%, 84% 52%, 99% 59%, 82% 61%, 96% 72%, 79% 68%, 88% 82%, 73% 75%, 79% 90%, 67% 80%, 69% 96%, 59% 83%, 57% 100%, 51% 84%, 44% 100%, 42% 83%, 32% 97%, 34% 80%, 21% 90%, 27% 75%, 12% 82%, 22% 68%, 6% 71%, 19% 60%, 1% 59%, 17% 52%, 1% 47%, 17% 44%, 3% 34%, 20% 36%, 8% 23%, 24% 29%, 16% 14%, 31% 23%, 26% 6%, 38% 19%, 38% 2%, 46% 17%);
+            transition: clip-path 0.5s ease-in-out;
+        }
+
+        .shape-titles{
+            position: absolute;
+            top: 0;
+            left: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            min-height: 100%;
+            .large-title{
+                color: black;
+                font-size: 110px;
+                font-weight: 800;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: white;
+
+                &.hide{
+                    display: none;
+                }
+            }
+        }
+
+        &.medium {
+            #small-title, #large-title{
+                display: none;
+            }   
+        }
+        &.large{
+            #small-title, #medium-title{
+                display: none;
+            }
+        }
+    }
+
+    .slides{
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .slide{
+        height: 100%;
+        width: calc(100% - 60px);
+        flex-basis: calc(100% - 60px);
+        flex-shrink: 0;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: 30px;
+        color: white;
+        margin: 0 30px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: left 0.3s ease-in-out;
+        &.slide-two, &.slide-three{
+            left: 100%;
+        }
+        &.active-slide{
+            left: 0;
+        }
+        &.past-slide{
+            left: -100%;
+        }
+
+        &.teal-bg{
+            background-color: $teal;
+        }
+        &.blue-bg{
+            background-color: $blue;
+        }
+        &.purple-bg{
+            background-color: $purple;
+        }
+
+
+        .pre-title, .post-title{
+            font-size: 1.875rem;
+            font-weight: 500;
+        }
+       
+    }
+    .large-title{
+        font-size: 110px;
+        font-weight: 800;
+    }
+}
