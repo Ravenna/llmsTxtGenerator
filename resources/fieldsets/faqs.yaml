@@ -1,0 +1,67 @@
+title: FAQs
+fields:
+  -
+    handle: faq
+    field:
+      collapse: false
+      previews: true
+      sets:
+        new_set:
+          display: 'New Set'
+          fields:
+            -
+              handle: question
+              field:
+                input_type: text
+                antlers: false
+                display: Question
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: answer
+              field:
+                collapse: false
+                always_show_set_button: false
+                previews: true
+                buttons:
+                  - h2
+                  - h3
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - removeformat
+                  - quote
+                  - anchor
+                  - image
+                  - table
+                save_html: false
+                toolbar_mode: fixed
+                link_noopener: false
+                link_noreferrer: false
+                target_blank: false
+                reading_time: false
+                fullscreen: true
+                allow_source: true
+                enable_input_rules: true
+                enable_paste_rules: true
+                antlers: false
+                remove_empty_nodes: false
+                display: Answer
+                type: bard
+                icon: bard
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+      display: faq
+      type: replicator
+      icon: replicator
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false

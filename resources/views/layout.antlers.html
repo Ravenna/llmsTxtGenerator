@@ -20,7 +20,7 @@
         </script>
 
         <link rel="stylesheet" href="https://use.typekit.net/yim3ewy.css">
-        <script src="https://use.fontawesome.com/8ae0b96fce.js"></script>
+        <script src="https://kit.fontawesome.com/53e7fedfa5.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="{{ mix src='/css/site.css' }}">
     </head>
     <body class="{{ if !is_homepage }} not-homepage {{ /if }} {{ if collection == 'clients' }} client-template {{ /if }}">
@@ -31,6 +31,14 @@
             
             {{ partial src="includes.footer" }}
         </div>
+
+
+        <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+            <linearGradient id="icon-gradient" x2="1" y2="1">
+              <stop offset="0%" stop-color="rgba(101,179,195,1)" />
+              <stop offset="100%" stop-color="rgba(224,255,31,1)" />
+            </linearGradient>
+          </svg>
 
         <script src="/vendor/statamic/frontend/js/helpers.js"></script>
         <script src="{{ mix src='/js/site.js' }}"></script>

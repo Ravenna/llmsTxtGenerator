@@ -3,6 +3,7 @@ import form from '../js/components/form'
 import gallery from '../js/components/gallery'
 import nav from '../js/components/nav'
 import Alpine from 'alpinejs';
+import collapse from '@alpinejs/collapse'
 
 // Global get CSRF token function (used by forms).
 window.getToken = async () => {
@@ -20,6 +21,7 @@ window.getToken = async () => {
 Alpine.data("form", form);
 Alpine.data("gallery", gallery);
 Alpine.data("nav", nav);
+Alpine.plugin(collapse)
 window.Alpine = Alpine
 Alpine.start()
 

@@ -18,6 +18,7 @@
         "postcss-import": "^14.0.1"
     },
     "dependencies": {
+        "@alpinejs/collapse": "^3.10.5",
         "@kingshott/iodine": "^7.0.2",
         "alpinejs": "^3.10.3",
         "axios": "^1.0.0",

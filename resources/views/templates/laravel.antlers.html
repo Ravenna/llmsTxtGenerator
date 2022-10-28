@@ -1,0 +1,115 @@
+<div class="service-wrapper">
+    <div class="container">
+
+        <div class="row mb-5">
+            <div class="col">
+                <h1 class="seafoam mb-4"><span class="d-none">Certified</span> Laravel Development Services</h1>
+                <p>On-shore, nimble team, ready to get started on your next project.</p>
+            </div>
+        </div>
+
+        <div class="row service-types">
+            <div class="col-12 col-md-5">
+                <div class="service-card no-border">
+                    <h2>Laravel<br><span class="seafoam">Development</span></h2>
+                    <p>Ravenna is able to provide excellent Laravel development services for your organization, no matter your industry!</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">{{ partial src="includes.icons.gears-people" }}</div>
+                    <h3>Back Office Systems</h3>
+                    <p>Implement or augment back office systems that can help your business run more smoothly
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">{{ partial src="includes.icons.screen" }}</div>
+                    <h3>Customer facing solutions</h3>
+                    <p>Beautiful and blazing fast front-end interfaces designed with user experience in mind</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-7">
+                <div class="service-card">
+                    <div class="icon">{{ partial src="includes.icons.money" }}</div>
+                    <h3>Ecommerce, Transactional</h3>
+                    <p>Create or Improve operations systems that need a software solution</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">{{ partial src="includes.icons.building" }}</div>
+                    <h3>Enterprise Efficiency</h3>
+                    <p>Small, medium and large scale systems based on your requirements</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">{{ partial src="includes.icons.nodes" }}</div>
+                    <h3>Put it all Together</h3>
+                    <p>Most of the time we find that customers will need a mix of some or all of these things.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col"><a href="#section-4" class="btn">Lets Talk</a></div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row duotone">
+            <div class="col">
+                <div 
+                    class="container faderator" 
+                    x-data="{
+                        classes: ['option-one', 'option-two', 'option-three'],
+                        currentClass: 0,
+                        loopClasses(){     
+                            this.intervalId = setInterval(
+                                () => {                                                
+                                    if(this.currentClass == 2){
+                                        this.currentClass = 0;
+                                    } else {
+                                        this.currentClass++;
+                                    }
+                                },
+                                5000,
+                            );
+                        }
+                    }" 
+                    x-init="loopClasses"
+                >
+                    <div class="fader" :class="classes[currentClass]">
+                        <div class="shape-wrapper">
+                            <div class="shape">
+                                <div class="shape-titles">
+                                    <p class="super-big">Bring your idea to life</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="super-big">Bring your idea to life</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-5 pb-5">
+        <div class="row">
+            <div class="col-12 col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                <h3>You have questions<br><span class="seafoam">We have answers</span></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                <div x-data="{ current: 0 }" class="faqs">
+                    {{ faq }}
+                        <div class="accordion" data-index="{{ index }}">
+                            <button @click="current = {{ index }}" :class="current == {{ index }} ? 'active': ''">{{ question }} {{ partial src="includes.icons.xmark" }}</button>
+                            <div class="answer" x-show="current == {{ index }}" x-collapse> <!--  -->
+                                {{ answer }}
+                            </div>
+                        </div>
+                    {{ /faq }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ partial src="home-sections.form" }}
+
+</div>

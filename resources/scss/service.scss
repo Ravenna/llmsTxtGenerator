@@ -1,0 +1,200 @@
+body.not-homepage{
+    .service-wrapper{
+        padding-top: 100px;
+    
+        h1{
+            font-size: 7.5rem;
+            @include respond-below(md){
+                font-size: 4.5rem;
+            }
+        }
+
+        h2{
+            font-size: 3.5rem;
+            @include respond-below(md){
+                font-size: 2.5rem;
+            }
+        }
+
+        .service-types{
+            margin-top: 80px;
+        }
+
+        .service-card{
+            border: 1px solid white;
+            padding: 30px;
+            margin-bottom: 60px;
+
+            &.no-border{
+                border: 0px;
+            }
+
+            h3{
+                font-size: 2.5rem;
+            }
+
+            .icon{
+                color: white;
+                width: 90px;
+                height: 90px;
+                margin-bottom: 14px;
+                svg{
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+
+    }
+
+    .duotone{
+        background-color: white;
+        position: relative;
+        &:before{
+            content: "";
+            width: 100%;
+            height: 50%;
+            background: black;
+            position: absolute;
+            z-index: 4;
+        }
+    }
+
+    .faderator{
+        position: relative;
+        z-index: 5;
+        padding: 60px 0;
+        .fader{
+            min-height: 600px;
+            border-radius: 30px;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: $teal;
+            transition: background-color 0.3s ease-in-out;
+
+            p.super-big{
+                font-size: 5rem;
+                font-weight: 700;
+            }
+
+            .shape-wrapper{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                z-index: 10;
+                .shape{
+                    height: 540px;
+                    width: 540px;
+                    clip-path: polygon(50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 0% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);
+                    background: black;
+                    position: initial;
+                    transition: clip-path 0.5s ease-in-out;
+
+                    @include respond-below(lg){
+                        height: 460px;
+                        width: 460px;
+                    }
+                    @include respond-below(md){
+                        height: 400px;
+                        width: 400px;
+                    }
+                    @include respond-below(sm){
+
+                    }
+                } 
+                
+                .shape-titles{
+                    position: absolute;
+                    top: 0;
+                    left: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 100%;
+                    min-height: 100%;
+                    width: calc(100% - 120px);
+                    p.super-big{
+                        color: black;
+                        font-weight: 800;
+                        -webkit-text-stroke-width: 1px;
+                        -webkit-text-stroke-color: white;
+        
+                        &.hide{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            &.option-two{
+                background: $blue;
+                .shape{
+                    clip-path: polygon(50% 1%, 50% 1%, 50% 1%, 63% 20%, 63% 20%, 63% 20%, 63% 20%, 86% 15%, 86% 15%, 86% 15%, 81% 38%, 81% 38%, 81% 38%, 100% 50%, 100% 50%, 100% 50%, 81% 63%, 81% 63%, 81% 63%, 86% 86%, 86% 86%, 86% 86%, 63% 81%, 63% 81%, 63% 81%, 50% 100%, 50% 100%, 50% 100%, 37% 81%, 37% 81%, 37% 81%, 14% 86%, 14% 86%, 14% 86%, 19% 63%, 19% 63%, 19% 63%, 0% 50%, 0% 50%, 0% 50%, 19% 38%, 19% 38%, 19% 38%, 14% 15%, 14% 15%, 14% 15%, 37% 20%, 37% 20%, 37% 20%, 37% 20%);
+                    transition: clip-path 0.5s ease-in-out;
+                }
+            }
+            &.option-three{
+                background-color: $purple;
+                .shape{
+                    clip-path: polygon(50% 0%, 54% 17%, 63% 2%, 62% 19%, 74% 6%, 70% 23%, 84% 14%, 76% 29%, 92% 23%, 80% 36%, 97% 35%, 83% 44%, 100% 47%, 84% 52%, 99% 59%, 82% 61%, 96% 72%, 79% 68%, 88% 82%, 73% 75%, 79% 90%, 67% 80%, 69% 96%, 59% 83%, 57% 100%, 51% 84%, 44% 100%, 42% 83%, 32% 97%, 34% 80%, 21% 90%, 27% 75%, 12% 82%, 22% 68%, 6% 71%, 19% 60%, 1% 59%, 17% 52%, 1% 47%, 17% 44%, 3% 34%, 20% 36%, 8% 23%, 24% 29%, 16% 14%, 31% 23%, 26% 6%, 38% 19%, 38% 2%, 46% 17%);
+                    transition: clip-path 0.5s ease-in-out;
+                }
+            }
+        }
+        #fader-1{
+            background-color: $teal;
+        }
+    }
+
+    .faqs{
+        .accordion{
+            border-bottom: 1px solid white;
+            padding: 20px 0;
+            button{
+                border: 0px;
+                background: transparent;
+                color: $seafoam;
+                padding: 10px 0;
+                font-size: 1.5rem;
+                font-weight: 700;
+                position: relative;
+                width: 100%;
+                text-align: left;
+                svg{
+                    position: absolute;
+                    top: 12px;
+                    right: 0;
+                    fill: $seafoam;
+                    width: 30px;
+                    height: 30px;
+                    transform: rotate(-45deg);
+                    transform-origin: center;
+                    transition: transform 0.3s ease-in-out;
+                }
+                &.active svg{
+                    transform: rotate(0deg);
+                    transform-origin: center;
+                    transition: transform 0.3s ease-in-out;
+                }
+            }
+
+            .answer{
+                width: 90%;
+            }
+        }
+
+        :last-child{
+            border-bottom: 0px
+        }
+        
+    }
+}
+
