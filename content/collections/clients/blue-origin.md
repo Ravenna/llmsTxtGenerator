@@ -27,14 +27,14 @@ about:
     content:
       -
         type: text
-        text: 'They needed the website to be WCAG 2.0 compliant while also being visually stunning.'
+        text: 'They also needed the website to be WCAG 2.0 compliant while also being visually stunning.'
   -
     type: paragraph
 apis_integrated:
   - 'AWS Lambda'
   - 'AWS SES'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1666400088
+updated_at: 1666989170
 logo: img/blue-origin.svg
 result:
   -
@@ -48,4 +48,6 @@ gallery:
   - blue-1.jpg
   - blue-3.jpg
 one_image: false
+seo:
+  title: 'Ravenna | Blue Origin Statamic Website'
 ---
