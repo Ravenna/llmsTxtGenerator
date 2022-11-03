@@ -5,11 +5,20 @@
 @import "~bootstrap/scss/_maps";
 @import "~bootstrap/scss/_mixins";
 @import "~bootstrap/scss/_utilities";
+
+@import "~bootstrap/scss/_root";
+@import "~bootstrap/scss/_reboot";
+@import "~bootstrap/scss/_type";
+@import "~bootstrap/scss/_images";
+
 @import "~bootstrap/scss/_containers";
-@import "~bootstrap/scss/_helpers";
+@import "~bootstrap/scss/_grid";
 @import "~bootstrap/scss/_nav";
 @import "~bootstrap/scss/_navbar";
 @import "~bootstrap/scss/_forms";
+@import "~bootstrap/scss/_helpers";
+@import "~bootstrap/scss/utilities/_api";
+
 
 
 @import 'mixins';
