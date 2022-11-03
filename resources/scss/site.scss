@@ -1,13 +1,22 @@
-@import "~bootstrap/scss/bootstrap";
+
+
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/_maps";
+@import "~bootstrap/scss/_mixins";
+@import "~bootstrap/scss/_utilities";
+@import "~bootstrap/scss/_containers";
+@import "~bootstrap/scss/_helpers";
+@import "~bootstrap/scss/_nav";
+@import "~bootstrap/scss/_navbar";
+@import "~bootstrap/scss/_forms";
+
 
 @import 'mixins';
 @import 'vars';
-
 @import 'carousel';
 @import 'form';
 @import 'footer';
-
-
 @import 'clients';
 @import 'service';
 
