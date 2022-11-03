@@ -26,7 +26,8 @@
         <link rel="manifest" href="{{ config:app:url }}assets/favicon/site.webmanifest">
 
         <link rel="preconnect" rel="stylesheet" href="https://use.typekit.net/yim3ewy.css">
-        <link rel="stylesheet" href="{{ mix src='/css/site.css' }}">
+        <link rel="stylesheet" href="{{ mix src='/css/head.css' }}">
+        <link rel="stylesheet" href="{{ mix src='/css/site.css' }}" rel="preload">
     </head>
     <body class="{{ if !is_homepage }} not-homepage {{ /if }} {{ if collection == 'clients' }} client-template {{ /if }}">
         <div id="app" class="wrapper">

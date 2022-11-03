@@ -81,3 +81,12 @@ $breakpoints: (
       }
     }
   }
+
+
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  transition: $args;
+}

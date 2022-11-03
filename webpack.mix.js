@@ -4,6 +4,7 @@ const postcssPresetEnv = require('postcss-preset-env');
 
 mix.js('resources/js/site.js', 'public/js')
     .sass('resources/scss/site.scss', 'public/css')
+    .sass('resources/scss/head.scss', 'public/css')
     .options({
     	processCssUrls: false,
     	uglify: mix.inProduction(),

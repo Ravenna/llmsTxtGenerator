@@ -1,107 +1,12 @@
-@import "~bootstrap/scss/bootstrap";
 @import 'mixins';
 @import 'vars';
-@import 'typography';
-@import 'animations';
 
 @import 'carousel';
 @import 'form';
 @import 'footer';
 @import 'header';
 
-@import 'sections';
+
 @import 'clients';
 @import 'service';
 
-body{
-	font-family: sofia-pro, sans-serif;
-	font-style: normal;
-	scroll-behavior: smooth;
-	background-color: black;
-	&.modal-open{
-		overflow: hidden;
-		padding-right: 0px;
-	}
-}
-
-
-
-#app{
-
-	cursor: url("../assets/img/cursor.png") 13 7, auto !important;
-
-	#section-tech, #section-4{
-		cursor: url("../assets/img/cursor-black.png") 13 7, auto !important;
-	}
-	a {
-		cursor: pointer; //url("../assets/img/cursor.png") 64 12, auto !important; 
-	}
-	p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover, li:hover{
-		cursor: text;
-	}
-
-
-}
-
-@mixin transition($args...) {
-    -webkit-transition: $args;
-    -moz-transition: $args;
-    -ms-transition: $args;
-    transition: $args;
-}
-
-
-
-
-.seafoam{
-	color: $seafoam;
-}
-.seafoam-bg{
-	background-color: $seafoam;
-}
-
-.teal{
-	color: $teal;
-}
-.teal-bg{
-	background-color: $teal;
-}
-
-.not-homepage{
-    .header{
-        opacity: 1;
-    }
-    h1{
-        font-size: 12rem;
-		@include respond-below(md){
-			font-size: 5rem;
-		}
-    }
-
-	.hero{
-		min-height: 400px;
-		padding: 50px 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-}
-
-
-
-
-
-.btn{
-	background-color: $seafoam;
-	color: black;
-	border-radius: 0px;
-	text-transform: uppercase;
-	transition: all 0.3s ease-in-out;
-	padding: 6px 40px 7px;
-	border-radius: 20px;
-	&:hover{
-		background-color: $purple;
-		color: white;
-		transition: all 0.3s ease-in-out;
-	}
-}
