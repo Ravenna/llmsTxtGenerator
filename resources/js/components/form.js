@@ -82,6 +82,12 @@ function form() {
                     self.error = false;
                     self.success = true;
                     self.submitting = false;
+
+					gtag('event', 'submit', {
+						'event_category': 'Forms',
+						'event_label': 'form',
+						'value': 1
+					  });
                   })
                   .catch(function (er) {
 					self.loading = false;

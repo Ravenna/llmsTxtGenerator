@@ -1,0 +1,98 @@
+<div class="service-wrapper">
+    <div class="container">
+
+        <div class="row mb-5">
+            <div class="col">
+                <h1 class="seafoam mb-4">Certified Statamic Agency</h1>
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <p>Lets build an amazing website that looks great and that your content authors will love! Statamic is trusted by the likes of Disney, KFC, and our own client Blue Origin.  Let us show you why Statamic could be a good fit for you.</p>
+                        <p></p>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+
+        <div class="row service-types">
+            <div class="col-12 col-md-5">
+                <div class="service-card no-border">
+                    <h2>Statamic<br><span class="seafoam">Development</span></h2>
+                    <p>Ravenna provides certified Statamic development services for your organization, no matter your industry!</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">{{ partial src="includes.icons.gears-people" }}</div>
+                    <h3>Bespoke</h3>
+                    <p>Lets build something that looks great and brings your brand to life.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">{{ partial src="includes.icons.screen" }}</div>
+                    <h3>Secure</h3>
+                    <p>Skip the database and keep things secure.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-7">
+                <div class="service-card">
+                    <div class="icon">{{ partial src="includes.icons.money" }}</div>
+                    <h3>Ecommerce</h3>
+                    <p>Sell something, anything, Statamic can do it.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">{{ partial src="includes.icons.building" }}</div>
+                    <h3>Real-time collaboration</h3>
+                    <p>No more locked content because someone else is editing that piece of content.  Collaborative authoring experiences make things easy to manage.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">{{ partial src="includes.icons.nodes" }}</div>
+                    <h3>Put it all Together</h3>
+                    <p>Most of the time we find that customers will need a mix of some or all of these things.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col"><a href="#section-4" class="btn">Lets Talk</a></div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row duotone">
+            <div class="col">
+                <div 
+                    class="container faderator" 
+                    x-data="{
+                        classes: ['option-one', 'option-two', 'option-three'],
+                        currentClass: 0,
+                        loopClasses(){     
+                            this.intervalId = setInterval(
+                                () => {                                                
+                                    if(this.currentClass == 2){
+                                        this.currentClass = 0;
+                                    } else {
+                                        this.currentClass++;
+                                    }
+                                },
+                                5000,
+                            );
+                        }
+                    }" 
+                    x-init="loopClasses"
+                >
+                    <div class="fader" :class="classes[currentClass]">
+                        <div class="shape-wrapper">
+                            <div class="shape">
+                                <div class="shape-titles">
+                                    <p class="super-big">Bring your idea to life</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="super-big">Bring your idea to life</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ partial src="home-sections.form" }}
+
+</div>

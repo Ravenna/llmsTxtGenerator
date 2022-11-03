@@ -97,7 +97,8 @@ body{
 	border-radius: 0px;
 	text-transform: uppercase;
 	transition: all 0.3s ease-in-out;
-	padding: 6px 12px 7px;
+	padding: 6px 40px 7px;
+	border-radius: 20px;
 	&:hover{
 		background-color: $purple;
 		color: white;

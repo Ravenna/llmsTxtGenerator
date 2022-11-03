@@ -6,7 +6,7 @@ $scale: 1;
     position: fixed;
     padding: 10px 0;
     z-index: 100000;
-    top: 1px;
+    top: 0px;
     opacity: 0;
     &.shown{
         opacity: 1;
