@@ -4,7 +4,7 @@ blueprint: client
 title: 'Space Angels'
 project_objectives: 'Build a secure and comprehensive angel investment application'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1666370298
+updated_at: 1667488866
 apis_integrated:
   - Stripe
   - Mailgun
@@ -153,4 +153,8 @@ cool_facts:
   - 'Millions of dollars invested'
   - 'Hundreds of users'
 logo: space-angels.svg
+one_image: false
+seo:
+  title: 'Space Angels | Ravenna'
+  description: 'Ravenna built Space Angels a bespoke angel investment platform for raising money for early-stage space companies.'
 ---
