@@ -74,12 +74,12 @@ apis_integrated:
   - McKesson
   - 'AWS SES'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1667488745
+updated_at: 1667492532
 logo: btd-logo-horiz.png
 one_image: true
 gallery:
   - bartells-cutout.png
 seo:
-  title: 'Bartells | Ravenna'
+  title: 'Bartells RX Platform'
   description: 'Ravenna built Bartell Drugs a web and mobile rx system.'
 ---
