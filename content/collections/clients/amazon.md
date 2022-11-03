@@ -2,9 +2,9 @@
 id: c6876c49-3ebe-447e-8867-628c44b4f6b0
 blueprint: client
 title: Amazon
-logo: img/amazon.png
+logo: amazon.jpg
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1667492550
+updated_at: 1667496219
 about:
   -
     type: paragraph
@@ -31,7 +31,4 @@ gallery:
   - amazon-3.jpg
   - amazon-4.jpg
 one_image: false
-seo:
-  title: 'Amazon Hiring Mobile App'
-  description: 'Ravenna built Amazon a custom hiring information sharing mobile application'
 ---

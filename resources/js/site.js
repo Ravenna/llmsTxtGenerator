@@ -78,10 +78,3 @@ function startStopIntroAnim(){
         header.classList.add('shown');
     }
 }
-
-
-
-
-
-
-  

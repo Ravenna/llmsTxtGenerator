@@ -42,7 +42,7 @@
             {{ elseif gallery }}
                 {{ gallery }}
                     <div class="gallery-image"  >
-                        <a href="#" @click.prevent="showLarge" data-image="{{ url }}">
+                        <a href="#" @click.prevent="showLarge" title="Open Gallery" data-image="{{ url }}">
                             {{ if thumbnail }}
                                 <img src="{{ thumbnail }}" alt="{{ alt }}">
 
