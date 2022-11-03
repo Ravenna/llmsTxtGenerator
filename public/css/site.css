@@ -12575,7 +12575,7 @@ body.modal-open {
 }
 @media (max-width: 991px) {
   .not-homepage h1, .not-homepage .h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 .not-homepage .hero {
