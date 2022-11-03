@@ -46,7 +46,7 @@ apis_integrated:
   - Mailgun
   - Pusher
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1667492583
+updated_at: 1667492592
 logo: c2c_logo.png
 one_image: false
 gallery:
