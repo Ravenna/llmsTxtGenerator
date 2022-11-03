@@ -46,7 +46,7 @@ apis_integrated:
   - Mailgun
   - Pusher
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1666373474
+updated_at: 1667489396
 logo: c2c_logo.png
 one_image: false
 gallery:
@@ -55,4 +55,7 @@ gallery:
   - course-intro.jpg
   - c2c_habit-mobile.png
   - c2c_messaging.jpg
+seo:
+  title: 'Compete to Create | Ravenna'
+  description: 'Ravenna built Compete to Create a bespoke learning management system tailored to their brand and direction'
 ---
