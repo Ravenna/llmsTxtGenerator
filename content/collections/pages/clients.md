@@ -4,5 +4,8 @@ blueprint: page
 title: Clients
 template: templates/clients
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1666889751
+updated_at: 1667488631
+seo:
+  title: 'Ravenna | Our Clients'
+  description: 'We love our clients and want to do everything we can to help them succeed.'
 ---

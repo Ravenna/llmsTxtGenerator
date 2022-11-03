@@ -34,7 +34,7 @@ apis_integrated:
   - 'AWS Lambda'
   - 'AWS SES'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1666989170
+updated_at: 1667488788
 logo: img/blue-origin.svg
 result:
   -
@@ -49,5 +49,6 @@ gallery:
   - blue-3.jpg
 one_image: false
 seo:
-  title: 'Ravenna | Blue Origin Statamic Website'
+  title: 'Blue Origin | Ravenna'
+  description: 'Ravenna built Blue Origin multiple Statamic websites.'
 ---
