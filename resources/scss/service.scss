@@ -4,9 +4,9 @@ body.not-homepage{
         padding-top: 100px;
     
         h1{
-            font-size: 7.5rem;
+            font-size: 7.5rem !important;
             @include respond-below(md){
-                font-size: 4.5rem;
+                font-size: 4.5rem !important;
             }
         }
 
