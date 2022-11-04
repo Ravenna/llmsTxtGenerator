@@ -9,6 +9,7 @@
 body{
 	font-family: sofia-pro, sans-serif !important;
 	font-style: normal !important;
+	font-display: swap;
 	scroll-behavior: smooth !important;
 	background-color: black !important;
 	&.modal-open{
@@ -52,8 +53,9 @@ body{
 		border-radius: 0px;
 		text-transform: uppercase;
 		transition: all 0.3s ease-in-out;
-		padding: 6px 40px 7px;
+		padding: 11px 40px 12px;
 		border-radius: 20px;
+		text-decoration: none;
 		&:hover{
 			background-color: $purple;
 			color: white;
