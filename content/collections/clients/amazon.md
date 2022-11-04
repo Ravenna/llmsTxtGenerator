@@ -4,7 +4,7 @@ blueprint: client
 title: Amazon
 logo: amazon.jpg
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1667496219
+updated_at: 1667579336
 about:
   -
     type: paragraph
@@ -31,4 +31,7 @@ gallery:
   - amazon-3.jpg
   - amazon-4.jpg
 one_image: false
+seo:
+  title: 'Amazon Custom Hiring Mobile Application'
+  description: 'Ravenna built Amazon a mobile application (iOS and Android) that helped share critical information with prospective employees about the hiring process'
 ---

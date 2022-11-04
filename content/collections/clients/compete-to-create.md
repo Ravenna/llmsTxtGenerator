@@ -46,7 +46,7 @@ apis_integrated:
   - Mailgun
   - Pusher
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1667496201
+updated_at: 1667579388
 logo: c2c_logo.jpg
 one_image: false
 gallery:
@@ -55,4 +55,7 @@ gallery:
   - course-intro.jpg
   - c2c_habit-mobile.png
   - c2c_messaging.jpg
+seo:
+  title: 'Compete to Create Custom LMS'
+  description: 'Ravenna built Compete to Create a custom learning management system to support training people in a high performance mindset'
 ---
