@@ -10,9 +10,11 @@
     <div class="row">
         <div class="col-12 col-lg-6 mb-5">
             {{ about }}
+
+            {{ result }}
         </div>
 
-        <div class="col-12 col-lg-4 offset-lg-2">
+        <div class="col-12 col-lg-5 offset-lg-1 client-right">
             {{ if cool_facts }}
                 <h4>Cool Facts</h4>
                 <ul>
@@ -29,6 +31,14 @@
                         <li>{{ value }}</li>
                     {{ /apis_integrated }}
                 </ul>
+            {{ /if }}
+
+            {{ if quote }}
+                <div class="client-quote">
+                    <div class="quote-icon">{{ partial:includes.icons.quote-left }}</div>
+                    <blockquote>{{ quote }}</blockquote>
+                    <p><i>{{ quote_author }}</i></p>
+                </div>
             {{ /if }}
         </div>
     </div>

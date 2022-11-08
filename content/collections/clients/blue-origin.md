@@ -21,20 +21,94 @@ about:
     content:
       -
         type: text
-        text: 'Blue Origin is one of the few space companies putting people into space.  Their website needs strong visual imagery and their content authors need to be able to manage the content with ease. '
+        text: 'Blue Origin is one of the few space companies putting people into space.  Their website needs strong visual imagery and their content authors need to be able to manage the content with ease.   They also needed the website to be WCAG 2.0 compliant while also being visually stunning.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'They also needed the website to be WCAG 2.0 compliant while also being visually stunning.'
+        text: 'Ravenna has been working with Blue Origin since 2018. We have built and delivered multiple website projects along with ongoing support, maintenance, and hosting services.'
   -
     type: paragraph
+    content:
+      -
+        type: text
+        text: 'By leveraging Statamic CMS we have been able to build, deliver and support sites getting millions of visitors at peak times. '
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'We have supported several specific websites:'
+  -
+    type: bullet_list
+    content:
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://blueorigin.com'
+                      rel: null
+                      target: _blank
+                      title: 'Blue Origin'
+                text: BlueOrigin.com
+              -
+                type: text
+                text: ' - The main site for Blue Origin. Is not just a flat site, it also leverages AWS Lambda for interactivity in multiple ways.'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://orbitalreef.com'
+                      rel: null
+                      target: null
+                      title: 'Orbital Reef'
+                text: OrbitalReef.com
+              -
+                type: text
+                text: ' - NASA awarded Blue Origin and several partners the contract to build the next space station.  This website shows off the direction, the partners, and amazing renderings of how the station will look'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://clubforfuture.org'
+                      rel: null
+                      target: _blank
+                      title: 'Club for Future'
+                text: ClubForFuture.org
+              -
+                type: text
+                text: " - Blue Origins kids club and website focused on helping provide educational materials for teachers and educators.  The site is a primary driver for the club's main mission: to send one million postcards to space and send them back to kids across the world. "
 apis_integrated:
   - 'AWS Lambda'
   - 'AWS SES'
+  - 'AWS EC2'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1667492564
+updated_at: 1667933452
 logo: img/blue-origin.svg
 result:
   -
@@ -42,7 +116,7 @@ result:
     content:
       -
         type: text
-        text: 'Ravenna was able to build the CMS out based on the Statamic CMS and give content authors an easy-to-use but highly customizable authoring experience.  The result is a beautiful website that draws the visitor in and shares the amazing work being done at Blue. '
+        text: 'Ultimately across these and other projects, Ravenna has been able to provide efficient and on-demand design and development services.  Leveraging Statamic CMS we have provided content authors with an easy-to-use but highly customizable authoring experience.  The result is beautiful websites that draw visitors in and shares the amazing work being done at Blue. '
 gallery:
   - blue-2.jpg
   - blue-1.jpg
