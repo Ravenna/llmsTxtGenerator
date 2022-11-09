@@ -1,0 +1,12 @@
+title: Articles
+template: templates/article
+layout: layout
+taxonomies:
+  - categories
+  - tags
+revisions: false
+route: 'articles/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

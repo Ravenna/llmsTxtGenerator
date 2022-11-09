@@ -1,0 +1,46 @@
+
+<div class="container-fluid article-wrapper">
+
+    <div class="row mt-5 mb-5 article-hero" {{ if background_image }} style="background-image: url({{ background_image }})" {{ /if }}>
+        <div class="article-hero-overlay"></div>
+
+        <div class="col article-hero-content">
+            <div class="container">
+                <h1>{{ title }}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container article-wrapper">
+
+    <div class="row article-content">
+        <div class="col-12 col-lg-9 mb-5">
+            {{ content }}
+        </div>
+
+        <div class="col-12 col-lg-3 client-right">
+            {{ if categories }}
+                <h4>Categories</h4>
+                <ul>
+                    {{ categories }}
+                        <li>{{ title }}</li>
+                    {{ /categories }}
+                </ul>
+            {{ /if }}
+
+            {{ if tags }}
+                <h4>Tags:</h4>
+                <ul>
+                    {{ tags }}
+                        <li>{{ title }}</li>
+                    {{ /tags  }}
+                </ul>
+            {{ /if }}
+
+          
+        </div>
+    </div>
+
+
+</div>

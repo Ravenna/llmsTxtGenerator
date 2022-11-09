@@ -1,0 +1,6 @@
+id: ca5c5212-c52a-4b80-a269-476e287de102
+enabled: true
+source: '/articles/how-do-you-budget-for-your-web-and-mobile-application-development-outside-the-actual-development-costs(.*)'
+destination: /articles/how-to-budget-for-web-and-mobile-application-development-outside-of-actual-dev-costs$1
+type: '301'
+match_type: regex
