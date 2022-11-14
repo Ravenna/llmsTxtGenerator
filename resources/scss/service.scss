@@ -169,6 +169,10 @@ body.not-homepage{
                 position: relative;
                 width: 100%;
                 text-align: left;
+                span{
+                    display: inline-block;
+                    width: 90%;
+                }
                 svg{
                     position: absolute;
                     top: 12px;
