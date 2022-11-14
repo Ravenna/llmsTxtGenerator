@@ -4,7 +4,7 @@
         <div class="row mb-5">
             <div class="col">
                 <h1 class="seafoam mb-4">Certified Laravel Development Services</h1>
-                <p>We love building things with Laravel. We help organizations build dynamic and rich web applications. </p>
+                <p>We love building things with Laravel. We help organizations build rich and dynamic web applications. </p>
             </div>
         </div>
 
@@ -12,12 +12,12 @@
             <div class="col-12 col-md-5">
                 <div class="service-card no-border">
                     <h2>Laravel<br><span class="seafoam">Development</span></h2>
-                    <p>We can build modern, feature-rich web applications, and then maintain, provide support and help minimize risks.</p>
+                    <p>We can build modern, feature-rich web applications, and then maintain, provide support and help minimize risk.</p>
                 </div>
                 <div class="service-card">
                     <div class="icon">{{ partial src="includes.icons.screen" }}</div>
                     <h3>SaaS Application Development</h3>
-                    <p>We can develop software as a service (Saas) web applications based on your requirements.</p>
+                    <p>We can develop software-as-a-service (Saas) web applications based on your requirements.</p>
                 </div>
                 <div class="service-card">
                     <div class="icon">{{ partial src="includes.icons.gears-people" }}</div>
@@ -30,7 +30,7 @@
                 <div class="service-card">
                     <div class="icon">{{ partial src="includes.icons.money" }}</div>
                     <h3>Ecommerce, Transactional</h3>
-                    <p>Need a web application that can charge for membership, or you sell something specific. We can dev applications that will provide these features.</p>
+                    <p>Need a website that can charge for membership, sell to groups, create recurring revenue, or sell a product. </p>
                 </div>
                 <div class="service-card">
                     <div class="icon">{{ partial src="includes.icons.building" }}</div>
@@ -99,7 +99,8 @@
                 <div x-data="{ current: 0 }" class="faqs">
                     {{ faq }}
                         <div class="accordion" data-index="{{ index }}">
-                            <button @click="current = {{ index }}" :class="current == {{ index }} ? 'active': ''">{{ question }} {{ partial src="includes.icons.xmark" }}</button>
+                            <button @click="current = {{ index }}" :class="current == {{ index }} ? 'active': ''">
+                                <span>{{ question }}</span> {{ partial src="includes.icons.xmark" }}</button>
                             <div class="answer" x-show="current == {{ index }}" x-collapse> <!--  -->
                                 {{ answer }}
                             </div>
