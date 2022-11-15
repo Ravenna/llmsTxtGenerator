@@ -9,10 +9,10 @@ tags:
   - budgeting
   - laravel
 seo:
-  title: 'How to budget for web and mobile application development'
+  title: 'How to budget for web and mobile application dev'
   description: 'Building a Laravel web app, mobile app, or both can be daunting. One problem we have noticed is that often all the thinking when developing an application goes into the application itself. There needs to be more planning for long-term costs and resourcing'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1668529375
+updated_at: 1668529675
 photo_by: 'https://www.pexels.com/photo/computer-c-code-276452/'
 photo_by_text: 'Photo by Pixabay'
 background_image: how-to-budget-for-web-and-mobile-application-development-outside-of-actual-dev-costs-1668027939.jpg
