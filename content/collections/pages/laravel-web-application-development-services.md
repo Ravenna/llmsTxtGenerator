@@ -4,9 +4,9 @@ blueprint: page
 template: templates/laravel
 title: 'Laravel Development Services'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1667933678
+updated_at: 1668529365
 seo:
-  title: '@seo:Seattle, WA Laravel Web Application Development Agency'
+  title: 'Seattle, WA Laravel Development'
   description: 'Seattle WA Laravel development services for building web applications, APIs, micro-services and more.'
   priority: '1.0'
 faq:
