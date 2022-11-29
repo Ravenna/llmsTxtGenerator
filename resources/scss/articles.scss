@@ -1,11 +1,12 @@
-.article-wrapper{
+#app .article-wrapper{
 
     .article-hero{
         position: relative;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
 
 
         .article-hero-overlay{
@@ -23,13 +24,18 @@
             z-index: 2;
         }
         h1{
-            font-size: 4rem !important;
+            font-size: 5rem !important;
             color: black;
         }
     
     }
 
     .article-content{
+        h2{
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            margin-top: 2rem;
+        }
         li, h4{
             color: white;
         }
