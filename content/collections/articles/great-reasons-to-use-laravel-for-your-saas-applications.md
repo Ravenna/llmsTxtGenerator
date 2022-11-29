@@ -7,7 +7,7 @@ categories:
 tags:
   - laravel
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1669743379
+updated_at: 1669743412
 seo:
   title: 'You should use Laravel for your SaaS applications'
   description: 'Laravel is a great framework for building unique and feature-rich web applications.'
@@ -357,14 +357,16 @@ content:
         type: text
         text: ". The ability to create clean and DRY (don't repeat yourself) components make building out the front end of a web application much more effortless. Laravel is excellent in this part of the application. You can use any number of JS frameworks like Vue or React or the Laravel Blade templating setup with components."
   -
-    type: paragraph
+    type: heading
+    attrs:
+      level: 4
     content:
       -
         type: text
         marks:
           -
             type: bold
-        text: Concluding
+        text: 'Wrapping up'
   -
     type: paragraph
     content:
