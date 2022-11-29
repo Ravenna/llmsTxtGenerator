@@ -7,7 +7,10 @@ categories:
 tags:
   - laravel
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1669743300
+updated_at: 1669743379
+seo:
+  title: 'You should use Laravel for your SaaS applications'
+  description: 'Laravel is a great framework for building unique and feature-rich web applications.'
 content:
   -
     type: paragraph
