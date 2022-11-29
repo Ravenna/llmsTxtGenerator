@@ -8,7 +8,10 @@ tags:
   - statamic
   - laravel
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1669753190
+updated_at: 1669753244
+seo:
+  title: 'Statamic vs. WordPress'
+  description: 'Hint: we think Statamic is better.  But lets review why.'
 content:
   -
     type: paragraph
