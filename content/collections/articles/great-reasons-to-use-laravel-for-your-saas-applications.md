@@ -7,7 +7,7 @@ categories:
 tags:
   - laravel
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1669743412
+updated_at: 1669743647
 seo:
   title: 'You should use Laravel for your SaaS applications'
   description: 'Laravel is a great framework for building unique and feature-rich web applications.'
@@ -378,7 +378,7 @@ content:
     content:
       -
         type: text
-        text: "Consider your options, but Laravel is one of the best for building SaaS web applications.\_"
+        text: "Consider your options, but Laravel is one of the best for building SaaS web applications.\_  At Ravenna, we have certified Laravel developers who can help bring your idea to life. Let's talk about your project."
   -
     type: paragraph
 ---
