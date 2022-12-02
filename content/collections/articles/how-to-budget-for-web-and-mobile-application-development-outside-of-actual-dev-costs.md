@@ -12,7 +12,7 @@ seo:
   title: 'How to budget for web and mobile application dev'
   description: 'Building a Laravel web app, mobile app, or both can be daunting. One problem we have noticed is that often all the thinking when developing an application goes into the application itself. There needs to be more planning for long-term costs and resourcing'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1668529675
+updated_at: 1670023556
 photo_by: 'https://www.pexels.com/photo/computer-c-code-276452/'
 photo_by_text: 'Photo by Pixabay'
 background_image: how-to-budget-for-web-and-mobile-application-development-outside-of-actual-dev-costs-1668027939.jpg
@@ -22,58 +22,15 @@ content:
     content:
       -
         type: text
-        text: 'Building a Laravel web app, mobile app, or both can be daunting. Architecture, strategy, planning, resources, testing, and delivery should be a part of the project. One problem we have noticed is that often all the thinking when developing an application goes into the application itself. There needs to be more planning for long-term costs and resourcing. Some areas that would be good to consider are:'
-  -
-    type: bullet_list
-    content:
-      -
-        type: list_item
-        content:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Platform fees'
-      -
-        type: list_item
-        content:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Hosting/cloud fees'
-      -
-        type: list_item
-        content:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Subscription API fees '
-      -
-        type: list_item
-        content:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Patching coss'
-      -
-        type: list_item
-        content:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Maintenance and expansion'
+        text: 'Building a Laravel web app, mobile app, or both can be daunting. Architecture, strategy, planning, resources, testing, and delivery should be a part of the project. One problem we have noticed is that often all the thinking when developing an application goes into the application itself. There needs to be more planning for long-term costs and resourcing. Some areas that would be good to consider are. Platform fees, Hosting/cloud fees, Subscription API fees. Patching costs, and Maintenance and expansion.'
   -
     type: paragraph
     content:
+      -
+        type: image
+        attrs:
+          src: 'asset::assets::budgeting-laravel-development-costs.png'
+          alt: 'Budgeting Laravel development costs'
       -
         type: text
         text: 'These areas, and more, can contribute to the long-term costs of owning this application. Even though it may be a low priority when planning the project, stakeholders, product owners, or relevant staff should spend time on this topic. '
@@ -314,4 +271,22 @@ content:
       -
         type: text
         text: 'Building Laravel web applications and mobile apps that rely on the web can be a great process. But, awareness of long-term costs and budgeting considerations can help save the bottom line later.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://ravennainteractive.com/#section-4'
+              rel: null
+              target: null
+              title: 'Seattle Laravel Development Services'
+          -
+            type: bts_span
+            attrs:
+              class: 'btn btn-primary'
+        text: 'Lets Talk'
 ---

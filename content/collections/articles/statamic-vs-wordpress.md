@@ -8,7 +8,7 @@ tags:
   - statamic
   - laravel
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1669753244
+updated_at: 1670023618
 seo:
   title: 'Statamic vs. WordPress'
   description: 'Hint: we think Statamic is better.  But lets review why.'
@@ -19,6 +19,26 @@ content:
       -
         type: text
         text: "Yes, this is another this vs. that comparison article. We've been at this website development game for 15+ years, and we have some insight into this argument. The world needs it!\_\_"
+  -
+    type: paragraph
+    content:
+      -
+        type: image
+        attrs:
+          src: 'asset::assets::statamic-versus-wordpress.png'
+          alt: 'Statamic Vs WordPress'
+        marks:
+          -
+            type: italic
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: italic
+        text: 'Yes we made the Statamic logo larger than the WP logo.  Its our article.'
   -
     type: paragraph
     content:
@@ -376,4 +396,20 @@ content:
         text: "We are certified Statamic developers, but more than that, we enjoy working on Statamic. After breathing fresh air, it's hard to go back to the polluted landscape of WordPress.\_"
   -
     type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://ravennainteractive.com/statamic-development-services'
+              rel: null
+              target: null
+              title: 'Statamic Development Services'
+          -
+            type: bts_span
+            attrs:
+              class: 'btn btn-primary'
+        text: 'Lets build something'
 ---

@@ -30,6 +30,7 @@ sections:
             - h4
             - h5
             - underline
+            - btn
           save_html: false
           toolbar_mode: fixed
           link_noopener: false
@@ -49,6 +50,7 @@ sections:
           instructions_position: above
           visibility: visible
           always_save: false
+          container: assets
   sidebar:
     display: Sidebar
     fields:
