@@ -15,11 +15,11 @@
 <div class="container article-wrapper">
 
     <div class="row article-content">
-        <div class="col-12 col-lg-9 mb-5">
+        <div class="col-12 col-lg-8 mb-5">
             {{ content }}
         </div>
 
-        <div class="col-12 col-lg-3 client-right">
+        <div class="col-12 col-lg-4 client-right">
             {{ if categories }}
                 <h4>Categories</h4>
                 <ul>
@@ -38,7 +38,11 @@
                 </ul>
             {{ /if }}
 
-          
+            {{ if infographic }}
+                <div>
+                    <img src="{{ infographic }}" alt="{{ infographic:alt }}" class="img-fluid" />
+                </div>
+            {{ /if }}
         </div>
     </div>
 
