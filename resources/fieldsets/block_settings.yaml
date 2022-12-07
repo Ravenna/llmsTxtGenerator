@@ -1,0 +1,62 @@
+title: 'Block Settings'
+fields:
+  -
+    handle: background_color
+    field:
+      swatches:
+        - '#000000'
+        - '#FFFFFF'
+      theme: classic
+      lock_opacity: false
+      default_color_mode: HEXA
+      color_modes:
+        - hex
+      display: 'Background Color'
+      type: color
+      icon: color
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      width: 50
+  -
+    handle: copy_color
+    field:
+      options:
+        white: White
+        black: Black
+        seafoam: Seafoam
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: 'Copy Color'
+      type: select
+      icon: select
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      width: 50
+  -
+    handle: block_padding
+    field:
+      options:
+        small: Small
+        medium: Medium
+        large: Large
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: 'Block Padding'
+      type: select
+      icon: select
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false

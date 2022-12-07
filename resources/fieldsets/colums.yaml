@@ -1,28 +1,70 @@
-title: Expand
+title: Columns
 fields:
   -
-    handle: faq
+    handle: intro
     field:
       collapse: false
+      always_show_set_button: false
+      previews: true
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - h1
+        - h4
+        - h5
+        - btn
+      save_html: false
+      toolbar_mode: fixed
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      reading_time: false
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
+      antlers: false
+      remove_empty_nodes: false
+      display: Intro
+      type: bard
+      icon: bard
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: columns_per_row
+    field:
+      min: 1
+      max: 4
+      step: 1
+      display: 'Columns Per Row'
+      type: range
+      icon: range
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: columns
+    field:
+      collapse: true
       previews: true
       sets:
-        expand:
-          display: Expand
+        column:
+          display: Column
           fields:
             -
-              handle: question
-              field:
-                input_type: text
-                antlers: false
-                display: Question
-                type: text
-                icon: text
-                listable: hidden
-                instructions_position: above
-                visibility: visible
-                always_save: false
-            -
-              handle: answer
+              handle: content
               field:
                 collapse: false
                 always_show_set_button: false
@@ -39,6 +81,8 @@ fields:
                   - anchor
                   - image
                   - table
+                  - h4
+                  - h5
                 save_html: false
                 toolbar_mode: fixed
                 link_noopener: false
@@ -51,14 +95,14 @@ fields:
                 enable_paste_rules: true
                 antlers: false
                 remove_empty_nodes: false
-                display: Answer
+                display: Content
                 type: bard
                 icon: bard
                 listable: hidden
                 instructions_position: above
                 visibility: visible
                 always_save: false
-      display: expand
+      display: Columns
       type: replicator
       icon: replicator
       listable: hidden

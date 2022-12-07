@@ -1,0 +1,65 @@
+title: Copy
+fields:
+  -
+    handle: copy
+    field:
+      collapse: false
+      always_show_set_button: false
+      previews: true
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - h1
+        - h4
+        - h5
+        - codeblock
+        - btn
+        - horizontalrule
+      save_html: false
+      toolbar_mode: fixed
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      reading_time: false
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
+      antlers: false
+      remove_empty_nodes: false
+      display: Copy
+      type: bard
+      icon: bard
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: content_width
+    field:
+      options:
+        half: 50%
+        three-quarters: 75%
+        full: 100%
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: 'Content Width'
+      type: select
+      icon: select
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false

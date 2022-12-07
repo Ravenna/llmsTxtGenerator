@@ -10,12 +10,48 @@ sections:
           validate:
             - required
       -
-        handle: content
-        field:
-          type: markdown
-          localizable: true
-      -
         import: faqs
+      -
+        handle: blocks
+        field:
+          collapse: false
+          previews: true
+          sets:
+            columns:
+              display: Columns
+              fields:
+                -
+                  import: block_settings
+                -
+                  import: colums
+            expand:
+              display: Expand
+              fields:
+                -
+                  import: block_settings
+                -
+                  import: faqs
+            full_width:
+              display: 'Full Width'
+              fields:
+                -
+                  import: block_settings
+                -
+                  import: copy
+            hero:
+              display: Hero
+              fields:
+                -
+                  import: block_settings
+                -
+                  import: hero
+          display: Blocks
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
   sidebar:
     display: Sidebar
     fields:
@@ -33,6 +69,25 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+      -
+        handle: template
+        field:
+          options:
+            block-page: 'Block Page'
+            'null': null
+          multiple: false
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: Template
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
   SEO:
     display: SEO
     fields:
@@ -42,4 +97,15 @@ sections:
           type: seo_pro
           listable: false
           display: SEO
+      -
+        handle: json_citation_data
+        field:
+          antlers: false
+          display: 'JSON Citation Data'
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
 title: Page

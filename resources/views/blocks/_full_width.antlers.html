@@ -1,0 +1,18 @@
+<div class="block-section full-width {{ block_padding}}-padding">
+    <div class="container">
+        <div class="row">
+            {{ if content_width == 'three-quarters' }}
+                <div class="col-12 col-md-8 offset-md-2">
+            {{ elseif content_width == 'half' }}
+                <div class="col-12 col-md-8 offset-md-2">
+            {{ else }}
+            <div class="col-12">
+            {{ /if }}
+                <div class="copy-wrapper {{ copy_color}}-color ">
+                    {{ copy }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -41,7 +41,7 @@
         </script>
         <!-- End Inspectlet Asynchronous Code -->
     </head>
-    <body class="{{ if !is_homepage }} not-homepage {{ /if }} {{ if collection == 'clients' }} client-template {{ /if }}">
+    <body class="{{ if !is_homepage }} not-homepage {{ /if }} {{ if collection == 'clients' }} client-template {{ /if }} {{template}}-template">
         <div id="app" class="wrapper">
             {{ partial src="includes.header" }}
             

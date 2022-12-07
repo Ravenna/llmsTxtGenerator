@@ -1,5 +1,12 @@
 <footer>
-    <p>&copy; {{ now|format:Y }} Ravenna LLC. </p>
+    <div class="d-flex flex-row justify-content-start align-items-center">
+        <p class="pe-2">&copy; {{ now|format:Y }} Ravenna LLC. </p>
+        <ul>
+            {{ nav:footer_nav }}
+                <li><a href="{{ url }}" title="{{ title }}">{{ title }}</a></li>
+            {{ /nav:footer_nav }}
+        </ul>
+    </div>
     <span class="social-wrapper">
         <a href="https://www.linkedin.com/company/ravenna-llc/" title="LinkedIn" target="_blank"><span class="linkedin"></span></a>
 
