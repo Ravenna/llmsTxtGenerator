@@ -1,9 +1,9 @@
 <footer>
     <div class="d-flex flex-row justify-content-start align-items-center">
         <p class="pe-2">&copy; {{ now|format:Y }} Ravenna LLC. </p>
-        <ul>
+        <ul class="d-flex flex-row ps-1">
             {{ nav:footer_nav }}
-                <li><a href="{{ url }}" title="{{ title }}">{{ title }}</a></li>
+                <li class="ps-2"><a href="{{ url }}" title="{{ title }}">{{ title }}</a></li>
             {{ /nav:footer_nav }}
         </ul>
     </div>
