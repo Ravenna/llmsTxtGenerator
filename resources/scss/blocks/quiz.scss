@@ -1,0 +1,153 @@
+.block-section.quiz{
+    padding: 80px 0;
+    min-height: 600px;
+
+    .quiz-title{
+        margin-bottom: 30px;
+        color: $seafoam;
+    }
+
+    .steps-row{
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left:10%;
+            margin-bottom: 40px;
+            li{
+                list-style: none;
+                color: white;
+                position: relative;
+                flex: 1;
+                margin: 0 10px;
+                padding-left: 2px;
+                span{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 10px;
+                    color: white;
+                    display: block;
+                    text-align: center;
+                    line-height: 20px;
+                    position: relative;
+                    z-index: 2;
+                    &.current{
+                        color: black;
+                        background: white;
+                    }
+                    &#step-5{
+                        padding-left: 0;
+                    }
+                }
+                &:after{
+                    content: "";
+                    position: absolute;
+                    z-index: 1;
+                    left: 24px;
+                    top: calc(50% - 1px);
+                    width: 96%;
+                    background: black;
+                    height: 2px;
+                }
+                &.filled:after{
+                    background: white;
+
+                }
+                &:last-child{
+                    span{
+                        padding-left: 10px;
+                    }
+                    &:after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .question, .answer{
+        color: white;
+    }
+    .question{
+        margin-bottom: 20px;
+    }
+
+    .answers{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        .answer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid $seafoam;
+            background: white;
+            padding: 20px;
+            color: black;
+            text-transform: uppercase;
+            margin-right: 40px;
+            width: 30%;
+
+            &.selected{
+                opacity: 1;
+            }
+
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+     
+
+        &.four-up{
+            .answer{
+                flex: 1;
+                width: auto;
+            }
+ 
+        }
+
+        .form-row{
+            label{
+                color: white;
+            }
+        }
+    }
+
+    #m-check-mark {
+        margin: 20px 0;
+        width: 60px;
+        height: auto;
+        display: inline;
+
+        #checkmark {
+            stroke-dasharray: 640;
+            stroke-dashoffset: 0;
+            transform-origin: center;
+            animation-iteration-count: 1;
+
+            opacity: 0;
+            stroke: $seafoam;
+        }
+    }
+    .answer.selected {
+        #m-check-mark #checkmark{
+            animation: draw-around 1s;
+            opacity: 1;
+        }
+    }
+      
+     
+
+    @keyframes draw-around {
+        0% {
+            stroke-dashoffset: 640;
+        }
+        10% {
+            stroke-dashoffset: 640;
+        }
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+}

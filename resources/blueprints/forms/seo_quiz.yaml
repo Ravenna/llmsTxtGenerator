@@ -1,0 +1,87 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: happy_with_traffic
+        field:
+          default: false
+          display: 'Are you happy with the amount of traffic or leads you get from your website?'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: product_or_service
+        field:
+          input_type: text
+          antlers: false
+          display: 'Do you offer a product or service'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: retail_or_online
+        field:
+          input_type: text
+          antlers: false
+          display: 'Retail or Online'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: local_regional_nationwide
+        field:
+          input_type: text
+          antlers: false
+          display: 'local regional nationwide'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: budget
+        field:
+          input_type: text
+          antlers: false
+          display: budget
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: name
+        field:
+          input_type: text
+          antlers: false
+          display: name
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: email
+        field:
+          input_type: text
+          antlers: false
+          display: email
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false

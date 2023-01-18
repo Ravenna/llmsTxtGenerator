@@ -14,7 +14,7 @@ sections:
       -
         handle: blocks
         field:
-          collapse: false
+          collapse: true
           previews: true
           sets:
             columns:
@@ -45,6 +45,11 @@ sections:
                   import: block_settings
                 -
                   import: hero
+            quiz:
+              display: Quiz
+              fields:
+                -
+                  import: quiz
           display: Blocks
           type: replicator
           icon: replicator
