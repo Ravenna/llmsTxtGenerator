@@ -6,7 +6,7 @@ seo:
   title: 'Seattle Website Developer | Web Design Company | Website Vendor'
   description: 'Ravenna offers website development and web design services in Seattle WA. Our web developers not only aim to make sure your website is fast and responsive, but we also ensure that it works to retain customer leads and engage potential clients.'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1674508292
+updated_at: 1674508366
 blocks:
   -
     id: leHNoJtE
