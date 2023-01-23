@@ -13,22 +13,38 @@ return [
 
     'styles' => [
 
-        // 'hero' => [
-        //     'type'   => 'heading',
-        //     'level'  => 1,
-        //     'name'   => 'Hero Heading',
-        //     'ident'  => 'H',
-        //     'class'  => 'hero-heading',
-        //     'cp_css' => 'font-family: Caslon',
-        // ],
+        'h2' => [
+            'type'   => 'paragraph',
+            'name'   => 'h2',
+            'ident'  => 'h2',
+            'class'  => 'h2',
+            'cp_css' => 'font-size: 2.5rem;',
+        ],
 
-        // 'intro' => [
-        //     'type'   => 'paragraph',
-        //     'name'   => 'Introduction',
-        //     'ident'  => 'I',
-        //     'class'  => 'introduction',
-        //     'cp_css' => 'font-size: 1.25em; margin-top: -0.5em',
-        // ],
+        'h3' => [
+            'type'   => 'paragraph',
+            'name'   => 'h3',
+            'ident'  => 'h3',
+            'class'  => 'h3',
+            'cp_css' => 'font-size: 2rem;',
+        ],
+
+        'seafoam' => [
+            'type'   => 'span',
+            'name'   => 'sea',
+            'ident'  => 'S',
+            'class'  => 'seafoam',
+            'cp_css' => 'color: #666;',
+        ],
+        
+        'icon' => [
+            'type'   => 'div',
+            'name'   => 'Icon',
+            'ident'  => 'I',
+            'class'  => 'icon',
+            'cp_css' => 'width: 100px;',
+        ],
+
 
         'btn' => [
             'type'   => 'span',

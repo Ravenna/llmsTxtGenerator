@@ -1,7 +1,9 @@
-title: Columns
+title: 'Offset Columns'
 fields:
   -
-    handle: intro
+    import: block_settings
+  -
+    handle: title
     field:
       collapse: false
       always_show_set_button: false
@@ -18,12 +20,8 @@ fields:
         - anchor
         - image
         - table
-        - h1
-        - h4
-        - h5
-        - btn
-        - center
         - seafoam
+        - btn
       save_html: false
       toolbar_mode: fixed
       link_noopener: false
@@ -36,7 +34,7 @@ fields:
       enable_paste_rules: true
       antlers: false
       remove_empty_nodes: false
-      display: Intro
+      display: Title
       type: bard
       icon: bard
       listable: hidden
@@ -44,31 +42,18 @@ fields:
       visibility: visible
       always_save: false
   -
-    handle: columns_per_row
+    handle: boxes
     field:
-      min: 1
-      max: 4
-      step: 1
-      display: 'Columns Per Row'
-      type: range
-      icon: range
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-      always_save: false
-  -
-    handle: columns
-    field:
-      collapse: true
+      collapse: false
       previews: true
       sets:
-        column:
-          display: Column
+        box:
+          display: Box
           fields:
             -
               handle: content
               field:
-                collapse: false
+                collapse: true
                 always_show_set_button: false
                 previews: true
                 buttons:
@@ -79,13 +64,10 @@ fields:
                   - unorderedlist
                   - orderedlist
                   - removeformat
-                  - quote
                   - anchor
                   - image
-                  - table
-                  - h4
-                  - h5
                   - seafoam
+                  - btn
                 save_html: false
                 toolbar_mode: fixed
                 link_noopener: false
@@ -105,49 +87,10 @@ fields:
                 instructions_position: above
                 visibility: visible
                 always_save: false
-      display: Columns
+                container: assets
+      display: Boxes
       type: replicator
       icon: replicator
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-      always_save: false
-  -
-    handle: outro
-    field:
-      collapse: false
-      always_show_set_button: false
-      previews: true
-      buttons:
-        - h2
-        - h3
-        - bold
-        - italic
-        - unorderedlist
-        - orderedlist
-        - removeformat
-        - quote
-        - anchor
-        - image
-        - h4
-        - seafoam
-        - btn
-        - center
-      save_html: false
-      toolbar_mode: fixed
-      link_noopener: false
-      link_noreferrer: false
-      target_blank: false
-      reading_time: false
-      fullscreen: true
-      allow_source: true
-      enable_input_rules: true
-      enable_paste_rules: true
-      antlers: false
-      remove_empty_nodes: false
-      display: Outro
-      type: bard
-      icon: bard
       listable: hidden
       instructions_position: above
       visibility: visible

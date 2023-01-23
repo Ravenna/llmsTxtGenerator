@@ -1,0 +1,13 @@
+.section.blog-section{
+    background: black;
+    .blog-thumb{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        height: 240px;
+    }
+
+    h4{
+        color: white;
+    }
+}

@@ -23,17 +23,30 @@
             
                 <div class="quiz"
                     :class="success ? 'd-none' : ''"
-                
+                    x-data="{
+                        questions: [
+                            'happy_with_traffic',
+                            'product_or_service',
+                            'retail_or_online',
+                            'local_regional_nationwide',
+                            'budget',
+                            'name',
+                            'email'
+                        ],
+                        steps: 6,
+                        currentStep: 1,
+                        success: false,
+                        width: 0,
+                        onStepUpdate() {
+                            this.currentStep++;
+                            let newWidth = (100 / this.steps) * this.currentStep
+                            this.width = newWidth
+                        }
+                    }"
                 >
             
-                    <div class="steps-row">
-                        <ul >
-                            <template x-for="(i, index) in steps" :key="index">
-                                <li :class="currentStep <= i ? '' : 'filled'" :id="`step-${index}`" >
-                                    <span x-text="i" :class="currentStep == i ? 'current' : ''"></span>
-                                </li>
-                            </template>
-                        </ul>
+                    <div class="steps-row" :style="`width: ${width}%`">
+                        
 
                     </div>
 
@@ -197,7 +210,7 @@
                                 href="#" 
                                 class="btn btn-primary" 
                                 :class="currentStep == 6 ? 'd-none' : ''" 
-                                @click="currentStep++">Next</a>
+                                @click.prevent="onStepUpdate">Next</a>
                         </div>
                     </div>
                 </div>

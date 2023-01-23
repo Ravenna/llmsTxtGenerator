@@ -2,14 +2,13 @@
 
 	h1{
 		font-weight: 700;
-		font-size: 24vw;
 	}
 
 	h2, h3{
 		color: white;
 	}
 	h2{
-		font-size: 8.125rem;
+		font-size: 3.5rem;
 		line-height: 1;
 		font-weight: 900;
 		@include respond-below(md){

@@ -1,4 +1,4 @@
-body.block-page-template #app{
+body.block-page-template {
 
     .blocks-wrapper .block-section:first-child{
         margin-top: 48px;
@@ -7,15 +7,14 @@ body.block-page-template #app{
     .block-section{
         position: relative;
 
-        
         &.small-padding{
-            padding: 40px 0;
+            padding: 40px 0 30px;
         }
         &.medium-padding{
-            padding: 80px 0;
+            padding: 80px 0 70px;
         }
         &.large-padding{
-            padding: 120px 0;
+            padding: 120px 0 110px;
         }
     }
     h1{

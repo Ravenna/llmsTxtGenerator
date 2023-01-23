@@ -21,17 +21,22 @@
 
 
 
-@import 'mixins';
-@import 'vars';
-@import 'carousel';
-@import 'form';
-@import 'footer';
+@import 'includes/mixins';
+@import 'includes/vars';
+@import 'includes/form';
+@import 'includes/footer';
+
+@import 'home-sections/blog';
+
 @import 'clients';
 @import 'service';
 @import 'articles';
+@import 'carousel';
 
 
 @import 'block-page';
 @import 'blocks/hero';
 @import 'blocks/quiz';
-
+@import 'blocks/offset-boxes';
+@import 'blocks/columns';
+@import 'blocks/image-break';

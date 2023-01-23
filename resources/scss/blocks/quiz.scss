@@ -8,61 +8,12 @@
     }
 
     .steps-row{
-        ul{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding-left:10%;
-            margin-bottom: 40px;
-            li{
-                list-style: none;
-                color: white;
-                position: relative;
-                flex: 1;
-                margin: 0 10px;
-                padding-left: 2px;
-                span{
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 10px;
-                    color: white;
-                    display: block;
-                    text-align: center;
-                    line-height: 20px;
-                    position: relative;
-                    z-index: 2;
-                    &.current{
-                        color: black;
-                        background: white;
-                    }
-                    &#step-5{
-                        padding-left: 0;
-                    }
-                }
-                &:after{
-                    content: "";
-                    position: absolute;
-                    z-index: 1;
-                    left: 24px;
-                    top: calc(50% - 1px);
-                    width: 96%;
-                    background: black;
-                    height: 2px;
-                }
-                &.filled:after{
-                    background: white;
-
-                }
-                &:last-child{
-                    span{
-                        padding-left: 10px;
-                    }
-                    &:after{
-                        display: none;
-                    }
-                }
-            }
-        }
+        background: rgb(224,255,31);
+        background: linear-gradient(90deg, rgba(224,255,31,0.8) 0%, rgba(90,232,164,0.8) 100%);
+        height: 14px;
+        margin: 20px 0;
+        width: 0%;
+        transition: width 0.3s ease-in-out;
     }
     .question, .answer{
         color: white;

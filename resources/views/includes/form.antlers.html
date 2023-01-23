@@ -18,6 +18,7 @@
         <div class="row">
             <div class="col">
                 <h2 class="text-center">Lets Talk</h2>
+                {{ intro }}
             </div>
         </div>
 
@@ -91,6 +92,7 @@
                     <div class="form-div"></div>
                     <select name="budget" class="form-control" id="budget"  x-bind:class="{'invalid': errors.includes('budget')}" data-rules='["required"]' required>
                         <option value="">Select One*</option>
+                        <option value="monthly">Monthly Services</option>
                         <option value="Less than $10k">Less than $10k</option>
                         <option value="20-50">$20k - $50k</option>
                         <option value="50-100">$50k - $100k</option>

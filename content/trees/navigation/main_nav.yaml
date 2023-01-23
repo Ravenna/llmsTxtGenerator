@@ -11,6 +11,11 @@ tree:
     entry: fd323348-9720-4616-b8bb-1d697b66a128
     title: Statamic
   -
+    id: 8db8fa42-68d7-4a7c-b27d-44d586e9e6af
+    entry: 7b3ae71b-1438-42d7-a334-f15906060894
+    data:
+      nav_class: mb-3
+  -
     id: ec0befbf-ddfe-4ded-9073-584852b76bbc
     entry: e4f69aac-eeb1-4d54-af8e-8c34a3976c6b
     children:

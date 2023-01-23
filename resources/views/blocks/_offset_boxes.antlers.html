@@ -1,0 +1,32 @@
+<div class="block-section offset-boxes">
+    <div class="container">
+        <div class="row service-types">
+            <div class="col-12 col-md-5">
+                <div class="service-card no-border">
+                    {{ title }}
+                </div>
+            
+                {{ boxes }}
+                    {{ if index < 1  }}
+                        <div class="service-card" :data-index="index">
+                            {{ content }}
+                        </div>
+                    {{ /if }}
+                {{ /boxes }}
+            </div>
+            <div class="col-12 col-md-7">
+                {{ boxes }}
+                    {{ if index >= 1  }}
+                        <div class="service-card">
+                            {{ content }}
+                        </div>
+                    {{ /if }}
+                {{ /boxes }}
+            </div>
+        </div>
+
+        <div class="row pb-5">
+            <div class="col text-center"><a href="#section-4" title="Lets Talk" class="btn">Lets Talk</a></div>
+        </div>
+    </div>
+</div>

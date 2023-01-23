@@ -50,6 +50,21 @@ sections:
               fields:
                 -
                   import: quiz
+            offset_boxes:
+              display: 'Offset Boxes'
+              fields:
+                -
+                  import: offset_columns
+            image_break:
+              display: 'Image Break'
+              fields:
+                -
+                  import: image_break
+            form:
+              display: Form
+              fields:
+                -
+                  import: form
           display: Blocks
           type: replicator
           icon: replicator

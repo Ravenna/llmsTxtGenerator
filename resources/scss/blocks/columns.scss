@@ -1,0 +1,14 @@
+#app .block-section.columns{
+    p.h2{
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    p.h3{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    li::marker{
+        color: $seafoam;
+    }
+}

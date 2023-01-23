@@ -20,11 +20,11 @@
             </div>
             <ul>
                 {{ nav:main_nav }}
-                    <li><a href="{{ url }}" title="{{ title }}">{{ title }}</a>
+                    <li class="{{ nav_class }}"><a href="{{ url }}" title="{{ title }}">{{ title }}</a>
                         {{ if children }}
                             <ul>
                                 {{ children }}
-                                    <li>
+                                    <li >
                                         <a href="{{ url }}" title="{{ title }}">{{ title }}</a>
                                     </li>
                                 {{ /children }}
