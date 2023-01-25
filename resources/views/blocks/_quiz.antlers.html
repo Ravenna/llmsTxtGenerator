@@ -1,12 +1,12 @@
 <div class="block-section quiz ">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-8 offset-md-2">
-                <h4 class="text-center quiz-title">Answer a few simple questions and get a detailed report and free 30 min Search Engine Optimization consult for your website!</h4>
+            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                <h4 class="quiz-title">Answer a few simple questions and get a detailed report and free 30 min Search Engine Optimization consult for your website!</h4>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-md-8 offset-md-2 color-white" x-data="form" x-cloak >
+            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 color-white" x-data="form" x-cloak >
                 {{ form:create 
                     in="seo_quiz"
                     id="form-contact"
@@ -36,144 +36,107 @@
                         steps: 6,
                         currentStep: 1,
                         success: false,
-                        width: 0,
+                        width: 15,
                         onStepUpdate() {
                             this.currentStep++;
+                            let newWidth = (100 / this.steps) * this.currentStep
+                            this.width = newWidth
+                        },
+                        onStepBack() {
+                            this.currentStep--;
                             let newWidth = (100 / this.steps) * this.currentStep
                             this.width = newWidth
                         }
                     }"
                 >
             
-                    <div class="steps-row" :style="`width: ${width}%`">
-                        
-
-                    </div>
+           
 
                     <div class="steps">
                         <div class="step" x-show="currentStep == 1" x-transition:leave.delay.0ms  x-data="{happy: ''}">
                             <div class="question">
-                                <h5>Are you happy with the amount of traffic or leads you get from your website?</h5>
+                                <p>Are you happy with the amount of traffic or leads you get from your website?</>
                             </div>
                             <div class="answers">
                                 <input type="hidden" name="happy_with_traffic" x-model="happy">
-                                <div class="answer" @click="happy = 'yes'" :class="happy == 'yes' ? 'selected' : ''">
+                                <div class="btn answer" @click="happy = 'yes'" :class="happy == 'yes' ? 'selected' : ''">
                                     Yes
-                                    <div class="check-wrap">
-                                        {{ partial src="includes.icons.check-mark" }}
-                                    </div>
                                 </div>
-                                <div class="answer" @click="happy = 'no'" :class="happy == 'no' ? 'selected' : ''">
+                                <div class="btn answer" @click="happy = 'no'" :class="happy == 'no' ? 'selected' : ''">
                                     No
-                                    <div class="check-wrap">
-                                        {{ partial src="includes.icons.check-mark" }}
-                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="step" x-show="currentStep == 2" x-transition:enter.delay.300ms  x-data="{product_service: ''}">
                             <div class="question">
-                                <h5>Do you offer a product or service?</h5>
+                                <p>Do you offer a product or service?</p>
                             </div>
                             <div class="answers">
                                 <input type="hidden" name="product_service" x-model="product_service">
 
-                                <div class="answer" @click="product_service = 'product'" :class="product_service == 'product' ? 'selected' : ''">
+                                <div class="answer btn" @click="product_service = 'product'" :class="product_service == 'product' ? 'selected' : ''">
                                     Product
-                                    <div class="check-wrap">
-                                        {{ partial src="includes.icons.check-mark" }}
-                                    </div>
                                 </div>
-                                <div class="answer" @click="product_service = 'service'" :class="product_service == 'service' ? 'selected' : ''">
+                                <div class="answer btn" @click="product_service = 'service'" :class="product_service == 'service' ? 'selected' : ''">
                                     Service
-                                    <div class="check-wrap">
-                                        {{ partial src="includes.icons.check-mark" }}
-                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="step" x-show="currentStep == 3" x-transition:enter.delay.300ms  x-data="{retail: ''}">
                             <div class="question">
-                                <h5>Do you have a retail location or only online?</h5>
+                                <p>Do you have a retail location or only online?</p>
                             </div>
                             <div class="answers">
                                 <input type="hidden" name="retail_or_online" x-model="retail">
 
-                                <div class="answer" @click="retail = 'yes'" :class="retail == 'yes' ? 'selected' : ''">
+                                <div class="answer btn" @click="retail = 'yes'" :class="retail == 'yes' ? 'selected' : ''">
                                     Retail
-                                    <div class="check-wrap">
-                                        {{ partial src="includes.icons.check-mark" }}
-                                    </div>
                                 </div>
-                                <div class="answer" @click="retail = 'no'" :class="retail == 'no' ? 'selected' : ''">
+                                <div class="answer btn" @click="retail = 'no'" :class="retail == 'no' ? 'selected' : ''">
                                     Online
-                                    <div class="check-wrap">
-                                        {{ partial src="includes.icons.check-mark" }}
-                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="step" x-show="currentStep == 4" x-transition:enter.delay.300ms  x-data="{region: ''}">
                             <div class="question">
-                                <h5>Do you sell locally, regionally or nationwide?</h5>
+                                <p>Do you sell locally, regionally or nationwide?</p>
                             </div>
-                            <div class="answers">
+                            <div class="answers three-up">
                                 <input type="hidden" name="local_regional_nationwide" x-model="region">
 
-                                <div class="answer" @click="region = 'local'" :class="region == 'local' ? 'selected' : ''">
+                                <div class="answer btn" @click="region = 'local'" :class="region == 'local' ? 'selected' : ''">
                                     Locally
-                                    <div class="check-wrap">
-                                        {{ partial src="includes.icons.check-mark" }}
-                                    </div>
                                 </div>
-                                <div class="answer" @click="region = 'regional'" :class="region == 'regional' ? 'selected' : ''">
+                                <div class="answer btn" @click="region = 'regional'" :class="region == 'regional' ? 'selected' : ''">
                                     Regionally 
-                                    <div class="check-wrap">
-                                        {{ partial src="includes.icons.check-mark" }}
-                                    </div>
                                 </div>
-                                <div class="answer" @click="region = 'nationwide'" :class="region == 'nationwide' ? 'selected' : ''">
+                                <div class="answer btn" @click="region = 'nationwide'" :class="region == 'nationwide' ? 'selected' : ''">
                                     Nationwide
-                                    <div class="check-wrap">
-                                        {{ partial src="includes.icons.check-mark" }}
-                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="step" x-show="currentStep == 5" x-transition:enter.delay.300ms  x-data="{seo_budget: ''}">
                             <div class="question">
-                                <h5>What is your SEO budget (pick the closest to your actual budget)?</h5>
+                                <p>What is your SEO budget (pick the closest to your actual budget)?</p>
                             </div>
-                            <div class="answers four_up">
+                            <div class="answers four-up">
                                 <input type="hidden" name="budget" x-model="seo_budget">
 
-                                <div class="answer" @click="seo_budget = '500'" :class="seo_budget == '500' ? 'selected' : ''">
+                                <div class="answer btn" @click="seo_budget = '500'" :class="seo_budget == '500' ? 'selected' : ''">
                                     $500/mo
-                                    <div class="check-wrap">
-                                        {{ partial src="includes.icons.check-mark" }}
-                                    </div>
                                 </div>
-                                <div class="answer" @click="seo_budget = '1000'" :class="seo_budget == '1000' ? 'selected' : ''">
+                                <div class="answer btn" @click="seo_budget = '1000'" :class="seo_budget == '1000' ? 'selected' : ''">
                                     $1,000/mo 
-                                    <div class="check-wrap">
-                                        {{ partial src="includes.icons.check-mark" }}
-                                    </div>
                                 </div>
-                                <div class="answer" @click="seo_budget = '2500'" :class="seo_budget == '2500' ? 'selected' : ''">
+                                <div class="answer btn" @click="seo_budget = '2500'" :class="seo_budget == '2500' ? 'selected' : ''">
                                     $2,500/mo 
-                                    <div class="check-wrap">
-                                        {{ partial src="includes.icons.check-mark" }}
-                                    </div>
                                 </div>
-                                <div class="answer" @click="seo_budget = '5000'" :class="seo_budget == '5000' ? 'selected' : ''">
+                                <div class="answer btn" @click="seo_budget = '5000'" :class="seo_budget == '5000' ? 'selected' : ''">
                                     $5k+/mo 
-                                    <div class="check-wrap">
-                                        {{ partial src="includes.icons.check-mark" }}
-                                    </div>
                                 </div>
                                
                             </div>
@@ -181,9 +144,9 @@
 
                         <div class="step" x-show="currentStep == 6" x-transition:enter.delay.300ms  x-data="{region: ''}">
                             <div class="question">
-                                <h5>Share your name and email and we'll get you a custom report for your website and all of the ways we can help.</h5>
+                                <p>Share your name and email and we'll get you a custom report for your website and all of the ways we can help.</p>
                             </div>
-                            <div class="answers flex-column">
+                            <div class="answers flex-column form-wrapper">
                                 <div class="form-row mb-3">
                                     <label for="name">My Name Is</label>
                                     <div class="form-div"></div>
@@ -191,7 +154,7 @@
                                     <p class="error-message text-end text-danger" x-show="errors.includes('name')" x-transition:enter>Please input your name</p>
                                 </div>
 
-                                <div class="form-row mb-5">
+                                <div class="form-row">
                                     <label for="email">My Email Is</label>
                                     <div class="form-div"></div>
                                     <input type="email" class="form-control" id="email" name="email" x-bind:class="{'invalid':errors.includes('email') }" data-rules='["required"]'  required>
@@ -199,19 +162,32 @@
 
                                 </div>
 
-                                <div>
+                                <div class="text-center">
                                     <button type="submit" class="btn btn-primary" x-bind:disabled="loading">Get My Report</button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="">
+                        <div 
+                            class="d-flex flex-row justify-content-center next-back" :class="currentStep == 6 ? 'd-none' : ''"
+                        >
                             <a 
                                 href="#" 
-                                class="btn btn-primary" 
-                                :class="currentStep == 6 ? 'd-none' : ''" 
+                                class="btn btn-primary mx-2" 
+                                :class="currentStep == 1 ? 'disabled' : ''" 
+                                @click.prevent="onStepBack">Prev</a>
+                            <a 
+                                href="#" 
+                                class="btn btn-primary mx-2" 
+                                :class="currentStep == 6 ? 'disabled' : ''" 
                                 @click.prevent="onStepUpdate">Next</a>
                         </div>
+                    </div>
+                    <div class="steps-row-wrap">
+                        <div class="steps-row" :style="`width: ${width}%`"></div>
+                    </div>
+                    <div class="steps-count text-center">
+                        <span x-text="currentStep"></span> of <span x-text="steps"></span>
                     </div>
                 </div>
                 <input type="text" class="d-none" name="{{ honeypot ?? 'honeypot' }}">
