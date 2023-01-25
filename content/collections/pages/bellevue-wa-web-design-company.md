@@ -3,11 +3,13 @@ id: a98fb648-03d3-43b1-90be-f20eb0547515
 blueprint: page
 title: 'Bellevue, Wa Website Development'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1673811928
+updated_at: 1674508244
 seo:
-  title: 'Bellevue Website Developer | Web Design Company | Website Development Vendor'
+  title: 'Bellevue Website Developer | Web Design Company | Website Vendor'
+  description: 'Ravenna offers website development and web design services in Bellevue WA. Our web developers not only aim to make sure your website is fast and responsive, but we also ensure that it works to retain customer leads and engage potential clients.'
 blocks:
   -
+    id: s6Gyuf0E
     overlay_image: true
     type: hero
     enabled: true
@@ -25,6 +27,7 @@ blocks:
             text: 'Bellevue, WA Website Development'
     background_image: bellevue-wa-website-development-1670439922.webp
   -
+    id: L08ZkRLL
     copy:
       -
         type: paragraph
