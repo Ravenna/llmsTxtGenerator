@@ -1,14 +1,16 @@
 <footer>
-    <div class="d-flex flex-row justify-content-start align-items-center">
-        <p class="pe-2">&copy; {{ now|format:Y }} Ravenna LLC. </p>
-        <ul class="d-flex flex-row ps-1">
-            {{ nav:footer_nav }}
-                <li class="ps-2"><a href="{{ url }}" title="{{ title }}">{{ title }}</a></li>
-            {{ /nav:footer_nav }}
-        </ul>
-    </div>
-    <span class="social-wrapper">
-        <a href="https://www.linkedin.com/company/ravenna-llc/" title="LinkedIn" target="_blank"><span class="linkedin"></span></a>
+    <div class="pt-3 w-100 d-flex flex-row justify-content-start align-items-center">
+        <div class="footer-left">
+            <p class="pe-2">&copy; {{ now|format:Y }} Ravenna LLC. </p>
+            <ul class="d-flex flex-row">
+                {{ nav:footer_nav }}
+                    <li class="pe-2"><a href="{{ url }}" title="{{ title }}">{{ title }}</a></li>
+                {{ /nav:footer_nav }}
+            </ul>
+        </div>
 
-    </span>
+        <span class="social-wrapper">
+            <a href="https://www.linkedin.com/company/ravenna-llc/" title="LinkedIn" target="_blank"><span class="linkedin"></span></a>
+        </span>
+    </div>
 </footer> 

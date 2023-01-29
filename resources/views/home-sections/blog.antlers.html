@@ -1,4 +1,4 @@
-<section class="section blog-section" style="z-index: 89;">
+<section class="section blog-section natural-scroll" style="z-index: 89;">
     <div class="container">
         <div class="row mb-5">
             <div class="col">
@@ -7,7 +7,7 @@
         </div>
         <div class="row">
             {{ collection from="articles" }}
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 mb-5">
                     {{ if background_image }}
                         <div class="blog-thumb mb-4" style="background-image: url({{ background_image }});"></div>
                     {{ elseif thumbnail}}

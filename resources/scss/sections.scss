@@ -53,6 +53,10 @@
 		text-align: center;
         position: relative;
         left: -64px;
+        @include respond-below(md){
+            left: auto;
+            width: 100%;
+        }
 	}
     &.white-bg, &.gray-bg{
         h3, p{

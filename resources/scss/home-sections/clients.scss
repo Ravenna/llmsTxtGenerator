@@ -1,4 +1,8 @@
 #section-3{
+    @include respond-below(md){
+        height: auto;
+        padding: 40px 0;
+    }
     .eyes{
         display: inline-block;
         padding: 0 14px;

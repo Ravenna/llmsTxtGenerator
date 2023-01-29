@@ -5,6 +5,9 @@
         background-size: cover;
         background-position: 50% 50%;
         height: 240px;
+        @include respond-below(md){
+            height: 160px;
+        }
     }
 
     h4{

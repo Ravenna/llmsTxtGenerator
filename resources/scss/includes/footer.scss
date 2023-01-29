@@ -7,6 +7,10 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding:40px;
+  width: 100%;
+  @include respond-below(md){
+    padding: 16px;
+  }
   &:before {
     content:'';
     display:block;
@@ -16,10 +20,26 @@ footer {
     top:20px;
     left:40px;
     background-color: $white;
+    @include respond-below(md){
+      width: calc(100% - 32px);
+      left: 16px;
+    }
+  }
+  .footer-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-basis: 90%;
+    @include respond-below(md){
+        flex-direction: column;
+    } 
   }
   p {
     font-size:16px;
     color:$white;
+  }
+  ul{
+    padding-left: 0px;
   }
   li{
     list-style: none;
