@@ -26,11 +26,10 @@ sections:
             - quote
             - anchor
             - image
-            - table
-            - h4
-            - h5
             - underline
             - btn
+            - h4
+            - h5
           save_html: false
           toolbar_mode: fixed
           link_noopener: false
@@ -51,6 +50,66 @@ sections:
           visibility: visible
           always_save: false
           container: assets
+          sets:
+            advertisement:
+              display: Advertisement
+              fields:
+                -
+                  handle: ad_image
+                  field:
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    max_files: 1
+                    display: 'Ad Image'
+                    type: assets
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    always_save: false
+                -
+                  handle: ad_content
+                  field:
+                    collapse: false
+                    always_show_set_button: false
+                    previews: true
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - image
+                      - table
+                      - h4
+                      - h5
+                      - btn
+                    save_html: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    enable_input_rules: true
+                    enable_paste_rules: true
+                    antlers: false
+                    remove_empty_nodes: false
+                    display: 'Ad Content'
+                    type: bard
+                    icon: bard
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    always_save: false
   sidebar:
     display: Sidebar
     fields:

@@ -1,14 +1,7 @@
 
 <div class="container-fluid article-wrapper">
-
-    <div class="row mt-5 mb-5 article-hero" {{ if background_image }} style="background-image: url({{ background_image }})" {{ /if }}>
-        <div class="article-hero-overlay"></div>
-
-        <div class="col article-hero-content">
-            <div class="container">
-                <h1>{{ title }}</h1>
-            </div>
-        </div>
+    <div class="row mt-5 mb-5 article-top-band">
+      
     </div>
 </div>
 
@@ -16,7 +9,27 @@
 
     <div class="row article-content">
         <div class="col-12 col-lg-8 mb-5">
+            <h1>{{ title }}</h1>
+
             {{ content }}
+                {{ if type == 'text' }}
+                    <div class="article-text">
+                        {{ text }}
+                    </div>
+                {{ elseif type == 'advertisement'}}
+                    <div class="article-ad">
+                        <div class="row">
+                            <div class="col-12 col-md-5 ad-image">
+                                {{ partial src="includes/icons/growth" }}
+                            </div>
+                            <div class="col-12 col-md-7 ad-copy">
+                                {{ ad_content }}
+                            </div>
+                        </div>
+
+                    </div>
+                {{ /if }}
+            {{ /content }}
         </div>
 
         <div class="col-12 col-lg-4 client-right">
