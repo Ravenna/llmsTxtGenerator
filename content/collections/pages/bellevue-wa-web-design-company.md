@@ -3,10 +3,10 @@ id: a98fb648-03d3-43b1-90be-f20eb0547515
 blueprint: page
 title: 'Bellevue, Wa Website Development'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1674508244
+updated_at: 1675039254
 seo:
-  title: 'Bellevue Website Developer | Web Design Company | Website Vendor'
-  description: 'Ravenna offers website development and web design services in Bellevue WA. Our web developers not only aim to make sure your website is fast and responsive, but we also ensure that it works to retain customer leads and engage potential clients.'
+  title: 'Finding Professional and Affordable Website Design in Bellevue'
+  description: 'Looking for professional website design in Bellevue? Get the help you need at an affordable price from experienced professionals.'
 blocks:
   -
     id: s6Gyuf0E
@@ -24,21 +24,23 @@ blocks:
         content:
           -
             type: text
-            text: 'Bellevue, WA Website Development'
+            text: 'Bellevue, WA Website Design'
     background_image: bellevue-wa-website-development-1670439922.webp
   -
     id: L08ZkRLL
     copy:
       -
         type: paragraph
+        attrs:
+          class: null
         content:
           -
             type: text
-            text: 'Ravenna Interactive delivers premier website development services for clients in Bellevue, WA, and the surrounding areas. You can depend on us for a website that truly stands out while delivering the marketing results you need. We implement the latest in design and development to ensure that your website loads quickly, is responsive, and is visually appealing. We will work with you from beginning to end to create the website you want for your company.'
+            text: 'Ravenna Interactive delivers professional website design services in Bellevue. Look no further than experienced professionals who specialize in complete web solutions at an affordable price. From creating custom designs that match your business’s vision to crafting a user-friendly interface, these knowledgeable experts can provide the help you need.'
       -
-        type: heading
+        type: paragraph
         attrs:
-          level: 2
+          class: null
         content:
           -
             type: text
@@ -48,6 +50,8 @@ blocks:
             text: 'Stunning Website Design'
       -
         type: paragraph
+        attrs:
+          class: null
         content:
           -
             type: text
@@ -59,12 +63,11 @@ blocks:
         content:
           -
             type: text
-            marks:
-              -
-                type: bold
-            text: 'Increase profitability for your business'
+            text: 'You are Looking for Local Professional Web Designers With Relevant Experience.'
       -
         type: paragraph
+        attrs:
+          class: null
         content:
           -
             type: text
@@ -82,10 +85,12 @@ blocks:
             text: 'Let’s Meet'
       -
         type: paragraph
+        attrs:
+          class: null
         content:
           -
             type: text
-            text: "We do our most effective work face-to-face. Contact us to discuss your website needs in Bellevue, WA or Seattle by calling us at (206) 427-0000 or send an email to\_"
+            text: "We do our most effective work face-to-face. Contact us to discuss your website needs in Bellevue, WA by calling us at (206) 427-0000 or send an email to\_"
           -
             type: text
             marks:

@@ -1,0 +1,29 @@
+{{ if collection == 'articles' }}
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site:url }}{{ url }}"
+      },
+      "headline": "{{ title }}",
+      "image": "{{ site:url }}{{ thumbnail }}",  
+      "author": {
+        "@type": "Organization",
+        "name": "Ravenna",
+        "url": "https://ravennainteractive.com"
+      },  
+      "publisher": {
+        "@type": "Organization",
+        "name": "Ravenna",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ config:app:url }}assets/img/ravenna.png"
+        }
+      },
+      "datePublished": "2023-02-08"
+    }
+    </script>
+{{ /if }}
