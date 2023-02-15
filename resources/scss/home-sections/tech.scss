@@ -35,4 +35,21 @@
             color: black;
         }
     }
+
+
+    .tech-links{
+        justify-content: center;
+        align-items: center;
+        li{
+            margin: 0 20px;
+            list-style-type: none;
+        }
+        img{
+            width: 110px;
+            height: auto;
+            &.good-firms{
+                width: 140px;
+            }
+        }
+    }
 }
