@@ -3,8 +3,11 @@ id: e5f2f3ff-171c-4bb4-855f-59eea9f52483
 blueprint: article
 title: 'Google Map Pack: What is it, and 4 Strategies to Use it for Your Local Business'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1675901015
+updated_at: 1676419632
 thumbnail: how-local-businesses-can-leverage-the-power-of-google-map-pack-thumb.png
+seo:
+  title: '@seo:title'
+  description: 'Learn how the Google Maps Pack and help your business reach its full potential.'
 content:
   -
     type: paragraph
