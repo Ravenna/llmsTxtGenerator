@@ -10,3 +10,7 @@ sort_dir: asc
 date_behavior:
   past: public
   future: private
+inject:
+  seo:
+    title: '@seo:title'
+    image: '@seo:social_share_image'
