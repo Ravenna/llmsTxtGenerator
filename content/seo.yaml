@@ -4,6 +4,6 @@ site_name: Ravenna
 site_name_position: after
 site_name_separator: '|'
 canonical_url: '@seo:permalink'
-image: false
+image: '@seo:social_share_image'
 priority: 0.5
 change_frequency: monthly
