@@ -1,13 +1,13 @@
 title: Expand
 fields:
   -
-    handle: faq
+    handle: faqs
     field:
       collapse: false
       previews: true
       sets:
-        expand:
-          display: Expand
+        faq:
+          display: faq
           fields:
             -
               handle: question
@@ -58,7 +58,7 @@ fields:
                 instructions_position: above
                 visibility: visible
                 always_save: false
-      display: expand
+      display: Faqs
       type: replicator
       icon: replicator
       listable: hidden

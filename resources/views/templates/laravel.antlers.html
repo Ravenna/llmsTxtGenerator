@@ -2,9 +2,21 @@
     <div class="container">
 
         <div class="row mb-5">
-            <div class="col">
+            <div class="col-12">
                 <h1 class="seafoam mb-4">Certified Laravel Development Services</h1>
-                <p>We love building things with Laravel. We help organizations build rich and dynamic web applications. </p>
+            </div>
+            <div class="col col-lg-8">
+                <p>We love building things with Laravel. It is a versatile web framework that is great for a wide range of web development tasks. Here are some of the ways we have used Laravel:</p>
+                <ol>
+                    <li><strong>Building web applications:</strong> Laravel is ideal for building web applications of all sizes, from small startups to large enterprise solutions. Its MVC architecture, built-in tools, and elegant syntax make it straight forward to develop complex applications quickly and efficiently.</li>
+                    <li><strong>Creating APIs:</strong> Laravel's built-in API support and resource controllers make developing APIs for web and mobile applications easy. With Laravel, you can quickly build a RESTful API that any client can consume. </li>
+                    <li><strong>E-commerce websites:</strong> Laravel's modular architecture and built-in tools like Eloquent ORM make it easy to build e-commerce websites. Laravel also has many packages and plugins that can add functionality to an e-commerce site, such as payment gateways and shopping carts.</li>
+                    <li><strong>Content Management Systems (CMS):</strong> Laravel can be used to build custom CMS solutions tailored to your organization's needs. Laravel's built-in authentication, routing, and caching features make it easy to develop secure, scalable CMS solutions.</li>
+                    <li><strong>Social networking sites:</strong> Laravel's modular architecture and built-in user authentication and authorization support make it easy to build social networking sites. Laravel also has many packages and plugins that can add functionality, such as chat and messaging.</li>
+                    <li><strong>Real-time applications:</strong> Laravel can build real-time applications using tools like Laravel Echo and Pusher. These tools make it easy to build real-time chat applications, notifications systems, and other applications that require real-time updates.</li>
+                    <li><strong>Custom web applications:</strong> Laravel's flexibility and extensibility make it a great choice for building custom web applications of all types. Whether you need to build a custom CRM, project management tool, or other web application, Laravel provides a solid foundation to build your application.</li>
+                </ol>
+            
             </div>
         </div>
 
@@ -96,16 +108,23 @@
         </div>
         <div class="row">
             <div class="col-12 col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
-                <div x-data="{ current: 0 }" class="faqs">
-                    {{ faq }}
-                        <div class="accordion" data-index="{{ index }}">
-                            <button @click="current = {{ index }}" :class="current == {{ index }} ? 'active': ''">
-                                <span>{{ question }}</span> {{ partial src="includes.icons.xmark" }}</button>
-                            <div class="answer" x-show="current == {{ index }}" x-collapse> <!--  -->
+                <div x-data="{ 
+                    active: 0,
+                    expand(i){
+                        this.active = i;
+                    }
+                }" class="faqs">
+                    {{ faqs }}
+                        <div class="accordion" role="region">
+                            <button @click="expand({{ index }})" :class="active === {{index}} ? 'active' : ''">
+                                <span>{{ question }}</span> {{ partial src="includes.icons.xmark" }}
+                            </button>
+                            <div class="answer" x-show="active === {{ index }}" x-collapse >
                                 {{ answer }}
+                              
                             </div>
                         </div>
-                    {{ /faq }}
+                    {{ /faqs }}
                 </div>
             </div>
         </div>
