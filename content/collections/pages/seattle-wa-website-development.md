@@ -6,7 +6,7 @@ seo:
   title: 'Seattle Website Developer | Web Design Company | Website Vendor'
   description: 'Ravenna offers website development and web design services in Seattle WA. Our web developers not only aim to make sure your website is fast and responsive, but we also ensure that it works to retain customer leads and engage potential clients.'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1674508401
+updated_at: 1681766635
 blocks:
   -
     id: leHNoJtE
@@ -30,30 +30,114 @@ blocks:
     copy:
       -
         type: paragraph
+        attrs:
+          class: null
         content:
           -
             type: text
-            text: 'At Ravenna Interactive, we offer website development and design services in Seattle, WA, and the surrounding areas. Our boutique branding and design services work with companies at all stages of development, from startups to well-established midsize and large-sized businesses. Whether you are just starting and need a website or want to increase your marketing results, we can provide you with the right solutions.'
+            text: "If you're looking for a Seattle, WA, website developer, you're in luck! At Ravenna, our experienced team of website developers is here to help you create a website that looks great and functions seamlessly."
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: "As a leading Seattle, WA, website development company, we understand your website is critical to your business's online presence. It's often the first impression that potential customers have of your brand, so it's essential to make it a good one."
       -
         type: heading
         attrs:
-          level: 2
+          level: 3
         content:
           -
             type: text
-            text: 'Get the marketing results you want'
+            marks:
+              -
+                type: textAlign
+                attrs:
+                  align: start
+            text: 'Comprehensive Website Development'
       -
         type: paragraph
+        attrs:
+          class: null
         content:
           -
             type: text
-            text: 'We provide a full range of services to improve the profitability of your business with real and measurable results. As an experienced website developer, we not only aim to make sure your website is fast and responsive, but we also ensure that it works to retain customer leads and engage potential clients. We use the most potent marketing strategies so you can finally start seeing the type of results you are hoping for in your business.'
+            text: "That's why we take a comprehensive approach to website development. We work closely with our clients to understand their unique needs and goals, and then we design and develop a custom website that meets those requirements."
       -
         type: paragraph
+        attrs:
+          class: null
         content:
           -
             type: text
-            text: 'If you are looking for application development, social media apps, web design services, and web development, Ravenna Interactive can provide the services you need. Contact us to discuss your website design or development idea for your Seattle business. We look forward to providing the cutting-edge services your business can benefit from.'
+            text: 'Whether you need a simple brochure website or a complex e-commerce platform, we have the skills and expertise to bring your vision to life. Our website developers in Seattle are proficient in a wide range of technologies, including the latest JavaScript frameworks and full-stack PHP. Depending on your preferences, we can also develop your website on popular platforms like WordPress or Statamic, Craft, and more.'
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'At Ravena, we pride ourselves on delivering high-quality websites that are optimized for speed, performance, and user experience. We use the latest web development technologies to ensure your website is responsive, mobile-friendly, and optimized for search engines.'
+    content_width: three-quarters
+    type: full_width
+    enabled: true
+    block_padding: medium
+    copy_color: white
+  -
+    id: lglbxul8
+    quote:
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: textAlign
+                attrs:
+                  align: left
+            text: "The Ravenna team are experienced software developers who work quickly and efficiently. I feel comfortable trusting them with my company's critical web infrastructure."
+    name_title: 'Vladimir Jelisavcic / Cherokee Aquisitions'
+    type: quote
+    enabled: true
+  -
+    id: lglc1omd
+    copy_color: white
+    copy:
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: textAlign
+                attrs:
+                  align: start
+            text: 'Website Maintenance and Support Services'
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: "In addition to website development, we also offer website maintenance and support services. We understand that maintaining a website can be time-consuming, so we're here to help you manage your website and ensure that it stays up-to-date and secure."
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Our maintenance and support options range from a simple retainer that gets you priority access to us all the way up to a service-level agreement that guarantees response times, even at 4 in the morning.'
       -
         type: heading
         attrs:
@@ -64,10 +148,20 @@ blocks:
             text: 'Let’s Meet'
       -
         type: paragraph
+        attrs:
+          class: null
         content:
           -
             type: text
-            text: 'We do our most effective work face-to-face. Contact us to discuss your website needs in Seattle, WA by calling us at '
+            text: "We know that choosing a development partner can be a daunting task. That's why we always offer a free consultation to help you determine if we're the right fit for your needs. During this consultation, we'll discuss your goals and objectives and answer any questions you may have about our services."
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Now all that said, we do our most effective work face-to-face. Contact us to discuss your website needs in Seattle, WA, by calling us at '
           -
             type: text
             marks:
@@ -99,7 +193,5 @@ blocks:
     content_width: three-quarters
     type: full_width
     enabled: true
-    block_padding: medium
-    copy_color: white
 template: block-page
 ---

@@ -65,6 +65,11 @@ sections:
               fields:
                 -
                   import: form
+            quote:
+              display: Quote
+              fields:
+                -
+                  import: quote
           display: Blocks
           type: replicator
           icon: replicator
