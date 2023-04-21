@@ -12,7 +12,7 @@ seo:
   title: '@seo:title'
   image: '@seo:social_share_image'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1682118969
+updated_at: 1682119065
 content:
   -
     type: paragraph
@@ -213,6 +213,77 @@ content:
       -
         type: text
         text: 'By optimizing website structure, AI can help to improve user experience, reduce bounce rates, and increase the likelihood of conversion.'
+  -
+    type: set
+    attrs:
+      id: lgr681jj
+      values:
+        type: advertisement
+        ad_content:
+          -
+            type: heading
+            attrs:
+              level: 4
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                  -
+                    type: textAlign
+                    attrs:
+                      align: start
+                text: 'See how Ravenna can Increase Traffic to Your Website'
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                  -
+                    type: textAlign
+                    attrs:
+                      align: start
+                text: 'SEO: Grow your ranking in the organic results and see real results'
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                  -
+                    type: textAlign
+                    attrs:
+                      align: start
+                text: 'Content Marketing: Our team can create great content for your site that will get views, links, and attract traffic'
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                  -
+                    type: textAlign
+                    attrs:
+                      align: start
+                text: 'Paid Ads: We can drive real ROI through a clear paid strategy'
+  -
+    type: paragraph
+    attrs:
+      class: null
   -
     type: heading
     attrs:
