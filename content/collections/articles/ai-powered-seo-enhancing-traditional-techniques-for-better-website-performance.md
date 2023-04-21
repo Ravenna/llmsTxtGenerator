@@ -12,7 +12,7 @@ seo:
   title: '@seo:title'
   image: '@seo:social_share_image'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1682119065
+updated_at: 1682119106
 content:
   -
     type: paragraph
@@ -280,6 +280,26 @@ content:
                     attrs:
                       align: start
                 text: 'Paid Ads: We can drive real ROI through a clear paid strategy'
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'statamic://entry::325d2282-f568-40ca-b1dd-7aca4c7278bb'
+                      rel: null
+                      target: null
+                      title: 'Lets Talk'
+                  -
+                    type: bts_span
+                    attrs:
+                      class: 'btn btn-primary'
+                text: 'Lets Talk'
   -
     type: paragraph
     attrs:
