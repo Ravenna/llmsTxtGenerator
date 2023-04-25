@@ -15,12 +15,14 @@
         </div>
 
 
-        <div class="row">
-            <div class="col">
-                <h2 class="text-center">Lets Talk</h2>
-                {{ intro }}
+        {{ if intro }}
+            <div class="row">
+                <div class="col">
+                    {{ intro }}
+                </div>
             </div>
-        </div>
+
+        {{ /if }}
 
         <div class="row">
             <div class="col form-name">
