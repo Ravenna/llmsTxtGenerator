@@ -6,8 +6,6 @@ preferences:
   collections:
     clients:
       after_save: continue_editing
-    articles:
-      after_save: continue_editing
     pages:
       after_save: continue_editing
   forms:
