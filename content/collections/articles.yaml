@@ -6,11 +6,18 @@ taxonomies:
   - tags
 revisions: false
 route: 'articles/{slug}'
-sort_dir: asc
+date: true
+sort_dir: desc
 date_behavior:
   past: public
   future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
 inject:
   seo:
     title: '@seo:title'
     image: '@seo:social_share_image'
+structure:
+  root: false
