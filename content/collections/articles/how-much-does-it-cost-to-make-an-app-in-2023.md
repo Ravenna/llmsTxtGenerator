@@ -1,0 +1,1130 @@
+---
+id: d41fba62-7ec2-40db-90cb-9e7d47e9ecb5
+blueprint: article
+title: 'How much does it cost to make an app in 2023'
+categories:
+  - project-planning
+tags:
+  - budgeting
+  - laravel
+  - costs
+seo:
+  title: '@seo:title'
+  image: '@seo:social_share_image'
+updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
+updated_at: 1683219688
+content:
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "The cost of building an app can vary greatly depending on several factors. It is common to find a wide range of estimates when researching this topic. This process can be complex, but we've compiled some helpful visuals and examples to guide you. If you're wondering how much it will cost to build your app, read on to learn more."
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: '[INFOGRAPHIC]'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "Now that we've walked you through the process visually let's review it in more detail:"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "When it comes down to it, you have three main options:\_"
+  -
+    type: ordered_list
+    attrs:
+      order: 1
+    content:
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: DIY
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Find a co-founder/hire a dev'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Hire an agency'
+          -
+            type: paragraph
+            attrs:
+              class: null
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: "Do it Yourself.\_"
+      -
+        type: text
+        text: "We've all been there. It can't be that hard, can it?"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "Whether you know how to code or not, a lot goes into building an app: product strategy, design, coding for sure, and analytics. Then there is the running of the actual business: sales, marketing, partnerships, fundraising, and HR.\_\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "If you feel like you have this in hand, then stop here. You are on your way; there is no reason to keep reading.\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: "The next option is a two-parter.\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: "Option 1:\_"
+      -
+        type: text
+        text: "\_you could find a co-founder.\_\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "The search for a co-founder is relatively straightforward. You look around for someone you know or in your network (try LinkedIn) with the skillset you need and pitch them your idea. You would trade equity in your company for their services and support.\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "The next question is, how much equity do you give this person(s)? The topic of how much equity would require a whole other article to cover, but the gist is you want the person to feel valued, but you likely don't want to give up control. That said, you are contemplating a long-term relationship here.\_\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Option 2:'
+      -
+        type: text
+        text: "\_Hire a dev."
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "You can find a designer, developer, or other technical individual anywhere. Fiver is an excellent place to start, but a quick Google search will help you find more places to source people. The question is: are you confident you know which language(s) you need? Should you write a hybrid React Native mobile app? Should you use Node or Laravel for the API? Next up: what about sourcing third-party tools? There are costs to analyze, scaling questions, and how easy the integration will be. The choices are endless.\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'That said, this is a viable way to get it done. Just make sure to work through getting to know the person you are bringing on as a co-founder or hiring as a dev.'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: hard_break
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Hire an Agency'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'I see what you are thinking. I am on an agency website reading about selecting an agency for my business. We are" slightly" biased towards this option, but hey, this is what we do for a living.'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'The list of things you need help with when building an app is not short. Here are a few of the things you have to take into consideration:'
+  -
+    type: bullet_list
+    content:
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Product Strategy'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: "Branding\_"
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'UX & UI design + User Testing'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: Development
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: Analytics
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: Maintenance
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Server & Storage'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'API/SDK or Third-Party Technology'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "That is just the list of things to work through pre-launch. Once you launch, there is a whole new set of things like:\_"
+  -
+    type: bullet_list
+    content:
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: "Sales\_"
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: "Marketing\_"
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: Partnerships
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: People/Salary
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: Benefits/HR
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Office space'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: Utilities
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'You may need a printer'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: ….
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: "Beers with the Team\_"
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Is this starting to feel hard yet?…'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "Still with me? Nice work. I believe in you. We are going to get this thing rolling.\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "Now that we have broken down the general paths, let's break down some ballpark costs for each area:"
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Product Strategy:'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "Product strategy encompasses a wide range of tasks that should help bring a new app to market.\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "A short list includes: competitive analysis, building user journey maps, defining personas, and much more. People often skip over these steps or start coding. It takes more work to make a solid plan. This phase of the project is where that plan takes shape.\_ \_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'Reviewing the competitive landscape is essential because you must know what is out there. If you think you are in a blue ocean and it turns out you are not, it is imperative to identify that early so that you can work to carve out a beachhead.'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'Defining user journeys is determining how your users will traverse through your application. Often this process uncovers areas of your application that need more definition. It helps remove extra steps and generally provides an excellent map for your app.'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'Personas and more. Who are your users, what do they care about, how much money do they like to spend, and how urgent is the need you are solving? All of these questions and more are important to answer early on. The earlier you resolve these items, the better your product will be.'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "Regarding budgeting for this, we'd recommend you plan for at least two weeks, likely one month, with a ballpark cost of $10k-$30k."
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: Branding
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "When it comes to branding, you have options. But all options are not created equal.\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Option 1: Fiver:'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "You'll pay $30-$100 for a logo. You are hiring a single designer and will likely undergo a couple of rounds of changes. The resulting logo is going to be pretty basic."
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Option 2: 99 Designs:'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "99 Designs allows you to crowdsource a logo. You commit to spending a minimum of $299 and then tell them what you want your logo to be like. Then as many designers as want to submit a logo design for your review. You usually select a couple to move forward with and go through a round of revisions. Once completed, you choose one, and that designer gets paid. While better than Fiver, this option is not genuinely diving into who you are and what your app does.\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Option 3: Hire a designer/Hire Us:'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "The thing about a brand is that it is more than just a logo. A brand is a tone of voice, a color palette, a mark, and a feeling. To achieve a great brand, working with a professional designer is critical. A professional designer will take you through their process of creating a brand. Several things are essential to creating a brand: mood boards, color palettes, brand tone, and more. Not to mention a brand guide at the end of the process that you share with your team and future designers to keep things on track. Plan on budgeting $10k-$15k here.\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "We can't stress enough that a quality brand sets a company apart. Going cheap here only hurts you down the road."
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: image
+        attrs:
+          src: 'asset::assets::ux-design.jpg'
+          alt: null
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'UX + UI + End-User Testing:'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "User Experience, User Interface, and User Testing are three essential parts of building a successful app.\_\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'We begin with UX. User Experience is where we take the user journeys created in the product strategy step and apply basic flat design. Often this is in the form of wireframes. Think of wireframes as a minimal pencil drawing of the app layout. Wireframes become a prototype that users can review. With a great set of wireframes, you can transition to user testing and start getting feedback. With software like Figma, we can even make these wireframes partially interactive so that someone can follow a path and test it.'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'Once we have completed the UX step and tested it to the point of being confident in our product, we can begin designing the app. The design is the User Interface, where we visually bring the app to life. This layer of design takes into account the brand work done previously. From font selection to color palette, the design builds on the brand to create something that feels complete.'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "When estimating this, we'd recommend two months and roughly $30-40k.\_"
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Development:'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'Now, it is time to write code. The development phase of the project is both art and science. We look at the development as problem-solving + math + writing code. There are many pieces of the development phase, and you can do this in more than one way.'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "You could buy: Swift for Dummies or React Native for Dummies. Now I am not saying you are a dummy. Far from it. If you want to bring your app to life on your own, more power to you. If you go it alone, the cost is just your time and a few books or online subscriptions.\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "Your next option is to hire a dev. You could go back to Fiver or post on a job board. Hiring is a viable way to launch your app. We mentioned it earlier in saying that you could be your own general contractor. We'd recommend hiring a backend dev, a front-end mobile developer, and a front-end web developer. Next, you will need someone to handle the server setup and host for all the API/backend systems your app needs."
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "We don't mean to be a broken record, but the last and best option would be to hire us to build your app. We have decades of experience collectively building web and mobile apps. We know how the server needs to work, and we can recommend the appropriate languages and frameworks to help speed up and smooth development.\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "There are a few things worth mentioning when coding your app.\_\_"
+  -
+    type: bullet_list
+    content:
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Quality: Not all code is good. Often, someone comes to us noting that they parted ways with their dev, and we get into a code review only to find a mess. Poor standards, a lack of attention to detail, and missing a clear strategy are critical for application development.'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Documentation: Is the code well documented? We believe in clear, concise documentation that allows future developers to get started faster. If you decide to move on from your developer or us, can someone new identify how things work and make sense of it?'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Cleanliness: Clean code that is well-written and documented is efficient and sustainable. I like spaghetti like the next person, but not in my code.'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'Working with us, you can plan on development costs ranging from $40k to well north of $100k, depending on your app.'
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: "Ok, now you have an app. HIGH FIVES AROUND. What's next?"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'You have an app that works how you want it and is ready to launch but wait a moment. Before you get this off the ground, there are a few more things to cover.'
+  -
+    type: bullet_list
+    content:
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: "Analytics\_"
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Server and Storage'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'APIs / Third-party costs'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: Maintenance
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: Analytics
+      -
+        type: text
+        text: "\_involves gathering data about how users utilize your product in the real world. Without analytics, you are driving blind. You will get some analytics from the app stores, but tracking the interactions inside your app requires other options.\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'We typically use third-party tools to integrate analytics into apps. Our favorite two options are:'
+  -
+    type: bullet_list
+    content:
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: Mixpanel
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: Amplitude
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'By integrating with one of these systems, we can track specific events or activities to help you understand how people use your app. In addition, we can help you build reporting so that you have vital KPIs at your fingertips.'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: "Servers and Storage\_"
+      -
+        type: text
+        text: "are necessary things to consider when building an app. While the actual app is on the App Store or Google Play Store, your app likely has some interaction that requires a server and possibly storage.\_\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'As a quick note (assuming you are still reading), whoever you hire should never offer to host this themselves. If that happens, run for the hills.'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "User data and information should live in cloud infrastructure, and using Amazon AWS, Google Firebase, or Microsoft Azure are your best options. You can expect to start around $100-$300/mo. Costs can scale into the thousands or tens of thousands of dollars. That said, the scaling is not linear. Generally will take hundreds of thousands of users before you pay thousands of dollars.\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'APIs / Third party costs'
+      -
+        type: text
+        text: "\_are something worth considering. Whether you build this thing yourself, find a co-founder, hire a dev, or work with us, using third-party systems will likely happen. Some examples of services like this are:"
+  -
+    type: bullet_list
+    content:
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Stripe for payment processing.'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Salesforce or another CRM.'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Twilio for messaging.'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "The options are almost endless. These third-party solutions help speed up development because you don't have to reinvent the wheel, but they charge you a fee in exchange for their service."
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "It would be safe to initially plan for $300-$600/mo.\_"
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Now you have an app, and it is running month after month. Is there anything else I need?'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: 'Up front, you only need to worry about maintenance and Feature additions. Maintenance would cover things like:'
+  -
+    type: bullet_list
+    content:
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Server maintenance.'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'OS updates that cause breaking changes.'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Service outages.'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "Things come up, and it helps to have someone you trust who can troubleshoot and resolve issues. It is hard to plan exactly how much this will cost, but it's safe to say it will happen. Maintenance and support can run you 0-$5k/mo."
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "The other thing that will likely come up is feature additions. Whether they come from reviews, direct user outreach, or your product roadmap, there will probably be the need to update or add features. Depending on size, it could be a simple change only requiring a single dev and a couple of days, or it could be a multi-person dev team over weeks or months. We would work with you to scope out your feature needs and a road map so that you can budget and plan.\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "Beyond that, with this many users, you are running a business. You likely have costs for things like:\_"
+  -
+    type: bullet_list
+    content:
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: Marketing
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: Office
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: Sales
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: "Maybe you even hire designers, devs…\_"
+              -
+                type: hard_break
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "Whew, this is a long article.\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'To wrap it up'
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "Hopefully, this article has given you some idea of what you should be budgeting and planning for. Building a successful app/business is complex and requires the right team. Let's talk if you want a team that cares about integrity, having fun, and building cool shit."
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: text
+        text: "We'd be happy to help!\_"
+  -
+    type: paragraph
+    attrs:
+      class: null
+---
