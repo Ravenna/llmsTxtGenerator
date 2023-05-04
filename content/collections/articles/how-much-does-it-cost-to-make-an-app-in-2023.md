@@ -12,7 +12,7 @@ seo:
   title: '@seo:title'
   image: '@seo:social_share_image'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1683219838
+updated_at: 1683219878
 content:
   -
     type: paragraph
@@ -619,6 +619,8 @@ content:
         type: text
         marks:
           -
+            type: small
+          -
             type: textAlign
             attrs:
               align: center
@@ -634,6 +636,8 @@ content:
               target: null
               title: null
           -
+            type: small
+          -
             type: textAlign
             attrs:
               align: center
@@ -641,6 +645,8 @@ content:
       -
         type: text
         marks:
+          -
+            type: small
           -
             type: textAlign
             attrs:
@@ -656,6 +662,8 @@ content:
               rel: null
               target: null
               title: null
+          -
+            type: small
           -
             type: textAlign
             attrs:
