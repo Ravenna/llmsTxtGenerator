@@ -12,7 +12,7 @@ seo:
   title: '@seo:title'
   image: '@seo:social_share_image'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1683219688
+updated_at: 1683219838
 content:
   -
     type: paragraph
@@ -601,15 +601,71 @@ content:
         type: text
         text: "We can't stress enough that a quality brand sets a company apart. Going cheap here only hurts you down the road."
   -
-    type: heading
+    type: paragraph
     attrs:
-      level: 3
+      class: null
     content:
       -
         type: image
         attrs:
           src: 'asset::assets::ux-design.jpg'
           alt: null
+        marks:
+          -
+            type: textAlign
+            attrs:
+              align: center
+      -
+        type: text
+        marks:
+          -
+            type: textAlign
+            attrs:
+              align: center
+        text: 'Photo by '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://unsplash.com/@sigmund?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+              rel: null
+              target: null
+              title: null
+          -
+            type: textAlign
+            attrs:
+              align: center
+        text: Sigmund
+      -
+        type: text
+        marks:
+          -
+            type: textAlign
+            attrs:
+              align: center
+        text: ' on '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://unsplash.com/photos/4UGmm3WRUoQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+              rel: null
+              target: null
+              title: null
+          -
+            type: textAlign
+            attrs:
+              align: center
+        text: Unsplash
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
       -
         type: text
         marks:
