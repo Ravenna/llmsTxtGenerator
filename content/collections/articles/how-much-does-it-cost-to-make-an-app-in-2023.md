@@ -12,7 +12,11 @@ seo:
   title: '@seo:title'
   image: '@seo:social_share_image'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1683219956
+updated_at: 1683220399
+background_image: cost-of-building-an-app-in-2023.jpg
+photo_by: 'https://unsplash.com/@blankerwahnsinn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+photo_by_text: 'Photo by Fabian Blank'
+thumbnail: cost-of-building-an-app-in-2023-thumb.jpg
 content:
   -
     type: paragraph
@@ -805,6 +809,70 @@ content:
               -
                 type: text
                 text: Maintenance
+  -
+    type: paragraph
+    attrs:
+      class: null
+    content:
+      -
+        type: image
+        attrs:
+          src: 'asset::assets::app-analytic.jpg'
+          alt: null
+      -
+        type: text
+        marks:
+          -
+            type: small
+          -
+            type: textAlign
+            attrs:
+              align: center
+        text: 'Photo by '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://unsplash.com/@kmuza?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+              rel: null
+              target: null
+              title: null
+          -
+            type: small
+          -
+            type: textAlign
+            attrs:
+              align: center
+        text: 'Carlos Muza'
+      -
+        type: text
+        marks:
+          -
+            type: small
+          -
+            type: textAlign
+            attrs:
+              align: center
+        text: ' on '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://unsplash.com/photos/hpjSkU2UYSU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'
+              rel: null
+              target: null
+              title: null
+          -
+            type: small
+          -
+            type: textAlign
+            attrs:
+              align: center
+        text: Unsplash
   -
     type: paragraph
     attrs:
