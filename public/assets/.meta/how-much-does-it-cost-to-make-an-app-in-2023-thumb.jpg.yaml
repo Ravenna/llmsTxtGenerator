@@ -1,4 +1,5 @@
-data: {  }
+data:
+  alt: 'How much does it cost to make an app in 2023'
 size: 33257
 last_modified: 1683650905
 width: 800
