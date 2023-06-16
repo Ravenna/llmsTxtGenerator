@@ -5,14 +5,14 @@ title: Home
 template: home
 author: 1d1068ab-208d-480d-a677-dda65fe0f490
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1686929063
+updated_at: 1686930110
 json_citation_data: |-
   {
   	"@context": "https://schema.org",
   	"@type": "LocalBusiness",
   	"name": "Ravenna Interactive",
   	"image": "https://ravennainteractive.com/assets/img/ravenna.svg",
-  	"description": "We rea among the top Laravel and Statamic Website Development companies in Seattle. Our expert developers offer you custom solutions that will help you drive conversions",
+  	"description": "We are among the top Laravel and Statamic Website Development companies in Seattle. Our expert developers offer you custom solutions that will help drive conversions",
   	"@id": "https://ravennainteractive.com/",
   	"url": "https://ravennainteractive.com/",
   	"telephone": " +1 206 - 427 - 0000 ",
