@@ -27,18 +27,12 @@
         <link rel="preconnect" rel="stylesheet" href="https://use.typekit.net/yim3ewy.css">
         <link rel="stylesheet" href="{{ mix src='/css/head.css' }}">
         <link rel="stylesheet" href="{{ mix src='/css/site.css' }}" rel="preload">
-
-        <!-- Begin Inspectlet Asynchronous Code -->
-        <script type="text/javascript">
-            (function() {
-            window.__insp = window.__insp || [];
-            __insp.push(['wid', 239742123]);
-            var ldinsp = function(){
-            if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=239742123&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
-            setTimeout(ldinsp, 0);
-            })();
-        </script>
-        <!-- End Inspectlet Asynchronous Code -->
+        
+        {{ if json_citation_data }}
+            <script type="application/ld+json">
+            {{ json_citation_data }}
+            </script>
+        {{ /if }}
 
         {{ partial src="includes/schema" }}
     </head>
