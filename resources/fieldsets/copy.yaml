@@ -36,7 +36,7 @@ fields:
       enable_input_rules: true
       enable_paste_rules: true
       antlers: false
-      remove_empty_nodes: true
+      remove_empty_nodes: false
       display: Copy
       type: bard
       icon: bard
