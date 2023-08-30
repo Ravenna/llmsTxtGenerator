@@ -3,7 +3,7 @@ id: 7b3ae71b-1438-42d7-a334-f15906060894
 blueprint: page
 title: SEO
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1674503162
+updated_at: 1693366350
 blocks:
   -
     id: 1pzpfW8k
@@ -47,13 +47,7 @@ blocks:
     enabled: true
   -
     id: SDBzeze1
-    copy:
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Search engine optimization (SEO) is an essential part of modern business success. At Ravenna, our specialized SEO experts know all the ins and outs of driving organic traffic to websites. Our team works to plan and execute comprehensive strategies that involve research, outreach, content creation, audit analysis, and detailed reporting. This combination of skills allows us to tailor SEO plans for each brand based on their unique needs and goals.'
+    copy: '<p>Search engine optimization (SEO) is an essential part of modern business success. At Ravenna, our specialized SEO experts know all the ins and outs of driving organic traffic to websites. Our team works to plan and execute comprehensive strategies that involve research, outreach, content creation, audit analysis, and detailed reporting. This combination of skills allows us to tailor SEO plans for each brand based on their unique needs and goals.</p>'
     type: full_width
     enabled: true
     copy_color: white
