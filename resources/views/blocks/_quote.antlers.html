@@ -4,7 +4,9 @@
     <div class="container quote-container">
         <div class="row">
             <div class="col col-lg-8 offset-lg-2">
-                <div class="left-quote">{{ partial src="includes.icons.quote" }}</div><blockquote>{{ quote }}</blockquote>
+                
+
+                <div class="left-quote"><div class="quote-icon">{{ partial:includes.icons.quote-left }}</div></div><blockquote>{{ quote }}</blockquote>
                 <p>- {{ name_title }}</p>
             </div>
         </div>
