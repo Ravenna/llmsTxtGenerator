@@ -3,10 +3,10 @@ id: 5db8a5eb-d280-4d2d-a600-9dd19a1dd263
 blueprint: page
 title: 'Seattle, WA Website Development'
 seo:
-  title: 'Seattle Website Developer | Web Design Company'
-  description: 'Ravenna offers website development and web design services in Seattle WA. Our web developers not only aim to make sure your website is fast and responsive, but we also ensure that it works to retain customer leads and engage potential clients.'
+  title: 'Leading Seattle Web Design & Development Company'
+  description: 'Unlock the full potential of your business with exceptional Website Design and Development services in Seattle, WA. We specialize in creating intuitive, responsive websites that elevate your brand and engage your audience. Get a free consultation today!'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1693363142
+updated_at: 1693363407
 blocks:
   -
     id: leHNoJtE
