@@ -6,7 +6,7 @@ seo:
   title: 'Leading Seattle Web Design & Development Company'
   description: 'Unlock the full potential of your business with exceptional Website Design and Development services in Seattle, WA. We specialize in creating intuitive, responsive websites that elevate your brand and engage your audience. Get a free consultation today!'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1693364454
+updated_at: 1693364874
 blocks:
   -
     id: leHNoJtE
@@ -66,7 +66,12 @@ blocks:
         content:
           -
             type: text
-            text: "That's why we take a comprehensive approach to website design. We work closely with our clients to understand their unique needs and goals, and then we design a custom website that exceeds those requirements."
+            marks:
+              -
+                type: textAlign
+                attrs:
+                  align: start
+            text: "In today's fast-paced digital landscape, website design is about more than just eye-catching graphics and a sleek interface; it's about creating an interactive experience that resonates with your audience. Thoughtful website design goes beyond the superficial. It's a meticulous process that involves understanding your audience's needs, behaviors, and pain points. From an intuitive navigation menu to a color scheme that evokes the right emotions, every design element should serve a specific purpose and offer a solution to a problem. When done correctly, it turns visitors into loyal customers and brand ambassadors, adding real value to their experience."
       -
         type: paragraph
         attrs:
@@ -74,20 +79,84 @@ blocks:
         content:
           -
             type: text
-            text: 'Whether you need a simple brochure website or a complex e-commerce platform, we have the skills and expertise to bring your vision to life. Our website developers in Seattle are proficient in a wide range of technologies, including the latest JavaScript frameworks and full-stack PHP. Depending on your preferences, we can also develop your website on popular platforms like WordPress or Statamic, Craft, and more.'
-      -
-        type: paragraph
-        attrs:
-          class: null
-        content:
-          -
-            type: text
-            text: 'At Ravena, we pride ourselves on delivering high-quality websites that are optimized for speed, performance, and user experience. We use the latest web development technologies to ensure your website is responsive, mobile-friendly, and optimized for search engines.'
+            marks:
+              -
+                type: textAlign
+                attrs:
+                  align: start
+            text: 'Being thoughtful in design means paying attention to both form and function. The site should be aesthetically pleasing, but it should also be user-friendly and optimized for conversions. A website that excels in form but fails in function can frustrate users, leading to higher bounce rates. On the other hand, a site that is utilitarian but lacks polish may fail to convey professionalism, weakening brand trust. Striking a balance between the two is essential. This involves technical finesse, artistic skill, and an analytical approach to understand how users interact with the site. Every button placement, every image, and even the typography are intentionally chosen to create a harmonious user journey.'
     content_width: three-quarters
     type: full_width
     enabled: true
     block_padding: medium
     copy_color: white
+  -
+    id: llx5gdx8
+    quote:
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: "Ravenna did an amazing job and took the time to learn about our company mission so that our website would be aesthetically pleasing and highly effective. They were flexible and accommodating\_with our schedule and gave thorough weekly reports to keep us updated on progress. We will definitely use Ravenna again for future needs!"
+      -
+        type: paragraph
+        attrs:
+          class: null
+    name_title: 'Marilee - Outpost Space'
+    type: quote
+    enabled: true
+  -
+    id: llx5hjdx
+    copy_color: white
+    copy:
+      -
+        type: heading
+        attrs:
+          level: 3
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: textAlign
+                attrs:
+                  align: start
+            text: 'Full Stack and CMS Website Development'
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: textAlign
+                attrs:
+                  align: start
+            text: "In the amazing city of Seattle, WA, Full Stack and CMS Website Development are not just buzzwords; they're essential tools for any business looking to thrive in the digital world. Full Stack Development offers the full package—from server-side scripting to front-end user interfaces, we've got it all covered. By leveraging cutting-edge technologies like Laravel, we create scalable, high-performance websites that can adapt to your ever-evolving business needs. It's not just about having a functional website; it's about delivering a seamless, end-to-end user experience that turns casual browsers into loyal customers."
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            marks:
+              -
+                type: textAlign
+                attrs:
+                  align: start
+            text: "When it comes to CMS (Content Management Systems) development, we offer unparalleled customization and ease of use. Whether you're a blogging aficionado or an e-commerce mogul, we tailor our CMS solutions to fit your unique needs, giving you the power to update content effortlessly without compromising on design or functionality. Based right here in Seattle, we understand the dynamic, fast-paced nature of this city and tailor our services to meet the demands of a competitive marketplace. Get ready to engage with your audience like never before, thanks to our state-of-the-art Full Stack and CMS solutions."
+          -
+            type: hard_break
+          -
+            type: hard_break
+    type: full_width
+    enabled: true
   -
     id: lglbxul8
     quote:
@@ -194,24 +263,6 @@ blocks:
             text: .
     content_width: three-quarters
     type: full_width
-    enabled: true
-  -
-    id: llx5gdx8
-    quote:
-      -
-        type: paragraph
-        attrs:
-          class: null
-        content:
-          -
-            type: text
-            text: "Ravenna did an amazing job and took the time to learn about our company mission so that our website would be aesthetically pleasing and highly effective. They were flexible and accommodating\_with our schedule and gave thorough weekly reports to keep us updated on progress. We will definitely use Ravenna again for future needs!"
-      -
-        type: paragraph
-        attrs:
-          class: null
-    name_title: 'Marilee - Outpost Space'
-    type: quote
     enabled: true
 template: block-page
 json_citation_data: |-
