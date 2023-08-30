@@ -6,7 +6,7 @@ seo:
   title: 'Leading Seattle Web Design & Development Company'
   description: 'Unlock the full potential of your business with exceptional Website Design and Development services in Seattle, WA. We specialize in creating intuitive, responsive websites that elevate your brand and engage your audience. Get a free consultation today!'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1693364101
+updated_at: 1693364454
 blocks:
   -
     id: leHNoJtE
@@ -83,21 +83,6 @@ blocks:
           -
             type: text
             text: 'At Ravena, we pride ourselves on delivering high-quality websites that are optimized for speed, performance, and user experience. We use the latest web development technologies to ensure your website is responsive, mobile-friendly, and optimized for search engines.'
-      -
-        type: blockquote
-        content:
-          -
-            type: paragraph
-            attrs:
-              class: null
-            content:
-              -
-                type: text
-                text: "Ravenna did an amazing job and took the time to learn about our company mission so that our website would be not only aesthetically pleasing but also highly effective. They were very flexible and accommodating\_with our schedule and gave thorough weekly reports to keep us updated on progress. We will definitely use Ravenna again for future needs!"
-      -
-        type: paragraph
-        attrs:
-          class: null
     content_width: three-quarters
     type: full_width
     enabled: true
@@ -209,6 +194,24 @@ blocks:
             text: .
     content_width: three-quarters
     type: full_width
+    enabled: true
+  -
+    id: llx5gdx8
+    quote:
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: "Ravenna did an amazing job and took the time to learn about our company mission so that our website would be aesthetically pleasing and highly effective. They were flexible and accommodating\_with our schedule and gave thorough weekly reports to keep us updated on progress. We will definitely use Ravenna again for future needs!"
+      -
+        type: paragraph
+        attrs:
+          class: null
+    name_title: 'Marilee - Outpost Space'
+    type: quote
     enabled: true
 template: block-page
 json_citation_data: |-
