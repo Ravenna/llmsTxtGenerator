@@ -6,7 +6,7 @@ seo:
   title: 'Leading Seattle Web Design & Development Company'
   description: 'Unlock the full potential of your business with exceptional Website Design and Development services in Seattle, WA. We specialize in creating intuitive, responsive websites that elevate your brand and engage your audience. Get a free consultation today!'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1693363466
+updated_at: 1693364101
 blocks:
   -
     id: leHNoJtE
@@ -35,15 +35,17 @@ blocks:
         content:
           -
             type: text
-            text: "If you're looking for a Seattle, WA, website developer, you're in luck! At Ravenna, our experienced team of website developers is here to help you create a website that looks great and functions seamlessly."
-      -
-        type: paragraph
-        attrs:
-          class: null
-        content:
+            marks:
+              -
+                type: textAlign
+                attrs:
+                  align: start
+            text: "Hey Seattle, ready to up your digital game? At Ravenna, we don’t just build websites; we craft digital experiences that turn clicks into customers. Based right here in the Emerald City, we're your go-to experts for kickass Website Design and Development. Let's get something done together."
+          -
+            type: hard_break
           -
             type: text
-            text: "As a leading Seattle, WA, website development company, we understand your website is critical to your business's online presence. It's often the first impression that potential customers have of your brand, so it's essential to make it a good one."
+            text: "As a leading Seattle, WA, website design and development company, we understand your website is critical to your business. It's often the first impression that potential customers have of your brand, so it's critical to make it a good one."
       -
         type: heading
         attrs:
@@ -56,7 +58,7 @@ blocks:
                 type: textAlign
                 attrs:
                   align: start
-            text: 'Comprehensive Website Development'
+            text: 'Thoughtful Website Design'
       -
         type: paragraph
         attrs:
@@ -64,7 +66,7 @@ blocks:
         content:
           -
             type: text
-            text: "That's why we take a comprehensive approach to website development. We work closely with our clients to understand their unique needs and goals, and then we design and develop a custom website that meets those requirements."
+            text: "That's why we take a comprehensive approach to website design. We work closely with our clients to understand their unique needs and goals, and then we design a custom website that exceeds those requirements."
       -
         type: paragraph
         attrs:
@@ -81,6 +83,21 @@ blocks:
           -
             type: text
             text: 'At Ravena, we pride ourselves on delivering high-quality websites that are optimized for speed, performance, and user experience. We use the latest web development technologies to ensure your website is responsive, mobile-friendly, and optimized for search engines.'
+      -
+        type: blockquote
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: "Ravenna did an amazing job and took the time to learn about our company mission so that our website would be not only aesthetically pleasing but also highly effective. They were very flexible and accommodating\_with our schedule and gave thorough weekly reports to keep us updated on progress. We will definitely use Ravenna again for future needs!"
+      -
+        type: paragraph
+        attrs:
+          class: null
     content_width: three-quarters
     type: full_width
     enabled: true
