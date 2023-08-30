@@ -6,7 +6,7 @@ seo:
   title: 'Seattle Website Developer | Web Design Company'
   description: 'Ravenna offers website development and web design services in Seattle WA. Our web developers not only aim to make sure your website is fast and responsive, but we also ensure that it works to retain customer leads and engage potential clients.'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1682444123
+updated_at: 1693363142
 blocks:
   -
     id: leHNoJtE
@@ -194,4 +194,62 @@ blocks:
     type: full_width
     enabled: true
 template: block-page
+json_citation_data: |-
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Ravenna Interactive",
+    "url": "https://www.ravennainteractive.com",
+    "telephone": "+1-206-427-0000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Seattle",
+      "addressRegion": "WA",
+      "postalCode": "98101",
+      "addressCountry": "USA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "47.6062",
+      "longitude": "-122.3321"
+    },
+    "image": "https://ravennainteractive.com/assets/img/ravenna.svg",
+    "logo": "https://ravennainteractive.com/logo.jpg",
+    "description": "Specializing in cutting-edge Website Design and Development services in Seattle, Washington. Transform your online presence with responsive design, intuitive UI, and robust back-end solutions.",
+    "priceRange": "$$$",
+    "openingHours": "Mo,Tu,We,Th,Fr 09:00-18:00",
+    "areaServed": {
+      "@type": "GeoShape",
+      "name": "Seattle, Washington",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": "47.6062",
+        "longitude": "-122.3321"
+      }
+    },
+    "serviceArea": {
+      "@type": "AdministrativeArea",
+      "name": "Seattle, Washington"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Web Development Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Website Design"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web Development"
+          }
+        }
+      ]
+    }
+  }
 ---
