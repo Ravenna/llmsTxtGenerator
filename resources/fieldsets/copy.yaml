@@ -25,7 +25,7 @@ fields:
         - btn
         - horizontalrule
         - seafoam
-      save_html: false
+      save_html: true
       toolbar_mode: fixed
       link_noopener: false
       link_noreferrer: false
@@ -36,7 +36,7 @@ fields:
       enable_input_rules: true
       enable_paste_rules: true
       antlers: false
-      remove_empty_nodes: false
+      remove_empty_nodes: true
       display: Copy
       type: bard
       icon: bard
