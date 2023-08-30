@@ -6,7 +6,7 @@ seo:
   title: 'Leading Seattle Web Design & Development Company'
   description: 'Unlock the full potential of your business with exceptional Website Design and Development services in Seattle, WA. We specialize in creating intuitive, responsive websites that elevate your brand and engage your audience. Get a free consultation today!'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1693363407
+updated_at: 1693363466
 blocks:
   -
     id: leHNoJtE
@@ -22,7 +22,7 @@ blocks:
         content:
           -
             type: text
-            text: 'Seattle, WA Website Development'
+            text: 'Seattle, WA Website Design & Development'
     type: hero
     enabled: true
   -
