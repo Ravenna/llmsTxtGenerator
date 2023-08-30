@@ -3,7 +3,7 @@ id: a98fb648-03d3-43b1-90be-f20eb0547515
 blueprint: page
 title: 'Bellevue, Wa Website Development'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1693362230
+updated_at: 1693362853
 seo:
   title: 'Website Design and Development in Bellevue, Washington'
   description: "Specializing in cutting-edge Website Design and Development services in Bellevue, Washington. Transform your online presence with responsive design, intuitive UI, and robust back-end solutions. Let's build your digital future together!"
@@ -111,4 +111,62 @@ blocks:
     block_padding: medium
     content_width: three-quarters
 template: block-page
+json_citation_data: |-
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Ravenna Interactive",
+    "url": "https://ravennainteractive.com",
+    "telephone": "+1-206-427-0000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bellevue",
+      "addressRegion": "WA",
+      "postalCode": "98004",
+      "addressCountry": "USA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "47.6101",
+      "longitude": "-122.2015"
+    },
+    "image": "https://ravennainteractive.com/assets/img/ravenna.svg",
+    "logo": "https://ravennainteractive.com/logo.jpg",
+    "description": "Specializing in cutting-edge Website Design and Development services in Bellevue, Washington. Transform your online presence with responsive design, intuitive UI, and robust back-end solutions.",
+    "priceRange": "$$$",
+    "openingHours": "Mo,Tu,We,Th,Fr 09:00-18:00",
+    "areaServed": {
+      "@type": "GeoShape",
+      "name": "Bellevue, Washington",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": "47.6101",
+        "longitude": "-122.2015"
+      }
+    },
+    "serviceArea": {
+      "@type": "AdministrativeArea",
+      "name": "Bellevue, Washington"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Web Development Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Website Design"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Web Development"
+          }
+        }
+      ]
+    }
+  }
 ---
