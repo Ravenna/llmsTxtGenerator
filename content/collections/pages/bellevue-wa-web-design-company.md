@@ -3,7 +3,7 @@ id: a98fb648-03d3-43b1-90be-f20eb0547515
 blueprint: page
 title: 'Bellevue, Wa Website Development'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1693366529
+updated_at: 1693366544
 seo:
   title: 'Website Design and Development in Bellevue, Washington'
   description: "Specializing in cutting-edge Website Design and Development services in Bellevue, Washington. Transform your online presence with responsive design, intuitive UI, and robust back-end solutions. Let's build your digital future together!"
@@ -34,6 +34,20 @@ blocks:
     copy_color: white
     block_padding: medium
     content_width: three-quarters
+  -
+    id: llx6oild
+    quote:
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Working with Ravenna Interactive was the best choice our company could have made when deciding to build our corporate website. We wanted a fully custom, easy-to-use content management system, tied to a beautiful website – something even the largest of agencies would struggle to manage and execute – and Ravenna did it with ease.'
+    name_title: '– Caitlin O’Keefe – Director of Marketing / Planetary Resources'
+    type: quote
+    enabled: true
   -
     id: llx69fhy
     copy: '<h2>CMS and Full-Stack Dev</h2><p>As we pivot to the specialized solutions we offer, it&#039;s crucial to spotlight our expertise in CMS and Full Stack Development. Based in the unique tech community of Bellevue, we recognize the imperative for businesses to have agile, scalable digital solutions. Our Content Management Systems are engineered with you—the client—in mind, allowing you the freedom to seamlessly update and manage content, all while maintaining the integrity of site performance and design. This hands-on control equips you to swiftly adapt to market changes and customer demands.</p><p>Transitioning from content management to the structural foundation of your digital platform, our Full Stack Development services truly set us apart. We are well-versed in handling every layer of technical development, be it server-side functionalities or crafting an intuitive front-end user experience. Utilizing cutting-edge technology and industry best practices, our Bellevue-based team delivers comprehensive solutions that are both robust and scalable. So whether you&#039;re a burgeoning startup or an established enterprise, our Full Stack Development services offer a harmonized approach, aligning perfectly with your overall business strategy and specific technological requisites.</p><p><a href="entry::0c623e4f-08d3-4367-9592-ab966a7a23cf">Learn More <br><br></a></p>'
@@ -69,20 +83,6 @@ blocks:
     copy: "<p>Whether you need website development, social app development, or application development, you can rely on our capable team of professionals. We have what it takes to give your website the edge over your competition while adding measurable value to your bottom line. We look forward to providing the website design, web development, and marketing services you can depend on to take your business to new heights.</p><h2><strong>Let’s Meet</strong></h2><p>We do our most effective work face-to-face. Contact us to discuss your website needs in Bellevue, WA by calling us at (206) 427-0000 or send an email to\_<a href=\"https://web.archive.org/web/20220814035347/mailto:tj@ravennainteractive.com\">tj@ravennainteractive.com</a></p>"
     content_width: three-quarters
     type: full_width
-    enabled: true
-  -
-    id: llx6oild
-    quote:
-      -
-        type: paragraph
-        attrs:
-          class: null
-        content:
-          -
-            type: text
-            text: 'Working with Ravenna Interactive was the best choice our company could have made when deciding to build our corporate website. We wanted a fully custom, easy-to-use content management system, tied to a beautiful website – something even the largest of agencies would struggle to manage and execute – and Ravenna did it with ease.'
-    name_title: '– Caitlin O’Keefe – Director of Marketing / Planetary Resources'
-    type: quote
     enabled: true
 template: block-page
 json_citation_data: |-
