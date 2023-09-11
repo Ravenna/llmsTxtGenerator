@@ -5,62 +5,7 @@ title: Contact
 blocks:
   -
     id: lgwjtmo9
-    copy:
-      -
-        type: heading
-        attrs:
-          level: 1
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: bold
-              -
-                type: textAlign
-                attrs:
-                  align: 'center !important'
-              -
-                type: bts_span
-                attrs:
-                  class: seafoam
-            text: 'Lets Talk'
-      -
-        type: paragraph
-        attrs:
-          class: null
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: textAlign
-                attrs:
-                  align: center
-            text: "Let's discuss your next Web or App project, digital marketing, or anything else."
-      -
-        type: paragraph
-        attrs:
-          class: null
-        content:
-          -
-            type: text
-            marks:
-              -
-                type: textAlign
-                attrs:
-                  align: center
-            text: "Also, feel free to pick up the phone and call us at\_"
-          -
-            type: text
-            marks:
-              -
-                type: bold
-              -
-                type: textAlign
-                attrs:
-                  align: center
-            text: 206.427.0000
+    copy: "<h1><strong><span style=\"text-align:center !important;display :block\"><span class=\"seafoam\">Lets Talk</span></span></strong></h1><p><span style=\"text-align:center;display :block\">Let&#039;s discuss your next Web or App project, digital marketing, or anything else.</span></p><p><span style=\"text-align:center;display :block\">Also, feel free to pick up the phone and call us at\_<strong>206.427.0000</span></strong></p>"
     type: full_width
     enabled: true
     background_color: '#FFFFFF'
@@ -77,7 +22,7 @@ blocks:
     type: form
     enabled: true
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1682444394
+updated_at: 1694444336
 template: block-page
 seo:
   title: 'Contact Ravenna | Seattle Website Agency'
