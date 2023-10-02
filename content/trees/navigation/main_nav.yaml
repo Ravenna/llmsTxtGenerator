@@ -3,6 +3,9 @@ tree:
     id: 47bbcacd-ac40-4c9b-80a0-6e66c4965f7c
     entry: home
   -
+    id: e8ce280a-a46f-419d-900f-208a51276d24
+    entry: 00e42ad3-97e6-4fbd-ba62-a21a077e0370
+  -
     id: 1e6cfe1e-daaa-44a4-a153-588321c03b97
     entry: 0c623e4f-08d3-4367-9592-ab966a7a23cf
     title: Laravel
@@ -23,19 +26,3 @@ tree:
   -
     id: ec0befbf-ddfe-4ded-9073-584852b76bbc
     entry: e4f69aac-eeb1-4d54-af8e-8c34a3976c6b
-    children:
-      -
-        id: dd602f1f-5c6c-444a-94a6-00e1c930163c
-        entry: c6876c49-3ebe-447e-8867-628c44b4f6b0
-      -
-        id: 2b3aecde-2a21-4528-bd08-34de4b97e562
-        entry: 1623f17e-59f6-4c41-b2fb-c3c5cf13c9c4
-      -
-        id: 03c50e36-4b25-4497-94d7-0a32fb75476b
-        entry: 206f04b3-0db2-401b-92fa-905ef35b1c96
-      -
-        id: 546d3c86-7d11-46ea-b780-4b1ac5801ab9
-        entry: 37b981ea-b088-4bed-93ee-defd713804a6
-      -
-        id: 41959ce4-0dd9-48d2-9c92-4c941866b4a6
-        entry: e1f8db1d-0dca-4754-a62e-536adad519b0
