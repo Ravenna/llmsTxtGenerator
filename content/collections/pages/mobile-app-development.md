@@ -4,7 +4,7 @@ blueprint: page
 title: 'Mobile App Development'
 template: block-page
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1696282502
+updated_at: 1696432489
 blocks:
   -
     id: lmuvwe63
@@ -354,4 +354,7 @@ blocks:
     form: contact
     type: form
     enabled: true
+seo:
+  title: 'Seattle Mobile App Development'
+  description: "Unlock limitless potential with Seattle's premier mobile application development services. Experience cutting-edge design and robust functionality tailored to the Pacific Northwest's innovative spirit."
 ---
