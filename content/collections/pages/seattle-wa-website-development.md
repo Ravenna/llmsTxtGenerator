@@ -6,7 +6,7 @@ seo:
   title: 'Leading Seattle Web Design & Development Company'
   description: 'Elevate your Seattle business with top-notch, responsive web design & development. Engage your audience—book a free consultation now!'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1699641531
+updated_at: 1699642436
 blocks:
   -
     id: leHNoJtE
