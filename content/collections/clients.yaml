@@ -1,9 +1,18 @@
 title: Clients
 template: templates/client
 layout: layout
+mount: e4f69aac-eeb1-4d54-af8e-8c34a3976c6b
 revisions: false
 route: 'clients/{slug}'
 sort_dir: asc
 date_behavior:
   past: public
   future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true
+inject:
+  seo:
+    image: '@seo:social_share_image'

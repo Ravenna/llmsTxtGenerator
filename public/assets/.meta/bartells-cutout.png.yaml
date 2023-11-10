@@ -1,4 +1,5 @@
-data: {  }
+data:
+  alt: 'Bartell Drugs Web and Mobile Prescription Application'
 size: 453889
 last_modified: 1666372601
 width: 1170

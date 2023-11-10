@@ -4,7 +4,7 @@ blueprint: client
 title: 'Space Angels'
 project_objectives: 'Build a secure and comprehensive angel investment application'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1667930189
+updated_at: 1699635370
 apis_integrated:
   - Stripe
   - Mailgun
@@ -40,10 +40,10 @@ about:
         type: text
         text: 'Investor Features:'
   -
-    type: bullet_list
+    type: bulletList
     content:
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -52,7 +52,7 @@ about:
                 type: text
                 text: 'Review curated investment opportunities'
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -61,7 +61,7 @@ about:
                 type: text
                 text: 'Complete investments including digitally signing the appropriate documents'
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -70,7 +70,7 @@ about:
                 type: text
                 text: 'Manage payment methods, investment funding methods, and investment entities'
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -79,7 +79,7 @@ about:
                 type: text
                 text: 'Clear and in-depth investment reporting over the life of an investment'
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -88,7 +88,7 @@ about:
                 type: text
                 text: 'Self-selecting interest in future deals'
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -105,10 +105,10 @@ about:
         type: text
         text: 'Key Admin features:'
   -
-    type: bullet_list
+    type: bulletList
     content:
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -117,7 +117,7 @@ about:
                 type: text
                 text: 'Create and manage investment opportunities'
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -126,7 +126,7 @@ about:
                 type: text
                 text: "Reporting on KPI's related to investments, users, interactions and more"
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -135,7 +135,7 @@ about:
                 type: text
                 text: 'Full user lifecycle management including reviewing applications, approving, limited access, soft deleting, and full removal'
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -144,7 +144,7 @@ about:
                 type: text
                 text: 'Investment management including ach and wire payment handling, countersigning documents inside the admin and handling recurring payments'
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph

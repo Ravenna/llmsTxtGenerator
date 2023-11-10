@@ -1,5 +1,7 @@
 title: Articles
-template: templates/articles
+template: templates/article
+layout: layout
+mount: d96e951d-1351-4575-9eda-8d4568982116
 taxonomies:
   - categories
   - tags

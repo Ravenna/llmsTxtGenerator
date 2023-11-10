@@ -1,6 +1,0 @@
-id: 263ac662-da62-4ad5-97ed-12f432da75cf
-enabled: true
-source: '/articles/how-to-budget-for-web-and-mobile-application-development-outside-of-actual-dev-costs(.*)'
-destination: /articles/budgeting-web-and-mobile-application-development$1
-type: '301'
-match_type: regex

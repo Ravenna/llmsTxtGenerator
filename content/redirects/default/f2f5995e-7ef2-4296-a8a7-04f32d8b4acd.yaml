@@ -1,6 +1,0 @@
-id: f2f5995e-7ef2-4296-a8a7-04f32d8b4acd
-enabled: true
-source: /laravel-development-services/
-destination: laravel-web-application-development-services/
-type: '302'
-match_type: exact

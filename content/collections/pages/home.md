@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 1d1068ab-208d-480d-a677-dda65fe0f490
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1686930110
+updated_at: 1699637761
 json_citation_data: |-
   {
   	"@context": "https://schema.org",
@@ -41,4 +41,6 @@ json_citation_data: |-
   		"https://www.facebook.com/RavennaInteractive/"
   	]
   }
+social_image: ravenna-com-og-cover.png
+social_share_image: ravenna-com-og-cover.png
 ---

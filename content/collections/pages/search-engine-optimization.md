@@ -3,7 +3,7 @@ id: 7b3ae71b-1438-42d7-a334-f15906060894
 blueprint: page
 title: SEO
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1693366350
+updated_at: 1699641558
 blocks:
   -
     id: 1pzpfW8k
@@ -74,7 +74,7 @@ blocks:
                   align: left
             text: SEO
           -
-            type: hard_break
+            type: hardBreak
             marks:
               -
                 type: bold
@@ -92,7 +92,7 @@ blocks:
                 attrs:
                   align: left
               -
-                type: bts_span
+                type: btsSpan
                 attrs:
                   class: seafoam
             text: Packages
@@ -125,7 +125,7 @@ blocks:
                   -
                     type: bold
                   -
-                    type: bts_span
+                    type: btsSpan
                     attrs:
                       class: seafoam
                 text: Baseline
@@ -152,10 +152,10 @@ blocks:
                     type: bold
                 text: 'SEO Monitoring'
           -
-            type: bullet_list
+            type: bulletList
             content:
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -166,7 +166,7 @@ blocks:
                         type: text
                         text: 'Identify important keywords'
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -177,7 +177,7 @@ blocks:
                         type: text
                         text: 'Track keyword positions for you and your competitors'
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -188,7 +188,7 @@ blocks:
                         type: text
                         text: 'Track SERP results'
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -214,7 +214,7 @@ blocks:
                   -
                     type: bold
                   -
-                    type: bts_span
+                    type: btsSpan
                     attrs:
                       class: seafoam
                 text: Grow
@@ -241,10 +241,10 @@ blocks:
                     type: bold
                 text: 'Active SEO'
           -
-            type: bullet_list
+            type: bulletList
             content:
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -255,7 +255,7 @@ blocks:
                         type: text
                         text: 'Dedicated SEO Analyst'
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -266,7 +266,7 @@ blocks:
                         type: text
                         text: 'SEO content writing'
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -277,7 +277,7 @@ blocks:
                         type: text
                         text: 'Site structure improvements'
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -288,7 +288,7 @@ blocks:
                         type: text
                         text: 'Technical and Local (if appropriate) SEO'
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -314,7 +314,7 @@ blocks:
                   -
                     type: bold
                   -
-                    type: bts_span
+                    type: btsSpan
                     attrs:
                       class: seafoam
                 text: Crush
@@ -338,10 +338,10 @@ blocks:
                 type: text
                 text: 'On-page and Off-page SEO'
           -
-            type: bullet_list
+            type: bulletList
             content:
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -352,7 +352,7 @@ blocks:
                         type: text
                         text: 'Everything from the other plans'
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -363,7 +363,7 @@ blocks:
                         type: text
                         text: 'Link building'
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -374,7 +374,7 @@ blocks:
                         type: text
                         text: 'PPC recommendations'
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -404,7 +404,7 @@ blocks:
                 attrs:
                   align: center
               -
-                type: bts_span
+                type: btsSpan
                 attrs:
                   class: seafoam
             text: 'Everything Everywhere All at Once'
@@ -459,4 +459,5 @@ template: block-page
 seo:
   title: 'Seattle, WA Search Engine Optimization'
   description: 'Seattle Organic SEO. Search Engine Optimization Services. Quality SEO Agency Using Empirically Successful Tactics for Visibility Expansion.'
+social_share_image: ravenna-com-og-cover.png
 ---

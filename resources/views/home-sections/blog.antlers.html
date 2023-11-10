@@ -10,15 +10,15 @@
                 <div class="col-12 col-md-4 mb-5">
                     {{ if background_image }}                        
                         <div class="blog-thumb mb-4" style="background-image: url({{ background_image }});">
-                            <a href="{{ url }}"></a>
+                            <a href="{{ url }}" title="{{ title }}"></a>
                         </div>
                     {{ elseif thumbnail}}
                         <div class="blog-thumb mb-4" style="background-image: url({{ thumbnail }});">
-                            <a href="{{ url }}"></a>
+                            <a href="{{ url }}" class="title"></a>
                         </div>
                     {{ /if }}
                     <h4 class="mb-3">{{ title }}</h4>
-                    <a href="{{ url }}" class="btn">Read It</a>
+                    <a href="{{ url }}" class="btn" title="{{ title }}">Read It</a>
                 </div>
             {{ /collection }}
         </div>

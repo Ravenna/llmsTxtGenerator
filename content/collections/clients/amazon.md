@@ -4,7 +4,7 @@ blueprint: client
 title: Amazon
 logo: amazon.jpg
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1667925761
+updated_at: 1699635238
 about:
   -
     type: paragraph
@@ -44,12 +44,12 @@ result:
         type: text
         text: 'We landed on a two-part application structure.   '
   -
-    type: ordered_list
+    type: orderedList
     attrs:
       order: 1
     content:
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -58,7 +58,7 @@ result:
                 type: text
                 text: "Users would not be required to log into anything. This saved having to create and maintain a user database when the database already existed in Amazon's hiring systems. A user could select a few key options and those options would be cached for them."
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph

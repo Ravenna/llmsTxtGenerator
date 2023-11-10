@@ -1,6 +1,7 @@
-data: {  }
+data:
+  alt: 'Space Angels Ascend Points System'
 size: 166676
-last_modified: 1667489434
+last_modified: 1667489612
 width: 1251
 height: 643
 mime_type: image/png

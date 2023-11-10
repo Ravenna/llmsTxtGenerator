@@ -41,10 +41,10 @@ about:
         type: text
         text: 'We have supported several specific websites:'
   -
-    type: bullet_list
+    type: bulletList
     content:
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -64,7 +64,7 @@ about:
                 type: text
                 text: ' - The main site for Blue Origin. Is not just a flat site, it also leverages AWS Lambda for interactivity in multiple ways.'
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -84,7 +84,7 @@ about:
                 type: text
                 text: ' - NASA awarded Blue Origin and several partners the contract to build the next space station.  This website shows off the direction, the partners, and amazing renderings of how the station will look'
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -108,7 +108,7 @@ apis_integrated:
   - 'AWS SES'
   - 'AWS EC2'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1667933452
+updated_at: 1699634426
 logo: img/blue-origin.svg
 result:
   -
@@ -124,5 +124,5 @@ gallery:
 one_image: false
 seo:
   title: 'Blue Origin Statamic Websites'
-  description: 'Ravenna built Blue Origin multiple Statamic websites.'
+  description: "Discover Ravenna's web solutions for Blue Origin: featuring the main website and the 'Club for Future' kids club, showcasing our diverse web development expertise."
 ---

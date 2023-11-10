@@ -4,8 +4,9 @@ blueprint: page
 template: templates/statamic
 title: 'Statamic Development Services'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1667331117
+updated_at: 1699641479
 seo:
   title: 'Seattle Statamic Development Services'
-  description: 'Seattle Statamic development services for building your beautiful website.'
+  description: 'Expert Statamic development services in Seattle, WA. Elevate your web presence with our custom, efficient Statamic CMS solutions tailored to your needs.'
+social_share_image: ravenna-com-og-cover.png
 ---

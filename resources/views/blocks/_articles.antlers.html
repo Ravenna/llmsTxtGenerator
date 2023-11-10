@@ -1,14 +1,5 @@
-<div class="container articles-wrapper">
-
-    <div class="hero">
-        <h1 class="seafoam mb-5">Articles</h1>
-        <div class="row">
-            <div class="col-12 col-md-8 col-lg-8">
-                <p>Dr Seuss said "Oh the thinks you think".  So we thought about it and decided to write down our thinking.  These articles represent decades of combined experience in the web and mobile industry.</p>
-
-            </div>
-        </div>
-    </div>
+<div class="block-section articles-wrapper mt-5 pt-5">
+    <div class="container">
     <div class="row">
         {{ collection:articles paginate="6" as="posts" }}
             {{ if no_results }}
@@ -34,7 +25,7 @@
             {{ /posts }}
         
             {{ paginate }}
-                <nav aria-label="Articles links" class="d-flex flex-row justify-content-center">
+                <nav aria-label="Articles links" class="mt-5 d-flex flex-row justify-content-center">
                     <ul class="pagination">
                         {{ if prev_page }}
                             <li class="page-item"><a class="page-link" href="{{ prev_page }}">&laquo;</a></li>
@@ -60,5 +51,6 @@
             {{ /paginate }}
 
         {{ /collection:articles }}
+    </div>
     </div>
 </div>

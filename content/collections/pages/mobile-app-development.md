@@ -4,7 +4,7 @@ blueprint: page
 title: 'Mobile App Development'
 template: block-page
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1696432540
+updated_at: 1699641609
 blocks:
   -
     id: lmuvwe63
@@ -117,12 +117,12 @@ blocks:
                 type: text
                 text: 'For us, the process is straightforward:'
           -
-            type: ordered_list
+            type: orderedList
             attrs:
               order: 1
             content:
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -133,7 +133,7 @@ blocks:
                         type: text
                         text: "Get to know you, your business, what makes things work, and what doesn't"
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -144,7 +144,7 @@ blocks:
                         type: text
                         text: 'Defining a clear target-user '
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -155,7 +155,7 @@ blocks:
                         type: text
                         text: 'Map features and technology'
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -166,7 +166,7 @@ blocks:
                         type: text
                         text: 'Build user journeys to help make sure that each user is supported and their experience is clear'
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -177,7 +177,7 @@ blocks:
                         type: text
                         text: 'Design a beautiful and/or utilitarian app'
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -188,7 +188,7 @@ blocks:
                         type: text
                         text: 'Develop the app'
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -199,7 +199,7 @@ blocks:
                         type: text
                         text: 'Connect with you weekly to make sure things are going according to plan'
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -210,7 +210,7 @@ blocks:
                         type: text
                         text: 'Test the crap out of things'
               -
-                type: list_item
+                type: listItem
                 content:
                   -
                     type: paragraph
@@ -347,7 +347,7 @@ blocks:
                 attrs:
                   align: center
               -
-                type: bts_span
+                type: btsSpan
                 attrs:
                   class: seafoam
             text: "Let's get started on your idea!"
@@ -358,4 +358,5 @@ seo:
   title: 'Seattle Mobile App Development'
   description: "Unlock limitless potential with Seattle's premier mobile application development services. Experience cutting-edge design and robust functionality tailored to the Pacific Northwest's innovative spirit."
   canonical_url: 'https://ravennainteractive.com/mobile-app-development'
+social_share_image: ravenna-com-og-cover.png
 ---

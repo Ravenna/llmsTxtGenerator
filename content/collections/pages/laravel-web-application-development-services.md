@@ -4,7 +4,7 @@ blueprint: page
 template: templates/laravel
 title: 'Laravel Development Services'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1681758421
+updated_at: 1699641419
 seo:
   title: 'Seattle, WA Laravel Development'
   description: 'Seattle WA Laravel development services for building web applications, APIs, micro-services and more.'
@@ -70,4 +70,5 @@ faqs:
             text: 'There are several ways to keep this from happening. The best place to solve this problem is during the planning and strategy part of a project. Not that every outcome can be planned for, but good planning can save the project in many ways. That said, sometimes things change. A stakeholder changes their perspective, market forces dictate a change or an outside factor that couldn’t be planned for. We will work hard, have integrity, and communicate with you at all times to keep the project on time and within budget.'
     type: faq
     enabled: true
+social_share_image: laravel-blog-hero.png
 ---

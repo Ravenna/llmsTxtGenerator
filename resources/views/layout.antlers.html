@@ -35,6 +35,7 @@
         {{ /if }}
 
         {{ partial src="includes/schema" }}
+
     </head>
     <body class="{{ if !is_homepage }} not-homepage {{ /if }} {{ if collection == 'clients' }} client-template {{ /if }} {{template}}-template">
         <div id="app" class="wrapper">

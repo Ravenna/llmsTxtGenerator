@@ -1,6 +1,0 @@
-id: 300028a8-8449-4608-beda-a5fb7aec6a8a
-enabled: true
-source: '/laravel-development-services(.*)'
-destination: /laravel-web-application-development-services$1
-type: '301'
-match_type: regex

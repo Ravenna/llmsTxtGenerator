@@ -11,7 +11,7 @@ about:
         type: text
         text: "Seattle Seahawks head coach Pete Carrol and performance psychologist Michael Gervais wanted to offer high-performance mindset training to individuals and businesses. \_ They had developed a curriculum around 16 principles and were offering it using an off-the-shelf learning management system (LMS).\_"
       -
-        type: hard_break
+        type: hardBreak
   -
     type: paragraph
     content:
@@ -82,10 +82,10 @@ about:
         type: text
         text: 'The features included:'
   -
-    type: bullet_list
+    type: bulletList
     content:
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -94,7 +94,7 @@ about:
                 type: text
                 text: "Tracking a trainee's progress through training modules on a granular level, including tracking progress through video and quiz content.  "
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -103,7 +103,7 @@ about:
                 type: text
                 text: 'Leaderboard and gamification for teams or cohorts of users'
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -112,7 +112,7 @@ about:
                 type: text
                 text: 'One-on-one chatting and interacting with coaches'
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -121,7 +121,7 @@ about:
                 type: text
                 text: 'Public and private trainee profile pages'
       -
-        type: list_item
+        type: listItem
         content:
           -
             type: paragraph
@@ -158,7 +158,7 @@ apis_integrated:
   - Mailgun
   - Pusher
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1667932721
+updated_at: 1699635314
 logo: c2c_logo.jpg
 one_image: false
 gallery:

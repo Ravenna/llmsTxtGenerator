@@ -1,4 +1,5 @@
-data: {  }
+data:
+  alt: 'Compete to Create Instant Messaging'
 size: 474260
 last_modified: 1666373310
 width: 1280
