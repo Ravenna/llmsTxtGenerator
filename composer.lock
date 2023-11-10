@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea223f1ef285596aa37699eca99ca3ec",
+    "content-hash": "dcca1878cd8f069b06052afcf71c880b",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -124,6 +124,57 @@
                 "source": "https://github.com/asm89/stack-cors/tree/v2.1.1"
             },
             "time": "2022-01-18T09:12:03+00:00"
+        },
+        {
+            "name": "avanerk/statamic-image-to-webp",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avanerk/statamic-image-to-webp.git",
+                "reference": "7e20bfbf247725dda23fa52b84e07e6aa191fb80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/avanerk/statamic-image-to-webp/zipball/7e20bfbf247725dda23fa52b84e07e6aa191fb80",
+                "reference": "7e20bfbf247725dda23fa52b84e07e6aa191fb80",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "statamic/cms": "^3.3 || ^4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.14",
+                "orchestra/testbench": "^7.16",
+                "pestphp/pest": "^1.22"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Image to WebP converter",
+                    "description": "Converts images to WebP format"
+                },
+                "laravel": {
+                    "providers": [
+                        "Avanerk\\ImageToWebP\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Avanerk\\ImageToWebP\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Converts uploaded images to WebP",
+            "support": {
+                "issues": "https://github.com/avanerk/statamic-image-to-webp/issues",
+                "source": "https://github.com/avanerk/statamic-image-to-webp/tree/1.2.0"
+            },
+            "time": "2023-10-31T10:31:07+00:00"
         },
         {
             "name": "brick/math",

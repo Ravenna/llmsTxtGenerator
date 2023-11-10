@@ -1,6 +1,5 @@
 title: Articles
-template: templates/article
-layout: layout
+template: templates/articles
 taxonomies:
   - categories
   - tags
@@ -13,11 +12,13 @@ date_behavior:
   future: private
 preview_targets:
   -
-    label: Entry
+    label: Article
     url: '{permalink}'
+    refresh: true
 inject:
   seo:
     title: '@seo:title'
     image: '@seo:social_share_image'
 structure:
-  root: false
+  root: true
+  slugs: true

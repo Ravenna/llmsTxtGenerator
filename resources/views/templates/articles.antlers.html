@@ -1,26 +1,64 @@
-<div class="container">
+<div class="container articles-wrapper">
 
     <div class="hero">
         <h1 class="seafoam mb-5">Articles</h1>
-        <p>After 15+ years our list of clients is long.  But its not the size that matters, but its the motion of the ocean.</p>
-    </div>
-    <div class="client-boxes" x-data="{
-        rotate: [
-            'rotate-one',
-            'rotate-two',
-            'rotate-three'
-        ],
-        random(){
-            return this.rotate[(Math.random() * this.rotate.length) | 0];
-        }
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-8">
+                <p>Dr Seuss said "Oh the thinks you think".  So we thought about it and decided to write down our thinking.  These articles represent decades of combined experience in the web and mobile industry.</p>
 
-    }">
-        {{ collection:clients }}
-            <div class="client-box" :class="random">
-                <a href="{{ url }}" title="{{ title }}">
-                    <img src="{{ logo }}" alt="{{ title }}">
-                </a>
             </div>
-        {{ /collection:clients }}
+        </div>
+    </div>
+    <div class="row">
+        {{ collection:articles paginate="6" as="posts" }}
+            {{ if no_results }}
+                <p>Aww, there are no results.</p>
+            {{ /if }}
+
+            {{ posts }}
+                    <div class="col-12 col-md-4 mb-5 blog-listing-item">
+                        <article>
+                            {{ if background_image }}                        
+                                <div class="blog-thumb mb-4" style="background-image: url({{ background_image }});">
+                                    <a href="{{ url }}"></a>
+                                </div>
+                            {{ elseif thumbnail}}
+                                <div class="blog-thumb mb-4" style="background-image: url({{ thumbnail }});">
+                                    <a href="{{ url }}"></a>
+                                </div>
+                            {{ /if }}
+                            <h4 class="mb-3"><a href="{{ url }}">{{ title }}</a></h4>
+                            <a href="{{ url }}" class="btn">Read It</a>
+                        </article>
+                    </div>
+            {{ /posts }}
+        
+            {{ paginate }}
+                <nav aria-label="Articles links" class="d-flex flex-row justify-content-center">
+                    <ul class="pagination">
+                        {{ if prev_page }}
+                            <li class="page-item"><a class="page-link" href="{{ prev_page }}">&laquo;</a></li>
+                        {{ else }}
+                            <li class="page-item disabled"><a href="#" class="page-link disabled"><span>&laquo;</span></a></li>
+                        {{ /if }}
+
+                        {{ links:all }}
+                            {{ if page == current_page }}
+                                <li class="page-item active"><a href="" class="page-link disabled"><span>{{ page }}</span></a></li>
+                            {{ else }}
+                                <li class="page-item"><a class="page-link" href="{{ url }}">{{ page }}</a></li>
+                            {{ /if }}
+                        {{ /links:all }}
+
+                        {{ if next_page }}
+                            <li class="page-item"><a class="page-link" href="{{ next_page }}">&raquo;</a></li>
+                        {{ else }}
+                            <li class="page-item disabled"><a href="" class="page-link disabled"><span>&raquo;</span></a></li>
+                        {{ /if }}
+                    </ul>
+                </nav>
+            {{ /paginate }}
+
+        {{ /collection:articles }}
     </div>
 </div>
