@@ -1,0 +1,6 @@
+id: 5cc35eff-8c6c-4be9-ac10-b996e05e9cdb
+enabled: true
+source: '/articles/unleashing-the-power-of-digital-innovation-discover-the-top-seattle-web-design-company-for-your-business-success(.*)'
+destination: /articles/unleashing-the-power-of-digital-innovation$1
+type: '301'
+match_type: regex

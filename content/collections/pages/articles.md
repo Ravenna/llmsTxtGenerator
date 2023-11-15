@@ -31,6 +31,9 @@ blocks:
     type: articles
     enabled: true
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1700066479
+updated_at: 1700068821
 template: block-page
+seo:
+  title: 'Our Thinking | Seattle Website Development | Page {{ get:page ?? "1"}}'
+  description: 'Our Thinking about topics ranging from web and mobile development to design and SEO Page {{ get:page ?? "1"}}'
 ---
