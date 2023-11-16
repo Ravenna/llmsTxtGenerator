@@ -3,7 +3,7 @@ id: a98fb648-03d3-43b1-90be-f20eb0547515
 blueprint: page
 title: 'Bellevue, Wa Website Development'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1700066914
+updated_at: 1700179077
 seo:
   title: 'Website Design and Development in Bellevue, Washington'
   description: "Revamp your web presence with our Bellevue-based design & dev services—responsive, intuitive, and robust. Let's craft your digital future!"
@@ -109,15 +109,29 @@ json_citation_data: |-
     "description": "Specializing in cutting-edge Website Design and Development services in Bellevue, Washington. Transform your online presence with responsive design, intuitive UI, and robust back-end solutions.",
     "priceRange": "$$$",
     "openingHours": "Mo,Tu,We,Th,Fr 09:00-18:00",
-    "areaServed": {
-      "@type": "GeoShape",
-      "name": "Bellevue, Washington",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": "47.6101",
-        "longitude": "-122.2015"
-      }
+  "areaServed": [{
+      "@type": "City",
+      "name": "Seattle",
+      "sameAs": "https://en.wikipedia.org/wiki/Ottawa"
     },
+    {
+      "@type": "City",
+      "name": "Everett",
+      "sameAs": "https://en.wikipedia.org/wiki/Toronto"
+    },{
+      "@type": "City",
+      "name": "Bothell",
+      "sameAs": "https://en.wikipedia.org/wiki/Ottawa"
+    },{
+      "@type": "City",
+      "name": "Redmond",
+      "sameAs": "https://en.wikipedia.org/wiki/Ottawa"
+    },{
+      "@type": "City",
+      "name": "Bellevue",
+      "sameAs": "https://en.wikipedia.org/wiki/Ottawa"
+    }] 
+  }
     "serviceArea": {
       "@type": "AdministrativeArea",
       "name": "Bellevue, Washington"

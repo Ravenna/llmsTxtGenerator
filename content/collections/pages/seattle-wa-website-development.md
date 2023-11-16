@@ -6,7 +6,7 @@ seo:
   title: 'Leading Seattle Web Design & Development Company'
   description: 'Elevate your Seattle business with top-notch, responsive web design & development. Engage your audience—book a free consultation now!'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1700066832
+updated_at: 1700179050
 blocks:
   -
     id: leHNoJtE
@@ -105,15 +105,30 @@ json_citation_data: |-
     "description": "Specializing in cutting-edge Website Design and Development services in Seattle, Washington. Transform your online presence with responsive design, intuitive UI, and robust back-end solutions.",
     "priceRange": "$$$",
     "openingHours": "Mo,Tu,We,Th,Fr 09:00-18:00",
-    "areaServed": {
-      "@type": "GeoShape",
-      "name": "Seattle, Washington",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": "47.6062",
-        "longitude": "-122.3321"
-      }
+  "areaServed": [{
+      "@type": "City",
+      "name": "Seattle",
+      "sameAs": "https://en.wikipedia.org/wiki/Ottawa"
     },
+    {
+      "@type": "City",
+      "name": "Everett",
+      "sameAs": "https://en.wikipedia.org/wiki/Toronto"
+    },{
+      "@type": "City",
+      "name": "Bothell",
+      "sameAs": "https://en.wikipedia.org/wiki/Ottawa"
+    },{
+      "@type": "City",
+      "name": "Redmond",
+      "sameAs": "https://en.wikipedia.org/wiki/Ottawa"
+    },{
+      "@type": "City",
+      "name": "Bellevue",
+      "sameAs": "https://en.wikipedia.org/wiki/Ottawa"
+    }] 
+  }
+
     "serviceArea": {
       "@type": "AdministrativeArea",
       "name": "Seattle, Washington"
