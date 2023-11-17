@@ -1,0 +1,6 @@
+id: 4759affc-d1e8-49b7-932d-95dd01c40b3b
+enabled: true
+source: '/articles(.*)'
+destination: /our-thinking$1
+type: '301'
+match_type: regex
