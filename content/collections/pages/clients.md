@@ -4,7 +4,7 @@ blueprint: page
 title: Clients
 template: templates/clients
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1700243940
+updated_at: 1700262594
 seo:
   title: 'Ravenna | Our Clients'
   description: 'Meet our satisfied clients and explore successful projects at Ravenna. Discover how we tailor solutions to each unique digital challenge.'
@@ -47,7 +47,7 @@ blocks:
             content:
               -
                 type: text
-                text: 'Our preference is to partner with you on your web and mobile projects.  We are not good order takers; we crush it when we partner with you on the goals, strategy, and planning to launch.'
+                text: 'Our preference is to partner with you on your web and mobile projects.  We are not good order takers; we crush it when we partner with you on the goals, strategy, and planning to launch.  We love sweating the details and giving a shit about what we are doing.'
           -
             type: paragraph
             attrs:
@@ -92,6 +92,17 @@ blocks:
                       -
                         type: text
                         text: 'Vue / React'
+              -
+                type: listItem
+                content:
+                  -
+                    type: paragraph
+                    attrs:
+                      class: null
+                    content:
+                      -
+                        type: text
+                        text: 'Mobile application development + related backend systems'
               -
                 type: listItem
                 content:
@@ -151,5 +162,23 @@ blocks:
         type: column
         enabled: true
     type: columns
+    enabled: true
+  -
+    id: lp38e82r
+    quote:
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Ravenna Interactive has provided Space Angels with incredible Laravel development services since 2015. Our online investment platform is critical to the success of our business. Ravenna has been instrumental in the development of this platform. Ravenna has been great to work with and I highly recommend them.'
+      -
+        type: paragraph
+        attrs:
+          class: null
+    name_title: 'Chad Anderson - Managing Partner at Space Capital'
+    type: quote
     enabled: true
 ---
