@@ -4,7 +4,7 @@ blueprint: page
 title: 'Mobile App Development'
 template: block-page
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1699641609
+updated_at: 1700179587
 blocks:
   -
     id: lmuvwe63
@@ -47,11 +47,6 @@ blocks:
         content:
           -
             type: text
-            marks:
-              -
-                type: textAlign
-                attrs:
-                  align: center
             text: 'Start-to-Finish Mobile App Development'
     columns_per_row: 2
     columns:
@@ -232,11 +227,6 @@ blocks:
         content:
           -
             type: text
-            marks:
-              -
-                type: textAlign
-                attrs:
-                  align: start
             text: "Ravenna stands as one of Seattle's top-tier app development service companies. Our extensive knowledge and collective years in mobile design and software development create a fantastic environment to get your app built. Our commitment is to transform your vision into reality, underpinned by our industry-leading methodologies."
       -
         type: paragraph
@@ -245,11 +235,6 @@ blocks:
         content:
           -
             type: text
-            marks:
-              -
-                type: textAlign
-                attrs:
-                  align: start
             text: "We have extensive domain expertise to align with your specific needs. In Seattle and nationally, we've successfully aided various organizations—from startups to enterprises to nonprofits—in crafting the right solutions and scaling them effectively."
     copy_color: white
     block_padding: medium
@@ -271,11 +256,6 @@ blocks:
         content:
           -
             type: text
-            marks:
-              -
-                type: textAlign
-                attrs:
-                  align: center
             text: 'Great mobile apps start with listening'
     columns_per_row: 2
     columns:
@@ -324,7 +304,21 @@ blocks:
             content:
               -
                 type: text
-                text: 'We are not the biggest firm out there. Plenty of companies have more people.  We bring our expertise, from working in the Seattle, WA, area for the last 15+ years, to bear on your project.  '
+                text: 'We are not the biggest firm out there. Plenty of companies have more people.  We bring our '
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'statamic://entry::d41fba62-7ec2-40db-90cb-9e7d47e9ecb5'
+                      rel: null
+                      target: null
+                      title: 'Mobile App Development Expertise'
+                text: 'Moble App Development expertise'
+              -
+                type: text
+                text: ', from working in the Seattle, WA, area for the last 15+ years, to bear on your project.  '
         type: column
         enabled: true
     type: columns
@@ -342,10 +336,6 @@ blocks:
             marks:
               -
                 type: bold
-              -
-                type: textAlign
-                attrs:
-                  align: center
               -
                 type: btsSpan
                 attrs:
