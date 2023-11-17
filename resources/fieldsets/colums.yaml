@@ -62,49 +62,93 @@ fields:
       collapse: true
       previews: true
       sets:
-        column:
-          display: Column
-          fields:
-            -
-              handle: content
-              field:
-                collapse: false
-                always_show_set_button: false
-                previews: true
-                buttons:
-                  - h2
-                  - h3
-                  - bold
-                  - italic
-                  - unorderedlist
-                  - orderedlist
-                  - removeformat
-                  - quote
-                  - anchor
-                  - image
-                  - table
-                  - h4
-                  - h5
-                  - seafoam
-                save_html: false
-                toolbar_mode: fixed
-                link_noopener: false
-                link_noreferrer: false
-                target_blank: false
-                reading_time: false
-                fullscreen: true
-                allow_source: true
-                enable_input_rules: true
-                enable_paste_rules: true
-                antlers: false
-                remove_empty_nodes: false
-                display: Content
-                type: bard
-                icon: bard
-                listable: hidden
-                instructions_position: above
-                visibility: visible
-                always_save: false
+        main:
+          display: Main
+          instructions: null
+          icon: null
+          sets:
+            column:
+              display: Column
+              instructions: null
+              icon: null
+              fields:
+                -
+                  handle: content
+                  field:
+                    collapse: false
+                    always_show_set_button: false
+                    previews: true
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - quote
+                      - anchor
+                      - table
+                      - h4
+                      - h5
+                      - seafoam
+                      - image
+                    save_html: false
+                    toolbar_mode: fixed
+                    link_noopener: false
+                    link_noreferrer: false
+                    target_blank: false
+                    reading_time: false
+                    fullscreen: true
+                    allow_source: true
+                    enable_input_rules: true
+                    enable_paste_rules: true
+                    antlers: false
+                    remove_empty_nodes: false
+                    display: Content
+                    type: bard
+                    icon: bard
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    always_save: false
+                    replicator_preview: true
+                    smart_typography: false
+                    inline: false
+                    word_count: false
+                    hide_display: false
+                    unless:
+                      use_image_instead: 'equals true'
+                -
+                  handle: use_image_instead
+                  field:
+                    default: false
+                    type: toggle
+                    display: 'Use image instead'
+                    icon: toggle
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                -
+                  handle: column_image
+                  field:
+                    max_files: 1
+                    mode: list
+                    container: assets
+                    restrict: false
+                    allow_uploads: true
+                    show_filename: true
+                    show_set_alt: true
+                    type: assets
+                    display: 'Column Image'
+                    icon: assets
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
       display: Columns
       type: replicator
       icon: replicator
@@ -112,6 +156,9 @@ fields:
       instructions_position: above
       visibility: visible
       always_save: false
+      replicator_preview: true
+      fullscreen: true
+      hide_display: false
   -
     handle: outro
     field:
