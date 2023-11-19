@@ -1,6 +1,6 @@
 id: dae9aa37-9c17-4315-9d24-7e079d90ad27
 enabled: true
-source: /client/
+source: '/client/(.*)'
 destination: /clients/
 type: '301'
 match_type: exact
