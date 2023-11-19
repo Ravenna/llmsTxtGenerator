@@ -1,0 +1,6 @@
+id: 694ea47c-2dae-44ca-b0e2-9bb5177c3c82
+enabled: true
+source: /laravel-development-services
+destination: /laravel-web-application-development-services
+type: '301'
+match_type: exact
