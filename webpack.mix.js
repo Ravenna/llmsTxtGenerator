@@ -6,6 +6,7 @@ mix.js('resources/js/site.js', 'public/js')
     .sass('resources/scss/site.scss', 'public/css')
     .sass('resources/scss/head.scss', 'public/css')
     .options({
+        minify: true,
     	processCssUrls: false,
     	uglify: mix.inProduction(),
         postCss: [
