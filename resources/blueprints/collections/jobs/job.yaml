@@ -70,6 +70,18 @@ tabs:
             field:
               type: slug
               localizable: true
+          -
+            handle: short_description
+            field:
+              antlers: false
+              type: textarea
+              display: 'Short Description'
+              icon: textarea
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
   SEO:
     display: SEO
     sections:

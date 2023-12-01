@@ -1,0 +1,6 @@
+id: 39451ccb-c24b-413a-a7fb-5b761e77ae2d
+enabled: true
+source: /sitemap/
+destination: /sitemap.xml
+type: '301'
+match_type: exact

@@ -154,6 +154,22 @@ tabs:
                             visibility: visible
                             replicator_preview: true
                             hide_display: false
+                    careers:
+                      display: Careers
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: careers
+                          field:
+                            type: section
+                            display: Careers
+                            icon: section
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
               display: Blocks
               type: replicator
               icon: replicator

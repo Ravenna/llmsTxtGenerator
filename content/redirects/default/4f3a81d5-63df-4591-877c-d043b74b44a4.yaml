@@ -1,6 +1,6 @@
-id: dae9aa37-9c17-4315-9d24-7e079d90ad27
+id: 4f3a81d5-63df-4591-877c-d043b74b44a4
 enabled: true
-source: '/client/(.*)'
+source: '/m/client/(.*)'
 destination: /clients
 type: '301'
 match_type: regex

@@ -3,7 +3,7 @@ id: a53375cc-85a4-4f79-b51b-3f6aed298fdc
 blueprint: job
 title: 'Mid-level Laravel Developer'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1701364103
+updated_at: 1701391899
 body:
   -
     type: heading
@@ -44,15 +44,6 @@ body:
       -
         type: text
         text: 'We are looking to hire a full-stack developer to work closely with our team at Ravenna to produce engaging products for our customers. Your time will be spent across the stack, sometimes more focused on the backend, other times writing or tweaking the frontend.'
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
-      class: null
-    content:
-      -
-        type: text
-        text: 'Your job would be to develop the algorithms behind our engaging promotional games / campaigns for our clients, both existing and new which will be hosted on clients websites. We are a company that builds and provides marketing promotions for clients with a special emphasis on the Gaming industry. '
   -
     type: paragraph
     attrs:
@@ -491,6 +482,7 @@ body:
       -
         type: text
         text: 'We hope to hear from you soon!'
+short_description: 'We are looking to hire a full-stack developer to work closely with our team at Ravenna to produce engaging products for our customers. Your time will be spent across the stack, sometimes more focused on the backend, other times writing or tweaking the frontend.'
 ---
 Wanted! Full Stack Laravel developer
 

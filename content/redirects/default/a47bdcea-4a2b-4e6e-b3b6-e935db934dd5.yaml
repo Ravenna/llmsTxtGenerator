@@ -1,0 +1,6 @@
+id: a47bdcea-4a2b-4e6e-b3b6-e935db934dd5
+enabled: true
+source: /2015/11/customer-focused-wordpress-part-2/
+destination: /articles
+type: '301'
+match_type: exact
