@@ -1,24 +1,20 @@
 <div class="block-section articles-wrapper mt-5 pt-5">
     <div class="container">
     <div class="row">
-        {{ collection:jobs paginate="9" as="posts" }}
+        {{ collection:jobs paginate="9" as="jobs" }}
             {{ if no_results }}
                 <p>Aww, there are no results.</p>
             {{ /if }}
 
-            {{ posts }}
+            {{ jobs scope="job" }}
                     <div class="col-12 col-md-4 mb-5 career-listing-item">
                         <article>
-                         
-                            <h4 class="mb-3"><a href="{{ url }}">{{ title }}</a></h4>
-                            <p>{{short_description}}</p>
-                            <a href="{{ url }}" class="btn">Learn More</a>
+                            <h4 class="mb-3"><a href="{{ job:url }}">{{ job:title }}</a></h4>
+                            <p>{{ job:short_description }}</p>
+                            <a href="{{ job:url }}" class="btn">Learn More</a>
                         </article>
                     </div>
-            {{ /posts }}
-        
-            
-
+            {{ /jobs }}
         {{ /collection:jobs }}
     </div>
     </div>

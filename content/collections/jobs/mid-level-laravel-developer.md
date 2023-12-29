@@ -1,9 +1,9 @@
 ---
 id: a53375cc-85a4-4f79-b51b-3f6aed298fdc
 blueprint: job
-title: 'Mid-level Laravel Developer'
+title: 'Mid to Senior Level Laravel Developer'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1701391899
+updated_at: 1702341079
 body:
   -
     type: heading
