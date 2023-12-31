@@ -1,9 +1,9 @@
 ---
-id: 8dcde62a-1274-42de-8168-e69c73aaae19
+id: 404bdc85-4e84-4b16-b6a0-6959b2b281a1
 blueprint: job
-title: 'Junior Laravel Developer'
+title: 'React Native Developer'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1704047089
+updated_at: 1704047146
 body:
   -
     type: paragraph
@@ -25,34 +25,16 @@ body:
     content:
       -
         type: text
-        text: 'We are looking to hire a junior full-stack developer to join our team at Ravenna to produce engaging projects for our customers. Your time will be spent across the stack, sometimes more focused on the backend, other times writing or tweaking the frontend.'
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
-      class: null
-    content:
-      -
-        type: text
-        text: 'We are all passionate, highly motivated, and incredibly proud of what we do, and we are looking for another individual with similar attributes. We all work in separate locations, and travel is not required, but you have to be able to work independently and as a part of a team. Your communication skills are critical to your and our success.'
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
-      class: null
-    content:
-      -
-        type: text
-        text: 'We aim to be the best at what we do and need a junior backend developer who is hungry to learn.'
+        text: 'We are looking for a React Native developer interested in building performant mobile apps on both the iOS and Android platforms. You will be responsible for architecting and building these applications and coordinating with the teams responsible for other layers of the product infrastructure. Building a product is a highly collaborative effort, and as such, a strong team player with a commitment to perfection is important.  '
   -
     type: heading
     attrs:
-      textAlign: left
+      textAlign: start
       level: 3
     content:
       -
         type: text
-        text: 'The skills we are looking for'
+        text: Responsibilities
   -
     type: bulletList
     content:
@@ -67,7 +49,7 @@ body:
             content:
               -
                 type: text
-                text: 'Fluent in spoken and written English.'
+                text: 'Build pixel-perfect, buttery-smooth UIs across both mobile platforms.'
       -
         type: listItem
         content:
@@ -79,7 +61,7 @@ body:
             content:
               -
                 type: text
-                text: 'Minimum of 6 months working experience with Laravel and 1-2 years of web dev experience'
+                text: 'Leverage native APIs for deep integrations with both platforms.'
       -
         type: listItem
         content:
@@ -91,7 +73,7 @@ body:
             content:
               -
                 type: text
-                text: 'Entry-level understanding of MySQL'
+                text: 'Diagnose and fix bugs and performance bottlenecks for performance that feels native.'
       -
         type: listItem
         content:
@@ -103,7 +85,7 @@ body:
             content:
               -
                 type: text
-                text: "Entry-level understanding of how API's work"
+                text: 'Reach out to the open source community to encourage and help implement mission-critical software fixes—React Native moves fast and often breaks things.'
       -
         type: listItem
         content:
@@ -115,7 +97,7 @@ body:
             content:
               -
                 type: text
-                text: 'Experience with Git/Bitbucket'
+                text: 'Maintain code and write automated tests to ensure the product is of the highest quality.'
       -
         type: listItem
         content:
@@ -127,91 +109,16 @@ body:
             content:
               -
                 type: text
-                text: 'Experience in working remotely / with a fully remote team'
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
-      class: null
-    content:
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: 'Bonus points for experience with'
-  -
-    type: bulletList
-    content:
-      -
-        type: listItem
-        content:
-          -
-            type: paragraph
-            attrs:
-              textAlign: left
-              class: null
-            content:
-              -
-                type: text
-                text: 'Managing your own time'
-      -
-        type: listItem
-        content:
-          -
-            type: paragraph
-            attrs:
-              textAlign: left
-              class: null
-            content:
-              -
-                type: text
-                text: 'Bootstrap SASS'
-      -
-        type: listItem
-        content:
-          -
-            type: paragraph
-            attrs:
-              textAlign: left
-              class: null
-            content:
-              -
-                type: text
-                text: Javascript
-      -
-        type: listItem
-        content:
-          -
-            type: paragraph
-            attrs:
-              textAlign: left
-              class: null
-            content:
-              -
-                type: text
-                text: Npm
-      -
-        type: listItem
-        content:
-          -
-            type: paragraph
-            attrs:
-              textAlign: left
-              class: null
-            content:
-              -
-                type: text
-                text: Tailwindcss
+                text: 'Experience with data security and managing PII, fin-tech, HIPAA-related data'
   -
     type: heading
     attrs:
-      textAlign: left
+      textAlign: start
       level: 3
     content:
       -
         type: text
-        text: 'Finer details'
+        text: Skills
   -
     type: bulletList
     content:
@@ -226,7 +133,7 @@ body:
             content:
               -
                 type: text
-                text: 'Start date: Jan - Feb 2024'
+                text: 'Firm grasp of the JavaScript language and its nuances, including ES6+ syntax'
       -
         type: listItem
         content:
@@ -238,7 +145,7 @@ body:
             content:
               -
                 type: text
-                text: 'Fully remote-based role with active daily communication with the rest of the team'
+                text: 'Knowledge of object-oriented programming'
       -
         type: listItem
         content:
@@ -250,7 +157,7 @@ body:
             content:
               -
                 type: text
-                text: 'Contract role could lead to FTE'
+                text: 'Ability to write well-documented, clean Javascript code'
       -
         type: listItem
         content:
@@ -262,7 +169,7 @@ body:
             content:
               -
                 type: text
-                text: 'Based in Seattle, WA, and Pacific timezone'
+                text: 'Rock solid at working with third-party dependencies and debugging dependency conflicts'
       -
         type: listItem
         content:
@@ -274,7 +181,43 @@ body:
             content:
               -
                 type: text
-                text: 'Salary range: Flexible depending on experience'
+                text: 'Familiarity with native build tools, like XCode, Gradle, and Android Studio'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            attrs:
+              textAlign: left
+              class: null
+            content:
+              -
+                type: text
+                text: 'Understanding of REST APIs, the document request model, and offline storage'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            attrs:
+              textAlign: left
+              class: null
+            content:
+              -
+                type: text
+                text: 'Experience with automated testing suites, like Jest or Mocha'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            attrs:
+              textAlign: left
+              class: null
+            content:
+              -
+                type: text
+                text: 'Specific education level is not as important as your skills and ability to work on a team'
   -
     type: heading
     attrs:
@@ -364,6 +307,6 @@ body:
       -
         type: text
         text: 'We hope to hear from you soon!'
-thumbnail: laravel-dev.webp
-short_description: 'We are looking to hire a junior full-stack developer to work closely with and learn from our team at Ravenna.  You should be hungry to learn, flexible, and ready to dig in and work hard.'
+thumbnail: react-native.webp
+short_description: 'We are looking for a React Native developer interested in building performant mobile apps on both the iOS and Android platforms.'
 ---

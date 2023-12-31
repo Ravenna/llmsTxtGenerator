@@ -7,14 +7,20 @@
             {{ /if }}
 
             {{ jobs scope="job" }}
-                    <div class="col-12 col-md-4 mb-5 career-listing-item">
+                    <div class="col-12 col-md-4 mb-5 blog-listing-item career-listing-item">
                         <article>
-                            <h4 class="mb-3"><a href="{{ job:url }}">{{ job:title }}</a></h4>
+                            {{ if thumbnail}}
+                                <div class="blog-thumb mb-4" style="background-image: url({{ job:thumbnail }});">
+                                    <a href="{{ job:url }}"></a>
+                                </div>
+                            {{ /if }}
+                            <h4 class="mb-3 seafoam"><a href="{{ job:url }}">{{ job:title }}</a></h4>
                             <p>{{ job:short_description }}</p>
                             <a href="{{ job:url }}" class="btn">Learn More</a>
                         </article>
                     </div>
-            {{ /jobs }}
+
+                {{ /jobs }}
         {{ /collection:jobs }}
     </div>
     </div>

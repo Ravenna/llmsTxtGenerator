@@ -1,0 +1,6 @@
+id: 800a76e4-eb17-4b80-b757-a233a58c0589
+enabled: true
+source: '/careers/react-native-flutter-developer(.*)'
+destination: /careers/react-native-developer$1
+type: '301'
+match_type: regex

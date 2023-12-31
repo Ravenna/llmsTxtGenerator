@@ -1,61 +1,16 @@
 title: Columns
 fields:
   -
-    handle: intro
+    handle: content
     field:
-      collapse: false
-      always_show_set_button: false
-      previews: true
-      buttons:
-        - h2
-        - h3
-        - bold
-        - italic
-        - unorderedlist
-        - orderedlist
-        - removeformat
-        - quote
-        - anchor
-        - image
-        - table
-        - h1
-        - h4
-        - h5
-        - btn
-        - center
-        - seafoam
-      save_html: false
-      toolbar_mode: fixed
-      link_noopener: false
-      link_noreferrer: false
-      target_blank: false
-      reading_time: false
-      fullscreen: true
-      allow_source: true
-      enable_input_rules: true
-      enable_paste_rules: true
-      antlers: false
-      remove_empty_nodes: false
-      display: Intro
-      type: bard
-      icon: bard
+      type: section
+      display: Content
+      icon: section
       listable: hidden
       instructions_position: above
       visibility: visible
-      always_save: false
-  -
-    handle: columns_per_row
-    field:
-      min: 1
-      max: 4
-      step: 1
-      display: 'Columns Per Row'
-      type: range
-      icon: range
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-      always_save: false
+      replicator_preview: true
+      hide_display: false
   -
     handle: columns
     field:
@@ -160,6 +115,67 @@ fields:
       fullscreen: true
       hide_display: false
   -
+    handle: intro_outro
+    field:
+      type: section
+      display: 'Intro / Outro'
+      icon: section
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: intro
+    field:
+      collapse: false
+      always_show_set_button: false
+      previews: true
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - h1
+        - h4
+        - h5
+        - btn
+        - center
+        - seafoam
+        - alignleft
+        - aligncenter
+      save_html: false
+      toolbar_mode: fixed
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      reading_time: false
+      fullscreen: true
+      allow_source: true
+      enable_input_rules: true
+      enable_paste_rules: true
+      antlers: false
+      remove_empty_nodes: false
+      display: Intro
+      type: bard
+      icon: bard
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      replicator_preview: true
+      smart_typography: false
+      inline: false
+      word_count: false
+      hide_display: false
+  -
     handle: outro
     field:
       collapse: false
@@ -199,3 +215,39 @@ fields:
       instructions_position: above
       visibility: visible
       always_save: false
+  -
+    handle: presentation
+    field:
+      type: section
+      display: Presentation
+      icon: section
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: columns_per_row
+    field:
+      min: 1
+      max: 4
+      step: 1
+      display: 'Columns Per Row'
+      type: range
+      icon: range
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: narrow
+    field:
+      default: false
+      type: toggle
+      display: Narrow
+      icon: toggle
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

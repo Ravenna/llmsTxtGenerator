@@ -10,8 +10,13 @@
             {{ /if }}
 
             <div class="row">
+                {{ if narrow }}
+                    <div class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+                        <div class="row">
+                {{ endif }}
+
                 {{ columns }}
-                <div class="col-12 {{ if columns_per_row == '2' }} col-md-6 {{ elseif columns_per_row == 3 }} col-md-4 {{ elseif columns_per_row == 4 }} col-md-3 {{ /if }}">
+                <div class="col-12 {{ if columns_per_row == '2' }} col-md-6 {{ elseif columns_per_row == 3 }} col-md-4 {{ elseif columns_per_row == 4 }} col-md-3 {{ /if }} mb-5">
                     {{ if use_image_instead }}
                         <img src="{{ column_image:url }}" alt="{{ column_image:alt }}" class="img-fluid" />
                     {{ else }}
@@ -19,6 +24,11 @@
                     {{ /if }}
                 </div>
                 {{ /columns }}
+            
+                {{ if narrow }}
+                        </div>
+                    </div>
+                {{ endif }}
             </div>
 
             {{ if outro }}

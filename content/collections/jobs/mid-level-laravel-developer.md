@@ -3,17 +3,8 @@ id: a53375cc-85a4-4f79-b51b-3f6aed298fdc
 blueprint: job
 title: 'Mid to Senior Level Laravel Developer'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1702341079
+updated_at: 1704047041
 body:
-  -
-    type: heading
-    attrs:
-      textAlign: left
-      level: 3
-    content:
-      -
-        type: text
-        text: 'Wanted! Full Stack Laravel developer'
   -
     type: paragraph
     attrs:
@@ -34,7 +25,7 @@ body:
     content:
       -
         type: text
-        text: 'Do you want to work with a fun, hard-working company that delivers its best work? If the answer is yes, then read further…'
+        text: 'We are looking to hire a full-stack developer to join our team at Ravenna to produce engaging projects for our customers. Your time will be spent across the stack, primarily focused on the backend but occasionally tweaking the front end.'
   -
     type: paragraph
     attrs:
@@ -43,7 +34,7 @@ body:
     content:
       -
         type: text
-        text: 'We are looking to hire a full-stack developer to work closely with our team at Ravenna to produce engaging products for our customers. Your time will be spent across the stack, sometimes more focused on the backend, other times writing or tweaking the frontend.'
+        text: 'The Web Apps Ravenna delivers are bespoke, and we are always open to new concepts and innovative ways of working to produce a quality outcome for our clients. We are all passionate, highly motivated, and incredibly proud of what we do, and we are looking for another individual with similar attributes. We all work in separate locations, and travel is not required, but you have to be able to work independently and as a part of a team. Your communication skills are critical to your and our success.'
   -
     type: paragraph
     attrs:
@@ -52,16 +43,7 @@ body:
     content:
       -
         type: text
-        text: 'The Web Apps Ravenna delivers are bespoke, and we are always open to new concepts and innovative ways of working to produce a quality outcome for our clients. We are all passionate, highly motivated, and incredibly proud of what we do, and we are looking for another individual with similar attributes. We all work in separate locations, and travel isn’t a priority, but you have to be able to work independently and as a part of a team. Your communication skills are critical to your and our success.'
-  -
-    type: paragraph
-    attrs:
-      textAlign: left
-      class: null
-    content:
-      -
-        type: text
-        text: 'We aim to be the best at what we do and need a talented backend developer who is both eager and determined to produce solutions for our clients that  the next level.'
+        text: 'We aim to be the best at what we do and need a talented backend developer who is both eager and determined to produce solutions for our clients that next level.'
   -
     type: paragraph
     attrs:
@@ -355,7 +337,7 @@ body:
             content:
               -
                 type: text
-                text: 'Start date: Dec 2023 - Jan 2024'
+                text: 'Start date: Jan - Feb 2024'
       -
         type: listItem
         content:
@@ -391,7 +373,7 @@ body:
             content:
               -
                 type: text
-                text: 'Based in Seattle, WA and PST'
+                text: 'Based in Seattle, WA, and Pacific timezone'
       -
         type: listItem
         content:
@@ -439,7 +421,7 @@ body:
             content:
               -
                 type: text
-                text: 'Why would you like to work with Thunderbite?'
+                text: 'Why do you love Laravel, Full stack dev, and what is your relationship to coffee?'
       -
         type: listItem
         content:
@@ -451,7 +433,7 @@ body:
             content:
               -
                 type: text
-                text: 'Can you share at least one piece of work you are really proud of and that falls in line with the job specifications?'
+                text: 'Can you share at least one piece of work you are really proud of that aligns with the job specifications?'
       -
         type: listItem
         content:
@@ -472,7 +454,21 @@ body:
     content:
       -
         type: text
-        text: 'Please send all of the above in one email to jobs@ravennainteractive.com. We promise to personally respond to every single application that at least has the words “Joey Loves Jam” mentioned in the cover letter so we can easily filter out the time wasters that have not read this specification.'
+        text: 'Please send all of the above in one email to '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'mailto:jobs@ravennainteractive.com'
+              rel: null
+              target: null
+              title: 'Apply Now'
+        text: jobs@ravennainteractive.com
+      -
+        type: text
+        text: '. We promise to personally respond to every single application that includes the words “Joey Loves Jam” mentioned in the cover letter so we can easily filter out the time wasters that have not read this specification. Bonus points if you know what the reference is.'
   -
     type: paragraph
     attrs:
@@ -482,7 +478,8 @@ body:
       -
         type: text
         text: 'We hope to hear from you soon!'
-short_description: 'We are looking to hire a full-stack developer to work closely with our team at Ravenna to produce engaging products for our customers. Your time will be spent across the stack, sometimes more focused on the backend, other times writing or tweaking the frontend.'
+short_description: 'We are looking to hire a full-stack developer to work closely with our team at Ravenna to produce engaging products for our customers.'
+thumbnail: laravel-dev.webp
 ---
 Wanted! Full Stack Laravel developer
 

@@ -1,0 +1,45 @@
+
+<div class="container-fluid article-wrapper">
+    <div class="row mt-5 mb-5 article-top-band">
+      
+    </div>
+</div>
+
+<div class="container article-wrapper">
+
+    <div class="row article-content">
+        <div class="col-12 col-lg-8 mb-5">
+            <h1 class="h2">{{ title }}</h1>
+
+            {{ body }}
+        </div>
+
+        <div class="col-12 col-lg-4 client-right">
+            {{ if categories }}
+                <h4>Categories</h4>
+                <ul>
+                    {{ categories }}
+                        <li>{{ title }}</li>
+                    {{ /categories }}
+                </ul>
+            {{ /if }}
+
+            {{ if tags }}
+                <h4>Tags:</h4>
+                <ul>
+                    {{ tags }}
+                        <li>{{ title }}</li>
+                    {{ /tags  }}
+                </ul>
+            {{ /if }}
+
+            {{ if infographic }}
+                <div>
+                    <img src="{{ infographic }}" alt="{{ infographic:alt }}" class="img-fluid" />
+                </div>
+            {{ /if }}
+        </div>
+    </div>
+
+
+</div>

@@ -1,8 +1,9 @@
 title: Jobs
-template: default
+template: templates/job
 layout: layout
 mount: 81289cbf-2aaf-4ffe-9ab4-723d38249ac1
 revisions: false
+route: 'careers/{slug}'
 sort_dir: asc
 date_behavior:
   past: public
