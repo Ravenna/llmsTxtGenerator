@@ -3,7 +3,7 @@ id: 8dcde62a-1274-42de-8168-e69c73aaae19
 blueprint: job
 title: 'Junior Laravel Developer'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1704047089
+updated_at: 1704858577
 body:
   -
     type: paragraph
@@ -366,4 +366,6 @@ body:
         text: 'We hope to hear from you soon!'
 thumbnail: laravel-dev.webp
 short_description: 'We are looking to hire a junior full-stack developer to work closely with and learn from our team at Ravenna.  You should be hungry to learn, flexible, and ready to dig in and work hard.'
+seo:
+  title: 'Seattle WA, Junior Laravel Developer Position'
 ---
