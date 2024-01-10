@@ -3,7 +3,7 @@ id: a53375cc-85a4-4f79-b51b-3f6aed298fdc
 blueprint: job
 title: 'Mid to Senior Level Laravel Developer'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1704047041
+updated_at: 1704904477
 body:
   -
     type: paragraph
@@ -480,6 +480,9 @@ body:
         text: 'We hope to hear from you soon!'
 short_description: 'We are looking to hire a full-stack developer to work closely with our team at Ravenna to produce engaging products for our customers.'
 thumbnail: laravel-dev.webp
+seo:
+  title: 'Seattle WA, Mid-Senior Laravel Developer Position'
+  description: 'We are looking to hire a junior full-stack developer to join our team at Ravenna to produce engaging projects for our customers.'
 ---
 Wanted! Full Stack Laravel developer
 
