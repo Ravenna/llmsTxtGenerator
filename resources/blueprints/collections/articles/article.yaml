@@ -1,233 +1,268 @@
-sections:
+title: Article
+tabs:
   main:
     display: Main
-    fields:
+    sections:
       -
-        handle: title
-        field:
-          type: text
-          required: true
-          validate:
-            - required
-      -
-        handle: content
-        field:
-          collapse: false
-          always_show_set_button: false
-          previews: true
-          buttons:
-            - h2
-            - h3
-            - bold
-            - italic
-            - unorderedlist
-            - orderedlist
-            - removeformat
-            - quote
-            - anchor
-            - image
-            - underline
-            - btn
-            - h4
-            - h5
-            - small
-          save_html: false
-          toolbar_mode: fixed
-          link_noopener: false
-          link_noreferrer: false
-          target_blank: false
-          reading_time: false
-          fullscreen: true
-          allow_source: true
-          enable_input_rules: true
-          enable_paste_rules: true
-          antlers: false
-          remove_empty_nodes: false
-          display: Content
-          type: bard
-          icon: bard
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-          always_save: false
-          container: assets
-          sets:
-            advertisement:
-              display: Advertisement
-              fields:
-                -
-                  handle: ad_image
-                  field:
-                    mode: list
-                    container: assets
-                    restrict: false
-                    allow_uploads: true
-                    show_filename: true
-                    max_files: 1
-                    display: 'Ad Image'
-                    type: assets
-                    icon: assets
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    always_save: false
-                -
-                  handle: ad_content
-                  field:
-                    collapse: false
-                    always_show_set_button: false
-                    previews: true
-                    buttons:
-                      - h2
-                      - h3
-                      - bold
-                      - italic
-                      - unorderedlist
-                      - orderedlist
-                      - removeformat
-                      - quote
-                      - anchor
-                      - image
-                      - table
-                      - h4
-                      - h5
-                      - btn
-                    save_html: false
-                    toolbar_mode: fixed
-                    link_noopener: false
-                    link_noreferrer: false
-                    target_blank: false
-                    reading_time: false
-                    fullscreen: true
-                    allow_source: true
-                    enable_input_rules: true
-                    enable_paste_rules: true
-                    antlers: false
-                    remove_empty_nodes: false
-                    display: 'Ad Content'
-                    type: bard
-                    icon: bard
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    always_save: false
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              validate:
+                - required
+          -
+            handle: content
+            field:
+              collapse: false
+              always_show_set_button: false
+              previews: true
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - underline
+                - btn
+                - h4
+                - h5
+                - small
+                - code
+              save_html: false
+              toolbar_mode: fixed
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              reading_time: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              antlers: false
+              remove_empty_nodes: false
+              display: Content
+              type: bard
+              icon: bard
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              always_save: false
+              container: assets
+              sets:
+                main:
+                  display: Main
+                  instructions: null
+                  icon: null
+                  sets:
+                    advertisement:
+                      display: Advertisement
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          handle: ad_image
+                          field:
+                            mode: list
+                            container: assets
+                            restrict: false
+                            allow_uploads: true
+                            show_filename: true
+                            max_files: 1
+                            display: 'Ad Image'
+                            type: assets
+                            icon: assets
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            always_save: false
+                        -
+                          handle: ad_content
+                          field:
+                            collapse: false
+                            always_show_set_button: false
+                            previews: true
+                            buttons:
+                              - h2
+                              - h3
+                              - bold
+                              - italic
+                              - unorderedlist
+                              - orderedlist
+                              - removeformat
+                              - quote
+                              - anchor
+                              - image
+                              - table
+                              - h4
+                              - h5
+                              - btn
+                            save_html: false
+                            toolbar_mode: fixed
+                            link_noopener: false
+                            link_noreferrer: false
+                            target_blank: false
+                            reading_time: false
+                            fullscreen: true
+                            allow_source: true
+                            enable_input_rules: true
+                            enable_paste_rules: true
+                            antlers: false
+                            remove_empty_nodes: false
+                            display: 'Ad Content'
+                            type: bard
+                            icon: bard
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            always_save: false
+              replicator_preview: true
+              smart_typography: false
+              inline: false
+              word_count: false
+              hide_display: false
   sidebar:
     display: Sidebar
-    fields:
+    sections:
       -
-        handle: slug
-        field:
-          type: slug
-          localizable: true
-      -
-        handle: categories
-        field:
-          type: terms
-          taxonomies:
-            - categories
-          display: Categories
-          mode: select
-      -
-        handle: tags
-        field:
-          type: terms
-          taxonomies:
-            - tags
-          display: Tags
-          mode: select
-      -
-        handle: background_image
-        field:
-          mode: list
-          container: assets
-          restrict: false
-          allow_uploads: true
-          show_filename: true
-          max_files: 1
-          display: 'Background Image'
-          type: assets
-          icon: assets
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-          always_save: false
-      -
-        handle: photo_by
-        field:
-          display: 'Photo By Link'
-          type: link
-          icon: link
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-          always_save: false
-      -
-        handle: photo_by_text
-        field:
-          input_type: text
-          antlers: false
-          display: 'Photo By Text'
-          type: text
-          icon: text
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-          always_save: false
-      -
-        handle: infographic
-        field:
-          mode: list
-          container: assets
-          restrict: false
-          allow_uploads: true
-          show_filename: true
-          max_files: 1
-          display: Infographic
-          type: assets
-          icon: assets
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-          always_save: false
-      -
-        handle: thumbnail
-        field:
-          mode: list
-          container: assets
-          restrict: false
-          allow_uploads: true
-          show_filename: true
-          max_files: 1
-          display: Thumbnail
-          type: assets
-          icon: assets
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-          always_save: false
-      -
-        handle: social_share_image
-        field:
-          mode: list
-          container: assets
-          restrict: false
-          allow_uploads: true
-          show_filename: true
-          max_files: 1
-          display: 'Social Share Image'
-          type: assets
-          icon: assets
-          listable: hidden
-          instructions_position: above
-          visibility: visible
-          always_save: false
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+          -
+            handle: categories
+            field:
+              type: terms
+              taxonomies:
+                - categories
+              display: Categories
+              mode: select
+          -
+            handle: tags
+            field:
+              type: terms
+              taxonomies:
+                - tags
+              display: Tags
+              mode: select
+          -
+            handle: background_image
+            field:
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              max_files: 1
+              display: 'Background Image'
+              type: assets
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              always_save: false
+          -
+            handle: photo_by
+            field:
+              display: 'Photo By Link'
+              type: link
+              icon: link
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              always_save: false
+          -
+            handle: photo_by_text
+            field:
+              input_type: text
+              antlers: false
+              display: 'Photo By Text'
+              type: text
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              always_save: false
+          -
+            handle: infographic
+            field:
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              max_files: 1
+              display: Infographic
+              type: assets
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              always_save: false
+          -
+            handle: thumbnail
+            field:
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              max_files: 1
+              display: Thumbnail
+              type: assets
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              always_save: false
+          -
+            handle: social_share_image
+            field:
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              max_files: 1
+              display: 'Social Share Image'
+              type: assets
+              icon: assets
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              always_save: false
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - articles
+              max_items: 1
+              listable: false
+              localizable: true
   SEO:
     display: SEO
-    fields:
+    sections:
       -
-        handle: seo
-        field:
-          type: seo_pro
-          listable: false
-          display: SEO
-title: Article
+        fields:
+          -
+            handle: seo
+            field:
+              type: seo_pro
+              listable: false
+              display: SEO
