@@ -3,7 +3,7 @@ id: 404bdc85-4e84-4b16-b6a0-6959b2b281a1
 blueprint: job
 title: 'React Native Developer'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1704047146
+updated_at: 1705015664
 body:
   -
     type: paragraph
@@ -309,4 +309,7 @@ body:
         text: 'We hope to hear from you soon!'
 thumbnail: react-native.webp
 short_description: 'We are looking for a React Native developer interested in building performant mobile apps on both the iOS and Android platforms.'
+seo:
+  title: 'React Native Developer Open Position'
+  description: 'We are looking for a React Native developer interested in building performant mobile apps on both the iOS and Android platforms.'
 ---
