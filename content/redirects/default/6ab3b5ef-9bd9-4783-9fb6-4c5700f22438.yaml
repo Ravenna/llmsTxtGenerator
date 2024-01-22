@@ -1,0 +1,6 @@
+id: 6ab3b5ef-9bd9-4783-9fb6-4c5700f22438
+enabled: true
+source: /b
+destination: /
+type: '301'
+match_type: exact
