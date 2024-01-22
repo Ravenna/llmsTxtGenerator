@@ -1,0 +1,6 @@
+id: 89d0cbe1-c31f-4dec-8837-e079e7c235fe
+enabled: true
+source: /articles/statamic-vs-wordpress/1000
+destination: /articles/statamic-vs-wordpress/
+type: '301'
+match_type: exact
