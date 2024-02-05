@@ -25,7 +25,7 @@ rotate:
         {{ collection:clients }}
             <div class="client-box" :class="random">
                 <a href="{{ url }}" title="{{ title }}">
-                    <img src="{{ logo }}" alt="{{ title }}">
+                    <img src="{{ logo }}" alt="{{ title }}" {{ if square_logo }} class="square-logo" {{ endif}}>
                 </a>
             </div>
         {{ /collection:clients }}

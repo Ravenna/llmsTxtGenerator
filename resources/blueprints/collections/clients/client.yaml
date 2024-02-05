@@ -218,6 +218,18 @@ tabs:
               visibility: visible
               always_save: false
           -
+            handle: square_logo
+            field:
+              default: false
+              type: toggle
+              display: 'Square Logo'
+              icon: toggle
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
             handle: social_share_image
             field:
               max_files: 1
