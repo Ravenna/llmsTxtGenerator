@@ -142,7 +142,21 @@ result:
     content:
       -
         type: text
-        text: 'The HuntFund mobile app is built on React Native.  This selection was made so that the app could largely have a single codebase supporting Android and iOS. The mobile application utilizes the Laravel API/Backend '
+        text: 'The HuntFund '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'statamic://entry::00e42ad3-97e6-4fbd-ba62-a21a077e0370'
+              rel: null
+              target: null
+              title: null
+        text: 'mobile app is built on React Native'
+      -
+        type: text
+        text: '.  This selection was made so that the app could largely have a single codebase supporting Android and iOS. The mobile application utilizes the Laravel API/Backend '
   -
     type: paragraph
     attrs:
@@ -156,7 +170,7 @@ apis_integrated:
 seo:
   image: '@seo:social_share_image'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1707280104
+updated_at: 1707280139
 logo: hunt-fund-final-cut-white.webp
 gallery:
   - huntfund-1.webp
