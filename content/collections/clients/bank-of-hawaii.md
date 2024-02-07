@@ -6,11 +6,11 @@ big_statement: 'Design for 125 Years of community focussed banking'
 one_image: false
 square_logo: false
 seo:
-  title: "Ravenna design for Bank of Hawaii's 125th Anniversary"
+  title: "Ravennas design for Bank of Hawaii's 125th Anniversary"
   description: 'Ravenna completed a start to finish design process to create a beautiful and engaging experience celebrating 125 years.'
   image: '@seo:social_share_image'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1707279912
+updated_at: 1707323166
 about:
   -
     type: paragraph
