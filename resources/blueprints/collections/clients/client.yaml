@@ -217,6 +217,9 @@ tabs:
               instructions_position: above
               visibility: visible
               always_save: false
+              replicator_preview: true
+              show_set_alt: true
+              hide_display: false
           -
             handle: square_logo
             field:
