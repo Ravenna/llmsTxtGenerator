@@ -44,7 +44,21 @@ result:
     content:
       -
         type: text
-        text: 'The Laravel API/Backend was built to be flexible for growth and serve as the backend to the mobile app.  The backend build included integrating with several third-party APIs. These included:'
+        text: The
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'statamic://entry::0c623e4f-08d3-4367-9592-ab966a7a23cf'
+              rel: null
+              target: null
+              title: 'Laravel Development'
+        text: ' Laravel API'
+      -
+        type: text
+        text: '/Backend was built to be flexible for growth and serve as the backend to the mobile app.  The backend build included integrating with several third-party APIs. These included:'
   -
     type: bulletList
     content:
@@ -142,10 +156,11 @@ apis_integrated:
 seo:
   image: '@seo:social_share_image'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1706746824
+updated_at: 1707280104
 logo: hunt-fund-final-cut-white.webp
 gallery:
   - huntfund-1.webp
   - huntfund-2.webp
   - huntfund-3.webp
+square_logo: false
 ---
