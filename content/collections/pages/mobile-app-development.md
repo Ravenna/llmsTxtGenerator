@@ -4,7 +4,7 @@ blueprint: page
 title: 'Mobile App Development'
 template: block-page
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1700179587
+updated_at: 1707883266
 blocks:
   -
     id: lmuvwe63
@@ -67,6 +67,7 @@ blocks:
               class: null
         type: column
         enabled: true
+        use_image_instead: false
       -
         id: lmuwjyre
         content:
@@ -114,7 +115,7 @@ blocks:
           -
             type: orderedList
             attrs:
-              order: 1
+              start: 1
             content:
               -
                 type: listItem
@@ -217,6 +218,7 @@ blocks:
                         text: 'Launch your app'
         type: column
         enabled: true
+        use_image_instead: false
     type: columns
     enabled: true
     outro:
@@ -238,6 +240,7 @@ blocks:
             text: "We have extensive domain expertise to align with your specific needs. In Seattle and nationally, we've successfully aided various organizations—from startups to enterprises to nonprofits—in crafting the right solutions and scaling them effectively."
     copy_color: white
     block_padding: medium
+    narrow: false
   -
     id: ln978umy
     image: bartells-cutout.png
@@ -283,6 +286,7 @@ blocks:
                 text: 'From there, we can get into the details of what you want to build.  We love listening and digging into what you are doing, the strategy behind it, and where you hope to take your app idea.  '
         type: column
         enabled: true
+        use_image_instead: false
       -
         id: ln9eo2p5
         content:
@@ -321,7 +325,30 @@ blocks:
                 text: ', from working in the Seattle, WA, area for the last 15+ years, to bear on your project.  '
         type: column
         enabled: true
+        use_image_instead: false
     type: columns
+    enabled: true
+    narrow: false
+  -
+    id: lsl9d3vs
+    quote:
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: "I had the pleasure of collaborating with Ravenna Interactive and their performance was outstanding throughout our project. Demonstrating a deep understanding of fintech solutions, Ravenna Interactive showcased remarkable technical proficiency, consistently exceeding expectations. Their collaborative and transparent communication style fostered a seamless working relationship, and they showcased a genuine commitment to the project's success. The solution delivered not only met but surpassed our requirements, integrating innovative features that added substantial value."
+    name_title: 'Jeff Bynum / Founder HuntFund'
+    type: quote
+    enabled: true
+  -
+    id: lsl9gppy
+    background_color: '#000000'
+    block_padding: small
+    copy: '<p style="text-align: center;"><a href="statamic://entry::c0aa89ae-00da-4800-bd51-7c83cc139395" title="Hunt Fund Fintech Mobile App"><span class="btn btn-primary">Learn More about HuntFund</span></a></p>'
+    type: full_width
     enabled: true
   -
     id: ln9ejn2x
