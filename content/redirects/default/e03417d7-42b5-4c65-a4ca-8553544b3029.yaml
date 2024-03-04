@@ -1,0 +1,6 @@
+id: e03417d7-42b5-4c65-a4ca-8553544b3029
+enabled: true
+source: /wp-json/
+destination: /
+type: '301'
+match_type: exact
