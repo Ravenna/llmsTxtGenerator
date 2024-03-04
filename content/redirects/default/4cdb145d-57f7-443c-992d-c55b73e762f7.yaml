@@ -1,0 +1,6 @@
+id: 4cdb145d-57f7-443c-992d-c55b73e762f7
+enabled: true
+source: /client/holmes-electric
+destination: /clients
+type: '301'
+match_type: exact
