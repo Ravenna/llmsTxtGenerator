@@ -1,0 +1,6 @@
+id: 08d8946f-c201-4eac-9244-ba3c2b7e38d0
+enabled: true
+source: /client/arzeda
+destination: /clients
+type: '301'
+match_type: exact
