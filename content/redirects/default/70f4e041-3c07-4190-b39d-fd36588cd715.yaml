@@ -1,0 +1,6 @@
+id: 70f4e041-3c07-4190-b39d-fd36588cd715
+enabled: true
+source: /client/charlotte-omnes/
+destination: /clients
+type: '301'
+match_type: exact
