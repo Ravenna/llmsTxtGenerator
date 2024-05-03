@@ -6,9 +6,11 @@ big_statement: '90+ Lighthouse Score'
 one_image: false
 logo: sml_secondary_logo_gold.webp
 seo:
+  title: 'Custom WordPress theme for a Washington resort'
+  description: 'Ravenna built a custom WordPress theme for Sun Mountain Lodge that has a Pagespeed score of 90+.'
   image: '@seo:social_share_image'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1706902327
+updated_at: 1714749244
 cool_facts:
   - WordPress
   - '91 Lighthouse Speed Score'
