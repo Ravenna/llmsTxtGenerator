@@ -4,7 +4,7 @@ blueprint: page
 title: 'Mobile App Development'
 template: block-page
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1714749603
+updated_at: 1714749652
 blocks:
   -
     id: lmuvwe63
@@ -347,7 +347,7 @@ blocks:
     id: lsl9gppy
     background_color: '#000000'
     block_padding: small
-    copy: '<p style="text-align: center;"><a href="statamic://entry::c0aa89ae-00da-4800-bd51-7c83cc139395" title="Hunt Fund Fintech Mobile App"><span class="btn btn-primary">Learn More about HuntFund</span></a></p>'
+    copy: '<p style="text-align: center;"><a href="entry::c0aa89ae-00da-4800-bd51-7c83cc139395" title="Hunt Fund Fintech Mobile App"><span class="btn btn-primary">Learn More about HuntFund</span></a></p>'
     type: full_width
     enabled: true
   -
