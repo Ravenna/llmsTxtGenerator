@@ -168,9 +168,11 @@ apis_integrated:
   - Twilio
   - Persona
 seo:
+  title: 'Bsepoke Laravel and React Native Fintech MVP'
+  description: 'Ravenna built a fintech MVP for Huntfund using Laravel and React Native'
   image: '@seo:social_share_image'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1707883425
+updated_at: 1714749183
 logo: hunt-fund-final-cut-white.webp
 gallery:
   - huntfund-1.webp
