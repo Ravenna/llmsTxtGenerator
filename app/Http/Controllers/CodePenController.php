@@ -21,6 +21,6 @@ class CodePenController extends Controller
             }
         }
 
-        return response()->json(json_encode($foundMovies));
+        return response()->json($foundMovies);
     }
 }
