@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['https://codepen.io'],
+    'allowed_origins' => ['https://codepen.io', 'https://cdpn.io'],
 
     'allowed_origins_patterns' => [],
 
