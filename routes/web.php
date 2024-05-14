@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\CodepenController;
+use App\Http\Controllers\CodePenController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DynamicToken;
 /*
