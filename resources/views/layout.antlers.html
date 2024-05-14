@@ -56,5 +56,9 @@
 
         <script src="/vendor/statamic/frontend/js/helpers.js" defer></script>
         <script src="{{ mix src='/js/site.js' }}" defer></script>
+
+        {{ if current_template == 'templates/article' }}
+            <script src="/js/prism.js" defer></script>
+        {{ /if}}
     </body>
 </html>

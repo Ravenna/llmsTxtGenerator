@@ -1,9 +1,11 @@
 //imports
+
 import form from '../js/components/form'
 import gallery from '../js/components/gallery'
 import nav from '../js/components/nav'
 import Alpine from 'alpinejs';
 import collapse from '@alpinejs/collapse'
+
 
 // Global get CSRF token function (used by forms).
 window.getToken = async () => {

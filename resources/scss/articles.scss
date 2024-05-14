@@ -1,3 +1,6 @@
+@import 'prism-material-themes/themes/material-lighter.css';
+
+
 #app .articles-wrapper{
     .blog-listing-item{
         .blog-thumb{
@@ -95,6 +98,15 @@
                 color: black;
             }
         }
+
+        blockquote{
+            padding: 20px;
+            border-left: 5px solid $seafoam;
+            margin: 20px 0;
+            p{
+                margin-bottom: 0;
+            }
+        }
     }
 
     .infographic-embed{
@@ -107,5 +119,11 @@
         border: 1px solid white;
     }
 
-   
+
+    .code{
+        margin-bottom: 40px;
+        .language-htmlmixed{
+            padding: 0;
+        }
+    }
 }

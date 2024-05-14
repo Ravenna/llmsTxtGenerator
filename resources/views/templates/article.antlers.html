@@ -28,6 +28,12 @@
                         </div>
 
                     </div>
+                {{ elseif type == 'code' }}
+                    <div class="code">
+                        {{ inline_code }}
+                            <pre class="language-{{ mode }}"><code>{{ code | entities  }}</code></pre>
+                        {{ /inline_code }}
+                    </div>
                 {{ /if }}
             {{ /content }}
         </div>

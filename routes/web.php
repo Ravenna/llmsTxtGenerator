@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CodepenController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DynamicToken;
 /*
@@ -15,3 +16,5 @@ use App\Http\Controllers\DynamicToken;
 
 // Dynamic Token route for posting a form with Ajax.
 Route::get('/!/DynamicToken/refresh', [DynamicToken::class, 'getRefresh']);
+
+Route::get('/codepen/typeahead', [CodePenController::class, 'typeahead']);
