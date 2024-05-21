@@ -143,6 +143,22 @@ tabs:
                             visibility: visible
                             replicator_preview: true
                             hide_display: false
+                    embed_code:
+                      display: 'Embed Code'
+                      instructions: null
+                      icon: programming-script-code
+                      fields:
+                        -
+                          handle: embed
+                          field:
+                            antlers: false
+                            type: textarea
+                            display: embed
+                            listable: hidden
+                            instructions_position: above
+                            visibility: visible
+                            replicator_preview: true
+                            hide_display: false
               replicator_preview: true
               smart_typography: false
               inline: false

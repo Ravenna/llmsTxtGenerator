@@ -34,6 +34,12 @@
                             <pre class="language-{{ mode }}"><code>{{ code | entities  }}</code></pre>
                         {{ /inline_code }}
                     </div>
+            
+
+                {{ elseif type == 'embed_code' }}
+                    <div class="code embed-container ">
+                        {{ embed }}
+                    </div>
                 {{ /if }}
             {{ /content }}
         </div>
