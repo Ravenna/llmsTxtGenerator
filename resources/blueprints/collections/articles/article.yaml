@@ -176,6 +176,20 @@ tabs:
               localizable: true
               validate: 'max:200'
           -
+            handle: author
+            field:
+              max_items: 1
+              mode: select
+              default:
+                - 1d1068ab-208d-480d-a677-dda65fe0f490
+              type: users
+              display: Author
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
             handle: categories
             field:
               type: terms

@@ -10,6 +10,15 @@
     <div class="row article-content">
         <div class="col-12 col-lg-8 mb-5">
             <h1>{{ title }}</h1>
+            {{ if author }}
+                <div class="article-meta d-flex flex-row justify-content-start align-items-center mb-4">
+                    {{ author }}
+                        <img class="author-image d-block me-4 rounded-circle" src="{{ avatar }}" alt="Avatar of {{ name }}">
+                        <span class="text-white leading-none">{{ name }} &mdash;  <span class="date">{{ date }}</span></span>
+                    {{ /author }}
+                </div>
+            {{ /if }}
+
 
             {{ content }}
                 {{ if type == 'text' }}

@@ -53,6 +53,12 @@
     }
 
     .article-content{
+        .article-meta{
+            .author-image{
+                width: 80px;
+                height: auto;
+            }
+        }
         h1{
             font-size: 4rem;
             margin-bottom: 40px;
