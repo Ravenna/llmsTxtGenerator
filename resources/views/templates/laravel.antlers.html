@@ -42,12 +42,12 @@
                 <div class="service-card">
                     <div class="icon">{{ partial src="includes.icons.money" }}</div>
                     <h3>Ecommerce, Transactional</h3>
-                    <p>Need a website that can charge for membership, sell to groups, create recurring revenue, or sell a product. </p>
+                    <p>Need a website that can charge for membership, sell to groups, create recurring revenue, or sell a product? We can do that with Laravel. </p>
                 </div>
                 <div class="service-card">
                     <div class="icon">{{ partial src="includes.icons.building" }}</div>
                     <h3>Enterprise Efficiency</h3>
-                    <p>Small, medium and large scale systems based on your requirements</p>
+                    <p>Small, medium and large scale systems built to your requirements</p>
                 </div>
                 <div class="service-card">
                     <div class="icon">{{ partial src="includes.icons.nodes" }}</div>
@@ -126,6 +126,25 @@
                         </div>
                     {{ /faqs }}
                 </div>
+
+                <script type="application/ld+json">
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "FAQPage",
+                      "mainEntity": [
+                        {{ faqs }}
+                            {
+                            "@type": "Question",
+                            "name": "{{ question }}",
+                            "acceptedAnswer": {
+                              "@type": "Answer",
+                              "text": "{{ answer | strip_tags | decode }}"
+                            }
+                          },
+                        {{ /faqs }}
+                      ]
+                    }
+                    </script>
             </div>
         </div>
     </div>
