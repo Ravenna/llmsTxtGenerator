@@ -140,7 +140,7 @@
                               "@type": "Answer",
                               "text": "{{ answer | strip_tags | decode }}"
                             }
-                          }{{ if !loop.last }},{{ /if }}
+                          }{{ if !last }},{{ /if }}
                         {{ /faqs }}
                       ]
                     }
