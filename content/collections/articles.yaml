@@ -22,6 +22,3 @@ inject:
   seo:
     title: '@seo:title'
     image: '@seo:social_share_image'
-structure:
-  root: false
-  slugs: true
