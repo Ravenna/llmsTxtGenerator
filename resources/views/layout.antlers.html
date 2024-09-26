@@ -34,7 +34,9 @@
             </script>
         {{ /if }}
 
-        {{ partial src="includes/schema" }}
+        {{ stack:templateSD }}
+
+     
 
     </head>
     <body class="{{ if !is_homepage }} not-homepage {{ /if }} {{ if collection == 'clients' }} client-template {{ /if }} {{template}}-template {{ slug }}">

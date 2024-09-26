@@ -1,4 +1,39 @@
 
+{{ push:templateSD }}
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "{{ title }}",
+            "description": "{{ seo.description }}",
+            {{ author }}
+                "author": {
+                    "@type": "Person",
+                    "name": " {{ name }}"
+                  },
+            {{ /author }}
+            "datePublished": "{{ date }}",
+            "image": "{{ thumbnail }}",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Ravenna Interactive Our Thinking",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://ravennainteractive.com/assets/img/ravenna.png"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "{{ url}}"
+            },
+            "articleBody": "In this article, we explore the best structured data for blog articles...",
+            "keywords": "{{ seo.keywords}}"
+          }
+    </script>
+{{ /push:templateSD }}
+
+
+
 <div class="container-fluid article-wrapper">
     <div class="row mt-5 mb-5 article-top-band">
       

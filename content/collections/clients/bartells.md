@@ -74,7 +74,7 @@ apis_integrated:
   - McKesson
   - 'AWS SES'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1699635151
+updated_at: 1727374044
 logo: btd-logo-horiz.png
 one_image: true
 gallery:
@@ -82,4 +82,6 @@ gallery:
 seo:
   title: 'Bartells RX Platform'
   description: "Explore Ravenna's creation for Bartell Drugs: A comprehensive web and mobile prescription management platform, featuring native iOS and Android applications."
+square_logo: false
+client_url: 'https://www.bartelldrugs.com/'
 ---
