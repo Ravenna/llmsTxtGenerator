@@ -1,4 +1,41 @@
+{{ push:templateSD }}
+<script type="application/ld+json">
 
+{
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "{{ title }}",
+    "url": "{{ current_url }}",
+    "description": "{{ seo.description }}",
+    "thumbnailUrl": "{{ logo }}",
+    "image": "{{ gallery[0].url }}",
+    "datePublished": "2023-07-15",
+    "author": {
+      "@type": "Organization",
+      "name": "Ravenna"
+    },
+    "client": {
+      "@type": "Organization",
+      "name": "{{ title }}",
+      "url": "{{ client_url }}"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "{{ seo.title }}",
+      "description": "{{ seo.description }}"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ current_url }}"
+    },
+    "creator": {
+      "@type": "Organization",
+      "name": "Ravenna"
+    }
+  }
+</script>
+
+{{ /push:templateSD }}
 <div class="container client-wrapper">
 
     <div class="row mb-5">

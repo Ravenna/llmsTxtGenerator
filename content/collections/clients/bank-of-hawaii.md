@@ -10,7 +10,7 @@ seo:
   description: 'Ravenna completed a start to finish design process to create a beautiful and engaging experience celebrating 125 years.'
   image: '@seo:social_share_image'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1707323179
+updated_at: 1727373907
 about:
   -
     type: paragraph
@@ -118,4 +118,5 @@ cool_facts:
   - Wireframe
   - 'Multi-page design'
 social_share_image: boh-social-share-image.webp
+client_url: 'https://boh.com'
 ---

@@ -108,7 +108,7 @@ apis_integrated:
   - 'AWS SES'
   - 'AWS EC2'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1699634426
+updated_at: 1727374057
 logo: img/blue-origin.svg
 result:
   -
@@ -125,4 +125,6 @@ one_image: false
 seo:
   title: 'Blue Origin Statamic Websites'
   description: "Discover Ravenna's web solutions for Blue Origin: featuring the main website and the 'Club for Future' kids club, showcasing our diverse web development expertise."
+square_logo: false
+client_url: 'https://blueorigin.com'
 ---
