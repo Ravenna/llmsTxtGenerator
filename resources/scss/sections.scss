@@ -6,7 +6,7 @@
 	display: flex; 
 	flex-direction: column;
 	justify-content: center;
-	background: black;
+	background: $black;
     overflow:hidden;
     position: relative;
 	top: 0;
@@ -48,7 +48,7 @@
 		z-index: 10;
 		color: $seafoam;
 		text-align: center;
-		background: black;
+		background: $black;
 		width: calc(100% + 64px); 
 		text-align: center;
         position: relative;
@@ -60,7 +60,7 @@
 	}
     &.white-bg, &.gray-bg{
         h3, p{
-            color: black;
+            color: $black;
         }
     }
 }

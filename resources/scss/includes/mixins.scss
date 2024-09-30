@@ -90,3 +90,8 @@ $breakpoints: (
   -ms-transition: $args;
   transition: $args;
 }
+
+@mixin coolGradient(){
+  background: $yellow;
+  background: linear-gradient(90deg, $yellowRGB80 0%, $seafoamRGB80 100%);
+}

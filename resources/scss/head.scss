@@ -11,7 +11,7 @@ body{
 	font-style: normal !important;
 	font-display: swap;
 	scroll-behavior: smooth !important;
-	background-color: black !important;
+	background-color: $black !important;
 	&.modal-open{
 		overflow: hidden;
 		padding-right: 0px;
@@ -22,7 +22,7 @@ body{
 	cursor: url("../assets/img/cursor.png") 13 7, auto !important;
 
 	#section-tech, #section-4{
-		cursor: url("../assets/img/cursor-black.png") 13 7, auto !important;
+		cursor: url("../assets/img/cursor-$black.png") 13 7, auto !important;
 	}
 	a {
 		cursor: pointer; //url("../assets/img/cursor.png") 64 12, auto !important; 
@@ -49,7 +49,7 @@ body{
 	
 	.btn{
 		background-color: $seafoam;
-		color: black;
+		color: $black;
 		border-radius: 0px;
 		text-transform: uppercase;
 		transition: all 0.3s ease-in-out;

@@ -5,18 +5,17 @@
 
     .quiz-title{
         margin-bottom: 50px;
-        color: black;
+        color: $black;
     }
 
     .steps-row-wrap{
-        border: 1px solid black;
+        border: 1px solid $black;
         border-radius: 7px;
         margin: 50px 0 20px;
         overflow: hidden;
 
         .steps-row{
-            background: rgb(224,255,31);
-            background: linear-gradient(90deg, rgba(224,255,31,0.8) 0%, rgba(90,232,164,0.8) 100%);
+            @include coolGradient();
             height: 14px;
             width: 0%;
             transition: width 0.3s ease-in-out;
@@ -25,7 +24,7 @@
     }
     
     .question, .question p, .answer{
-        color: black;
+        color: $black;
     }
     .question{
         margin-bottom: 50px;
@@ -40,11 +39,11 @@
         .answer.btn{
             background: white;
             background-color: white;
-            color: black;
+            color: $black;
             text-transform: uppercase;
             font-weight: bold;
             width: 48%;
-            border: 1px solid black;
+            border: 1px solid $black;
             &:hover{
                 background: $purple;
                 border: 1px solid $purple;
@@ -74,7 +73,7 @@
 
         .form-row{
             label{
-                color: black;
+                color: $black;
                 font-size: 2rem;
                 padding-right: 20px;
             }

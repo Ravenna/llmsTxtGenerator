@@ -18,7 +18,7 @@
                 animation: swing ease-in-out 1s infinite alternate;
                 transform-origin: center -20px;
                 svg{
-                    fill: black;
+                    fill: $black;
                 }
             }
             
@@ -29,7 +29,7 @@
         }
     }
     p{
-        color: black;
+        color: $black;
         
     }
 

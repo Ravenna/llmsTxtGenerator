@@ -1,13 +1,13 @@
 #section-tech{
     background: white;
     z-index: 90;
-    color: black;
+    color: $black;
     height: auto;
     padding: 80px 0;
     h1{
         font-size: 3.75rem;
         background: white;
-        color: black;
+        color: $black;
         text-align: center;
         @include respond-below(md){
             text-align: left;
@@ -15,15 +15,15 @@
         }
     }
     p{
-        color: black;
+        color: $black;
         a{
-            color: black;
+            color: $black;
             text-decoration: underline;
         }
     }
 
     .home-feat-service{
-        color: black;
+        color: $black;
         .hft-img{
             position: relative;
             
@@ -37,7 +37,7 @@
             }
         }
         p{
-            color: black;
+            color: $black;
         }
     }
 

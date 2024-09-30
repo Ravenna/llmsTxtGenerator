@@ -5,8 +5,7 @@
     background-position: 50% 50%;
 
     .overlay{
-        background: rgb(224,255,31);
-        background: linear-gradient(90deg, rgba(224,255,31,0.8) 0%, rgba(90,232,164,0.8) 100%);
+        @include coolGradient();
         position: absolute;
         top: 0;
         left: 0;
@@ -20,7 +19,7 @@
         flex-direction: column;
         justify-content: center;
         h2, h3, p{
-            color: black;
+            color: $black;
         }
     }
 }

@@ -48,7 +48,9 @@
             {{ if author }}
                 <div class="article-meta d-flex flex-row justify-content-start align-items-center mb-4">
                     {{ author }}
-                        <img class="author-image d-block me-4 rounded-circle" src="{{ avatar }}" alt="Avatar of {{ name }}">
+                        {{ if avatar }}
+                            <img class="author-image d-block me-4 rounded-circle" src="{{ avatar }}" alt="Avatar of {{ name }}">
+                        {{ /if }}
                         <span class="text-white leading-none">{{ name }} &mdash;  <span class="date">{{ date }}</span></span>
                     {{ /author }}
                 </div>

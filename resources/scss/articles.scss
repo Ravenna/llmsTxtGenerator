@@ -30,7 +30,7 @@
         }
         .page-link{
             color: $seafoam;
-            background: black;
+            background: $black;
             border: 1px solid $seafoam;
             &.disabled{
                 opacity: 0.7;
@@ -42,9 +42,7 @@
 #app .article-wrapper{
     .article-top-band{
         height: 100px;
-        background: rgb(224,255,31);
-        background: linear-gradient(90deg, rgba(224,255,31,0.8) 0%, rgba(90,232,164,0.8) 100%);
-    
+        @include coolGradient();
     }
 
     .article-content{
@@ -91,12 +89,12 @@
             background: #fff;
             padding: 50px 40px;
             h4, h3{
-                color: black;
+                color: $black;
             }
             p{
                 font-size: 16px;
                 margin-bottom: 14px;
-                color: black;
+                color: $black;
             }
         }
 

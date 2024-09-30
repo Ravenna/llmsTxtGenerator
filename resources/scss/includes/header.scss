@@ -1,7 +1,7 @@
 $animation: 0.6s;	// animation speed
 $scale: 1;	
 .header{
-    background: black;
+    background: $black;
     text-align: center;
     position: fixed;
     padding: 10px 0;
@@ -45,7 +45,7 @@ $scale: 1;
                 transition: color .3s cubic-bezier(.8, .5, .2, 1.4) .5s, transform 0.3s cubic-bezier(.8, .5, .2, 1.4);
             }
             &.open .line{
-                background: black;
+                background: $black;
                 transition: .3s cubic-bezier(.8, .5, .2, 1.4);
             }
 
@@ -127,7 +127,7 @@ $scale: 1;
                     a{
                         font-size: 2rem;
                         font-weight: 700;
-                        color: black;
+                        color: $black;
                         text-decoration: none;
                         text-transform: uppercase;
                         display: inline-block;
@@ -142,7 +142,7 @@ $scale: 1;
                             top: 15px;
                             height: 20px;
                             width: 20px;
-                            background-color: black;
+                            background-color: $black;
                             clip-path: polygon(50% 1%, 50% 1%, 50% 1%, 63% 20%, 63% 20%, 63% 20%, 63% 20%, 86% 15%, 86% 15%, 86% 15%, 81% 38%, 81% 38%, 81% 38%, 100% 50%, 100% 50%, 100% 50%, 81% 63%, 81% 63%, 81% 63%, 86% 86%, 86% 86%, 86% 86%, 63% 81%, 63% 81%, 63% 81%, 50% 100%, 50% 100%, 50% 100%, 37% 81%, 37% 81%, 37% 81%, 14% 86%, 14% 86%, 14% 86%, 19% 63%, 19% 63%, 19% 63%, 0% 50%, 0% 50%, 0% 50%, 19% 38%, 19% 38%, 19% 38%, 14% 15%, 14% 15%, 14% 15%, 37% 20%, 37% 20%, 37% 20%, 37% 20%);
                             opacity: 0;
                             transition: opacity 0.3s ease;
@@ -153,7 +153,7 @@ $scale: 1;
                         }
                     }
                     & > ul{
-                        border-top: 2px solid black;
+                        border-top: 2px solid $black;
                     }
                 }
             }

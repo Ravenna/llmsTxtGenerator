@@ -37,7 +37,7 @@ body.block-page-template, body.clients {
 
     .block-section.form{
         a{
-            color: black;
+            color: $black;
             text-decoration: underline;
         }
     }
@@ -47,7 +47,7 @@ body.block-page-template, body.clients {
 .copy-wrapper{
     &.black-color{
         h1, h2, h3, h4, h5, h6, p, ul, li{
-            color: black;
+            color: $black;
         }
     }
     &.white-color{
