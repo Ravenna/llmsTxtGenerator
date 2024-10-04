@@ -1,0 +1,36 @@
+title: 'Client Body'
+fields:
+  -
+    handle: client_body
+    field:
+      type: replicator
+      display: 'Client Body'
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            body_copy:
+              display: 'Body Copy'
+              fields:
+                -
+                  import: body_copy
+            containered_image:
+              display: 'Containered Image'
+              fields:
+                -
+                  import: containered_image
+            quote:
+              display: Quote
+              fields:
+                -
+                  import: quote
+            two_column_w_image_side:
+              display: 'Two Column w Image Side'
+              fields:
+                -
+                  import: two_column_w_image_side
+            masonry_images:
+              display: 'Masonry Images'
+              fields:
+                -
+                  import: masonry_images

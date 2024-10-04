@@ -54,6 +54,14 @@ return [
             'cp_css' => 'color: dodgerblue; font-weight: 700',
         ],
 
+        'lead' => [
+            'type'   => 'paragraph',
+            'name'   => 'Lead',
+            'ident'  => 'L',
+            'class'  => 'lead',
+            'cp_css' => 'font-size: 1.25rem;',
+        ],
+
     ],
 
     /*

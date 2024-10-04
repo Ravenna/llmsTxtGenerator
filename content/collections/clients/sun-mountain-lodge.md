@@ -10,7 +10,7 @@ seo:
   description: 'Ravenna built a custom WordPress theme for Sun Mountain Lodge that has a Pagespeed score of 90+.'
   image: '@seo:social_share_image'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1727374113
+updated_at: 1728076310
 cool_facts:
   - WordPress
   - '91 Lighthouse Speed Score'
@@ -139,4 +139,5 @@ gallery:
   - sml-3.webp
   - sml-4.webp
 client_url: 'https://sunmountainlodge.com/'
+template: templates/client
 ---

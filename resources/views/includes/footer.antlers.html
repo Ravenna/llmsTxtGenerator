@@ -1,17 +1,52 @@
 <footer>
-    <div class="pt-3 w-100 d-flex flex-row justify-content-start align-items-center">
-        <div class="footer-left">
-            <p class="pe-2">&copy; {{ now|format:Y }} Ravenna LLC. </p>
-            <ul class="d-flex flex-row">
-                {{ nav:footer_nav }}
-                    <li class="pe-2"><a href="{{ url }}" title="{{ title }}">{{ title }}</a></li>
-                {{ /nav:footer_nav }}
-            </ul>
-        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="footer-logo">
+                    <a href="{{ config:app:url }}" title="Ravenna Interactive">
+                        <img src="{{ config:app:url }}assets/img/ravenna.png" alt="Ravenna">
+                    </a>
+                </div>
+          
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/company/ravenna-llc/" title="LinkedIn" target="_blank">{{ partial src="includes/icons/linkedin" }}</a>
+                    <a href="https://partners.laravel.com/partners/ravenna" title="Laravel" target="_blank">{{ partial src="includes/icons/laravel" }}</a>
+                </div>              
+            </div>
 
-      
-        <span class="social-wrapper">
-            <a href="https://www.linkedin.com/company/ravenna-llc/" title="LinkedIn" target="_blank"><span class="linkedin"></span></a>
-        </span>
+            <div class="col-12 col-md-3">
+                <h6 class="mt-3">Menu</h6>
+                <ul>
+                    {{ nav:footer_menu }}
+                        <li class="{{ nav_class }}"><a href="{{ url }}" title="{{ title }}">{{ title }}</a></li>
+                    {{ /nav:footer_menu }}
+             
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <h6 class="mt-3">Services</h6>
+                <ul>
+                    {{ nav:footer_services}}
+                        <li class="{{ nav_class }}"><a href="{{ url }}" title="{{ title }}">{{ title }}</a></li>
+                    {{ /nav:footer_services}}
+             
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-3">
+                <h6 class="mt-3">Menu</h6>
+                <ul>
+                    {{ nav:footer_contact }}
+                        <li class="{{ contact_class }}"><a href="{{ url }}" title="{{ title }}">{{ title }}</a></li>
+                    {{ /nav:footer_contact }}
+             
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <p class="mb-0">&copy; {{ now|format:Y }}  Ravenna LLC. All Rights Reserved</p>
     </div>
 </footer> 

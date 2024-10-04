@@ -158,7 +158,7 @@ apis_integrated:
   - Mailgun
   - Pusher
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1727374083
+updated_at: 1728076285
 logo: c2c_logo.jpg
 one_image: false
 gallery:
@@ -172,4 +172,5 @@ seo:
   description: 'Ravenna built Compete to Create a custom learning management system to support training people in a high performance mindset'
 square_logo: false
 client_url: 'http://c2c.competetocreate.co/'
+template: templates/client
 ---

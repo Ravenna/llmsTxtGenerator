@@ -1,93 +1,35 @@
 footer {
-  position: relative;
-  z-index: 110;
-  background: $black;
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding:40px;
-  width: 100%;
-  @include respond-below(md){
-    padding: 16px;
-  }
-  &:before {
-    content:'';
-    display:block;
-    width: calc(100% - 80px);
-    height:1px;
-    position: absolute;
-    top:20px;
-    left:40px;
-    background-color: $white;
-    @include respond-below(md){
-      width: calc(100% - 32px);
-      left: 16px;
-    }
-  }
-  .footer-left{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-basis: 90%;
-    @include respond-below(md){
-        flex-direction: column;
-    } 
-  }
-  p {
-    font-size:16px;
-    color:$white;
-  }
-  ul{
-    padding-left: 0px;
-  }
-  li{
-    list-style: none;
-    font-size: 1.25rem;
-    a{
-      color: white;
-      text-decoration: none;
-      &:hover{
-        color: $seafoam;
-      }
-    }
-  }
-  .social-wrapper {
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    a {
-      display: block;
-      cursor: pointer;
-      margin-left:16px;
-      &:first-of-type {
-        margin-left:0;
-      }
-      span {
-        cursor: pointer;
-        display: block;
-        width:16px;
-        height:16px;
-        color:$white;
-        background-size: contain;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        
+	position: relative;
+	z-index: 110;
+	background: $dkGreen;
+	padding: 60px 0;
+ 
+	.footer-logo{
+		margin-bottom: 20px;
+		img{
+			max-width:  220px;
+			height: auto;
+		}
+	}
+	.footer-social{
+		svg{
+			width: 30px;
+			height: 30px;
+			margin-right: 14px;
+		}
+	}
 
-        &.linkedin {
-          background-image: url($linkedin);
-        }
-        &.facebook {
-          background-image: url($facebook);
-        }
-        &.instagram {
-          background-image: url($instagram);
-        }
-        &.twitter {
-          background-image: url($twitter);
-        }
-      }
-    }
-  }
+	ul{
+		margin-top: 16px;
+		padding-left: 0;
+		list-style-type: none;
+		li{
+			margin-bottom: 14px;
+		}
+		a{
+			color: $white !important;
+			text-decoration: none;
+
+		}
+	}
 }

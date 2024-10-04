@@ -1,0 +1,26 @@
+title: 'Two Column w Image Side'
+fields:
+  -
+    handle: body_copy
+    field:
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - anchor
+        - h4
+        - h5
+        - h6
+      remove_empty_nodes: false
+      type: bard
+      display: 'Body Copy'
+  -
+    handle: image_column
+    field:
+      container: assets
+      type: assets
+      display: 'Image Column'

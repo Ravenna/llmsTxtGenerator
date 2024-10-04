@@ -1,13 +1,24 @@
+@import url(https://use.typekit.net/hwk1fjw.css);
 #app h1 {
-  font-weight: 700;
+  font-weight: 100;
+  font-size: 4.75rem;
+  line-height: 5rem;
+}
+@media (min-width: 992px) {
+  #app h1 {
+    font-size: 6.75rem;
+    line-height: 7rem;
+  }
 }
 #app h2, #app h3 {
   color: white;
 }
 #app h2 {
   font-size: 3.5rem;
+  color: #E0FF1F;
   line-height: 1;
-  font-weight: 900;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 @media (max-width: 991px) {
   #app h2 {
@@ -20,23 +31,60 @@
   }
 }
 #app h3 {
-  font-size: 3.75rem;
+  font-size: 1.375rem;
   font-weight: 700;
+  color: #E0FF1F;
 }
 @media (max-width: 767px) {
   #app h3 {
     font-size: 2.8rem;
   }
 }
-#app h4, #app h5 {
-  font-weight: 700;
+#app h5 {
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: #E0FF1F;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+#app h6 {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: #9DA2A7;
+  text-transform: uppercase;
+  margin-bottom: 6px;
 }
 #app p, #app li {
   color: white;
   font-size: 1.125rem;
+  font-weight: 300;
+}
+#app p {
+  margin-bottom: 30px;
+}
+#app p.large {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 300;
+  color: #F7F7F8;
+  margin: 40px 0 30px;
+}
+#app p.lead {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: #9DA2A7;
+  text-transform: uppercase;
+  margin-bottom: 6px;
 }
 #app li p {
   margin-bottom: 0px;
+}
+#app .eyebrow {
+  text-transform: uppercase;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 @keyframes shake {
@@ -927,14 +975,14 @@ body.not-homepage .ravenna-logo {
 }
 
 body {
-  font-family: sofia-pro, sans-serif !important;
-  font-style: normal !important;
+  font-family: "sofia-pro", sans-serif !important;
   scroll-behavior: smooth !important;
   background-color: #050D09 !important;
 }
 
 body {
   font-display: swap;
+  letter-spacing: 0.5px;
 }
 body.modal-open {
   overflow: hidden;

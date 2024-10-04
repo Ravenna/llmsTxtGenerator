@@ -172,7 +172,7 @@ seo:
   description: 'Ravenna built a fintech MVP for Huntfund using Laravel and React Native'
   image: '@seo:social_share_image'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1727374092
+updated_at: 1728076292
 logo: hunt-fund-final-cut-white.webp
 gallery:
   - huntfund-1.webp
@@ -190,4 +190,5 @@ quote:
         text: "I had the pleasure of collaborating with Ravenna Interactive and their performance was outstanding throughout our project. Demonstrating a deep understanding of fintech solutions, Ravenna Interactive showcased remarkable technical proficiency, consistently exceeding expectations. Their collaborative and transparent communication style fostered a seamless working relationship, and they showcased a genuine commitment to the project's success. The solution delivered not only met but surpassed our requirements, integrating innovative features that added substantial value."
 quote_author: 'Jeff Bynum / HuntFund Founder'
 client_url: 'https://huntfund.com'
+template: templates/client
 ---

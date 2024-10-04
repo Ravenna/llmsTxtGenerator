@@ -19,52 +19,84 @@ tabs:
               type: text
               always_save: false
           -
-            handle: about
+            handle: top_three_boxes
             field:
-              remove_empty_nodes: false
-              display: About
-              type: bard
-              always_save: false
-          -
-            handle: result
-            field:
-              remove_empty_nodes: false
-              display: Result
-              type: bard
-              always_save: false
+              max_sets: 3
+              type: replicator
+              display: 'Top Three Boxes'
+              instructions: 'Usually The Vision, The Solution, The Results'
+              if:
+                template: 'equals templates/client-two'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: box_title
+                          field:
+                            type: text
+                            display: 'Box Title'
+                        -
+                          handle: box_copy
+                          field:
+                            type: textarea
+                            display: 'Box Copy'
           -
             handle: gallery
             field:
               container: assets
-              display: Gallery
               type: assets
-              always_save: false
-              width: 75
+              display: Gallery
           -
-            handle: one_image
+            import: client_body
+          -
+            handle: old_client
             field:
-              display: 'One Image'
-              type: toggle
-              always_save: false
-              width: 25
+              type: group
+              display: 'Old Client'
+              if:
+                template: 'equals client'
+          -
+            handle: about
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: About
+          -
+            handle: result
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Result
           -
             handle: quote
             field:
               remove_empty_nodes: false
-              display: Quote
               type: bard
-              always_save: false
+              display: Quote
+              if:
+                template: 'equals client'
           -
             handle: quote_author
             field:
-              display: 'Quote Author'
               type: text
-              always_save: false
+              display: 'Quote Author'
+              if:
+                template: 'equals client'
   sidebar:
     display: Sidebar
     sections:
       -
         fields:
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              folder: templates
           -
             handle: slug
             field:
@@ -72,17 +104,10 @@ tabs:
               localizable: true
               validate: 'max:200'
           -
-            handle: cool_facts
+            handle: tags
             field:
-              display: 'Cool Facts'
               type: list
-              always_save: false
-          -
-            handle: apis_integrated
-            field:
-              display: 'Apis Integrated'
-              type: list
-              always_save: false
+              display: Tags
           -
             handle: logo
             field:
@@ -108,6 +133,39 @@ tabs:
             field:
               type: text
               display: 'Client URL'
+          -
+            handle: client_industry
+            field:
+              type: text
+              display: 'Client Industry'
+          -
+            handle: platform
+            field:
+              type: text
+              display: Platform
+          -
+            handle: technology
+            field:
+              type: replicator
+              display: Technology
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: name
+                          field:
+                            type: text
+                            display: Name
+                        -
+                          handle: icon
+                          field:
+                            type: text
+                            display: icon
+                            instructions: 'lowercase, hyphenated icon name.'
   SEO:
     display: SEO
     sections:

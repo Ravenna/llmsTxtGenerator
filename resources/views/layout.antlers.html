@@ -24,7 +24,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="{{ config:app:url }}assets/favicon/favicon-16x16.png">
         <link rel="manifest" href="{{ config:app:url }}assets/favicon/site.webmanifest">
 
-        <link rel="preconnect" rel="stylesheet" href="https://use.typekit.net/yim3ewy.css">
+        <link rel="preconnect" rel="stylesheet" href="https://use.typekit.net/hwk1fjw.css">
         <link rel="stylesheet" href="{{ mix src='/css/head.css' }}">
         <link rel="stylesheet" href="{{ mix src='/css/site.css' }}" rel="preload">
         
@@ -36,10 +36,8 @@
 
         {{ stack:templateSD }}
 
-     
-
     </head>
-    <body class="{{ if !is_homepage }} not-homepage {{ /if }} {{ if collection == 'clients' }} client-template {{ /if }} {{template}}-template {{ slug }}">
+    <body class="{{ if !is_homepage }} not-homepage {{ /if }} {{ stack:bodyClass }} {{template}}-template {{ slug }}">
         <div id="app" class="wrapper">
             {{ partial src="includes.header" }}
             
@@ -54,7 +52,17 @@
               <stop offset="0%" stop-color="rgba(101,179,195,1)" />
               <stop offset="100%" stop-color="rgba(224,255,31,1)" />
             </linearGradient>
-          </svg>
+        </svg>
+
+
+        <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false"  gradientTransform="rotate(45)">
+            <linearGradient id="icon-angle-gradient" x2="1" y2="1">
+              <stop offset="0%" stop-color="rgba(90, 236, 164, 1)" />
+              <stop offset="100%" stop-color="rgba(224, 255, 31, 1)" />
+            </linearGradient>
+        </svg>
+
+       
 
         <script src="/vendor/statamic/frontend/js/helpers.js" defer></script>
         <script src="{{ mix src='/js/site.js' }}" defer></script>

@@ -4,7 +4,7 @@ blueprint: client
 title: Amazon
 logo: amazon.jpg
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1727373887
+updated_at: 1728076245
 about:
   -
     type: paragraph
@@ -89,4 +89,5 @@ apis_integrated:
   - 'AWS SES'
 square_logo: false
 client_url: 'https://amazon.com'
+template: templates/client
 ---

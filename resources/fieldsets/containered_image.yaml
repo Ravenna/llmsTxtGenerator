@@ -1,0 +1,9 @@
+title: 'Containered Image'
+fields:
+  -
+    handle: containered_image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Containered Image'

@@ -1,0 +1,157 @@
+{{ push:templateSD }}
+<script type="application/ld+json">
+
+{
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "{{ title }}",
+    "url": "{{ current_url }}",
+    "description": "{{ seo.description }}",
+    "thumbnailUrl": "{{ logo }}",
+    "image": "{{ gallery[0].url }}",
+    "datePublished": "2023-07-15",
+    "author": {
+      "@type": "Organization",
+      "name": "Ravenna"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "{{ seo.title }}",
+      "description": "{{ seo.description }}"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ current_url }}"
+    },
+    "creator": {
+      "@type": "Organization",
+      "name": "Ravenna"
+    }
+  }
+</script>
+{{ /push:templateSD }}
+{{ push:bodyClass}} client-template-two {{ /push:bodyClass}}
+
+<div class="container client-wrapper">
+
+    <div class="row mb-5 client-title">
+        <div class="col-12 col-lg-8 col-xl-9">
+            <p><a href="" class="back eyebrow">&larr; All Case Studies</a></p>
+            <h1 class="">{{ title }}</h1>
+        </div>
+        <div class="col-12 col-lg-9">
+            <p class="large">{{ big_statement }}</p>
+            <ul class="tags">
+                {{ tags }}
+                    <li>{{ value }}</li>
+                {{ /tags }}
+            </ul>
+        </div>
+    </div>
+
+    <div class="row client-box-wrapper">
+        {{ top_three_boxes }}
+            <div class="col-12 col-lg-4">
+                <div class="client-box">
+                    <h5>{{ box_title }}</h5>
+                    <p>{{ box_copy }}</p>
+                </div>
+            </div>
+        {{ /top_three_boxes }}
+    </div>
+</div>
+
+<div class="auto-scroll-gallery">
+    {{ gallery }}
+        <img src="{{ url }}" alt="{{ alt }}">
+    {{ /gallery }}
+</div>
+
+<div class="container client-wrapper">
+    <div class="client-meta-grid-wrapper">
+        <div class="row client-meta-grid">
+            <div class="col-12 col-lg-4 border-seafoam">
+                <div class="logo"><img src="{{ logo }}" alt="{{ title }}"> </div>
+            </div>
+
+            <div class="col-12 col-lg-8">
+                <div class="row">
+                    <div class="col-12 col-md-6 border-seafoam">
+                        <div class="grid-box">
+                            <div class="eyebrow">Client Industry</div>
+                            <div class="meta-desc lead">{{ client_industry }}</div>
+                        </div>
+                    
+                    </div>
+                    <div class="col-12 col-md-6 border-seafoam">
+                        <div class="grid-box">
+                            <div class="eyebrow">Platform</div>
+                            <div class="meta-desc lead">
+                                {{ if platform == 'Website' }}
+                                    {{ partial src="includes/icons/browser" }}
+                                {{ else }}
+
+                                {{ /if }}
+                                
+                                {{ platform }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 border-seafoam">
+                        <div class="grid-box">
+                            <div class="eyebrow">Technology</div>
+                            <ul class="meta-tech">
+                                {{ technology }}
+                                    <li>        
+                                        <div>{{ partial src="includes/icons/{icon}" }}</div>
+
+                                        {{ name }}
+                                    </li>
+                                {{ /technology }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="client-body">
+    {{ client_body }}
+        {{ if type == 'body_copy' }}
+            <div class="client-body-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-9">
+                            {{ body }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        {{ elseif type == 'quote'}}
+
+            <div class="client-body-section client-quote">
+                <div class="quote-icon"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-9">
+                            <div class="quote">
+                                {{ quote }}
+                            </div>
+            
+                        </div>
+                    </div>
+                  
+                    <div class="author">
+                        <div>
+                            <span class="name">{{ name_title }}</span>
+                            <span class="title">{{ author_title }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{ endif }}
+    {{ /client_body }}
+</div>
