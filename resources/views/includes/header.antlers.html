@@ -19,7 +19,7 @@
                 </a>
             </div>
             <ul>
-                {{ nav:main_nav }}
+                {{ nav:main_nav max_depth="1" }}
                     <li class="{{ nav_class }}"><a href="{{ url }}" title="{{ title }}">{{ title }}</a>
                         {{ if children }}
                             <ul>

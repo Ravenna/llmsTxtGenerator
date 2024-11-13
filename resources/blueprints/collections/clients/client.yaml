@@ -65,12 +65,16 @@ tabs:
               remove_empty_nodes: false
               type: bard
               display: About
+              if:
+                template: 'equals client'
           -
             handle: result
             field:
               remove_empty_nodes: false
               type: bard
               display: Result
+              if:
+                template: 'equals client'
           -
             handle: quote
             field:

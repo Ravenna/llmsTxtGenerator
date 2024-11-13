@@ -1,10 +1,11 @@
 //imports
-
 import form from '../js/components/form'
 import gallery from '../js/components/gallery'
 import nav from '../js/components/nav'
 import Alpine from 'alpinejs';
 import collapse from '@alpinejs/collapse'
+import EmblaCarousel from 'embla-carousel'
+import AutoScroll from 'embla-carousel-auto-scroll'
 
 
 // Global get CSRF token function (used by forms).
@@ -34,7 +35,6 @@ window.addEventListener('load', (event) => {
         startStopIntroAnim();
     }
 
-
     //
     //
     // Eyeball tracking
@@ -55,6 +55,23 @@ window.addEventListener('load', (event) => {
             eyeBalls[index].style.left = "calc(50% - 15px)";
             eyeBalls[index].style.top = "calc(50% - 15px)";
         }
+    }
+
+    // Client two autoplay carousel
+    const emblaNode = document.querySelector('.embla')
+    if(emblaNode){
+      const viewportNode = emblaNode.querySelector('.embla__viewport')
+      const OPTIONS = { 
+          loop: true,
+          speed: 1
+      }
+
+      const emblaApi = EmblaCarousel(emblaNode, OPTIONS, [
+        AutoScroll({ 
+          playOnInit: true,
+          speed: 1
+        })
+      ])
     }
 });
 

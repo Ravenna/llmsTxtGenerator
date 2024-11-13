@@ -2,6 +2,11 @@ import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
 export default defineConfig({
+    resolve: {
+        alias: {
+          '@': '/resources',
+        },
+    },
     plugins: [
         laravel({
             input: [
@@ -9,7 +14,10 @@ export default defineConfig({
                 'resources/scss/site.scss',
                 'resources/js/site.js',
             ],
-            refresh: true,
+            refresh: ['resources/views/**'],
+            server: {
+                host: 'localhost',
+            },
         }),
-    ],
+    ]
 });

@@ -1,6 +1,7 @@
-data: {  }
+data:
+  size_style: horiz
 size: 85888
-last_modified: 1683220052
+last_modified: 1686929732
 width: 1000
 height: 576
 mime_type: image/jpeg

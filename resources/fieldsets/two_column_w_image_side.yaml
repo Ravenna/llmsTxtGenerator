@@ -15,6 +15,7 @@ fields:
         - h4
         - h5
         - h6
+        - lead
       remove_empty_nodes: false
       type: bard
       display: 'Body Copy'
@@ -24,3 +25,9 @@ fields:
       container: assets
       type: assets
       display: 'Image Column'
+      max_files: 4
+  -
+    handle: copy_on_right
+    field:
+      type: toggle
+      display: 'Copy on Right?'

@@ -6,7 +6,7 @@
     "@type": "CreativeWork",
     "name": "{{ title }}",
     "url": "{{ current_url }}",
-    "description": "{{ seo.description }}",
+    "description": "",
     "thumbnailUrl": "{{ logo }}",
     "image": "{{ gallery[0].url }}",
     "datePublished": "2023-07-15",
@@ -16,8 +16,8 @@
     },
     "about": {
       "@type": "Thing",
-      "name": "{{ seo.title }}",
-      "description": "{{ seo.description }}"
+      "name": "",
+      "description": ""
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
@@ -62,9 +62,13 @@
 </div>
 
 <div class="auto-scroll-gallery">
-    {{ gallery }}
-        <img src="{{ url }}" alt="{{ alt }}">
-    {{ /gallery }}
+    <div class="embla">
+        <div class="embla__container">
+            {{ gallery }}
+                <div class="embla__slide"><img src="{{ url }}" alt="{{ alt }}"></div>
+            {{ /gallery }}
+        </div>
+    </div>
 </div>
 
 <div class="container client-wrapper">
@@ -79,14 +83,14 @@
                     <div class="col-12 col-md-6 border-seafoam">
                         <div class="grid-box">
                             <div class="eyebrow">Client Industry</div>
-                            <div class="meta-desc lead">{{ client_industry }}</div>
+                            <p class="meta-desc lead-normal">{{ client_industry }}</p>
                         </div>
                     
                     </div>
                     <div class="col-12 col-md-6 border-seafoam">
                         <div class="grid-box">
                             <div class="eyebrow">Platform</div>
-                            <div class="meta-desc lead">
+                            <p class="meta-desc lead-normal">
                                 {{ if platform == 'Website' }}
                                     {{ partial src="includes/icons/browser" }}
                                 {{ else }}
@@ -94,7 +98,7 @@
                                 {{ /if }}
                                 
                                 {{ platform }}
-                            </div>
+                            </p>
                         </div>
                     </div>
                     <div class="col-12 col-md-12 border-seafoam">
@@ -103,9 +107,10 @@
                             <ul class="meta-tech">
                                 {{ technology }}
                                     <li>        
-                                        <div>{{ partial src="includes/icons/{icon}" }}</div>
-
-                                        {{ name }}
+                                        <div>
+                                            {{ partial src="includes/icons/{icon}" }}
+                                        </div>
+                                        <div class="mt-1">{{ name }}</div>
                                     </li>
                                 {{ /technology }}
                             </ul>
@@ -123,7 +128,7 @@
             <div class="client-body-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-md-9">
+                        <div class="col-12 col-md-10 body-text">
                             {{ body }}
                         </div>
                     </div>
@@ -131,27 +136,68 @@
             </div>
 
         {{ elseif type == 'quote'}}
-
             <div class="client-body-section client-quote">
-                <div class="quote-icon"></div>
                 <div class="container">
+                    <div class="quote-icon">{{ partial src="includes/icons/open-quote" }}</div>
                     <div class="row">
-                        <div class="col-12 col-md-9">
-                            <div class="quote">
-                                {{ quote }}
-                            </div>
-            
+                        <div class="col-12 col-md-10">
+                            <div class="quote">{{ quote }}</div>
                         </div>
                     </div>
-                  
-                    <div class="author">
-                        <div>
-                            <span class="name">{{ name_title }}</span>
-                            <span class="title">{{ author_title }}</span>
+                    <div class="row">
+                        <div class="col-12 col-lg-3 offset-lg-9">
+                            <div class="author">
+                                <div>
+                                    <span class="name">{{ name_title }}</span>
+                                    <span class="title">{{ author_title }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        {{ elseif type == 'two_column_w_image_side'}}
+            <div class="two-column-image-block client-body-section {{ copy_on_right ? "copy-on-right" : "" }}">
+                <div class="container">
+                    <div class="row gx-5">
+                        <div class="col-12 col-lg-5 body-text {{ copy_on_right ? "order-lg-2" : "" }}">
+                            {{ body_copy }}
+                        </div>
+                        <div class="col-12 col-lg-7 two-column-image">
+                            {{ image_column }}
+                                <img src="{{ url }}" alt="{{ alt }}" class="img-fluid">
+                            {{ /image_column }}
                         </div>
                     </div>
                 </div>
             </div>
+
+        {{ elseif type == 'containered_image'}}
+            <div class="client-body-section containered-image">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="{{ containered_image }}" alt="{{ alt }}" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        {{ elseif type == 'masonry_images' }}
+            <div class="client-body-section masonry-gallery">
+                <div class="container">
+                    <div class="mason-container">
+                        {{ images }}
+                            <div class="masonry-image {{ size_style }}">
+                                <img src="{{ url }}" alt="{{ alt }}" class="img-fluid">
+                            </div>
+                        {{ /images }}
+                    </div>
+                </div>
+            </div>
+
         {{ endif }}
     {{ /client_body }}
 </div>

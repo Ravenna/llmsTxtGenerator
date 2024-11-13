@@ -21,6 +21,9 @@
             text-decoration: underline;
         }
     }
+    h5{
+        color: $black;
+    }
 
     .home-feat-service{
         color: $black;
@@ -33,7 +36,7 @@
                 bottom: 30px;
                 left: 0;
                 transform: rotate(-20deg);
-                padding: 2px;
+                padding: 4px;
             }
         }
         p{

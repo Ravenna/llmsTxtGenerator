@@ -5,10 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        {{ if current_template != 'errors.404' }}
-            {{ seo_pro:meta }}
-        {{ /if }}
-
+        
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YF3J0TJRTM"></script>
         <script>
@@ -25,8 +22,10 @@
         <link rel="manifest" href="{{ config:app:url }}assets/favicon/site.webmanifest">
 
         <link rel="preconnect" rel="stylesheet" href="https://use.typekit.net/hwk1fjw.css">
-        <link rel="stylesheet" href="{{ mix src='/css/head.css' }}">
-        <link rel="stylesheet" href="{{ mix src='/css/site.css' }}" rel="preload">
+        
+
+        {{ vite src="resources/scss/head.scss" }}
+        {{ vite src="resources/scss/site.scss" }}
         
         {{ if json_citation_data }}
             <script type="application/ld+json">
@@ -35,7 +34,6 @@
         {{ /if }}
 
         {{ stack:templateSD }}
-
     </head>
     <body class="{{ if !is_homepage }} not-homepage {{ /if }} {{ stack:bodyClass }} {{template}}-template {{ slug }}">
         <div id="app" class="wrapper">
@@ -62,10 +60,8 @@
             </linearGradient>
         </svg>
 
-       
-
         <script src="/vendor/statamic/frontend/js/helpers.js" defer></script>
-        <script src="{{ mix src='/js/site.js' }}" defer></script>
+        {{ vite src="resources/js/site.js" }}
 
         {{ if current_template == 'templates/article' }}
             <script src="/js/prism.js" defer></script>

@@ -36,6 +36,9 @@ body.block-page-template, body.clients {
     }
 
     .block-section.form{
+        h3{
+            font-size: 3.75rem !important;
+        }
         a{
             color: $black;
             text-decoration: underline;
