@@ -44,9 +44,10 @@ technology:
     type: new_set
     enabled: true
 seo:
-  image: '@seo:social_share_image'
+  title: 'Custom Laravel College Search website'
+  description: 'CollegeIQ is a custom built Laravel application focussed on helping students and parents find colleges.'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1731526168
+updated_at: 1731531458
 logo: collegeiq_logo_rgb_reverse_f.svg
 client_body:
   -
@@ -467,4 +468,6 @@ top_three_boxes:
     type: new_set
     enabled: true
     box_copy: 'Clean branding, amazingly detailed design, easy-to-maintain website, and integrations that make future data importing a sinch.  The site is performant and includes structured data to support SEO ranking.'
+social_share_image: college-iq-social-share.jpg
+client_url: 'https://collegeiq.com'
 ---
