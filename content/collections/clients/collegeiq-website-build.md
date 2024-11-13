@@ -48,7 +48,7 @@ seo:
   description: 'CollegeIQ is a custom built Laravel application focussed on helping students and parents find colleges.'
   image: '@seo:social_share_image'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1731531488
+updated_at: 1731531731
 logo: collegeiq_logo_rgb_reverse_f.svg
 client_body:
   -

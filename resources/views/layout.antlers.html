@@ -4,7 +4,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        
+        {{ if current_template != 'errors.404' }}
+            {{ seo_pro:meta }}
+        {{ /if }}
         
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YF3J0TJRTM"></script>
@@ -20,7 +23,6 @@
         <link rel="icon" type="image/png" sizes="32x32" href="{{ config:app:url }}assets/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="{{ config:app:url }}assets/favicon/favicon-16x16.png">
         <link rel="manifest" href="{{ config:app:url }}assets/favicon/site.webmanifest">
-
         <link rel="preconnect" rel="stylesheet" href="https://use.typekit.net/hwk1fjw.css">
         
 
