@@ -93,8 +93,10 @@
     }
     .client-body{
         p{
-            font-size: 1.5rem;
-            line-height: 2.25rem;
+            font-size: 1.325rem;
+            line-height: 2.125rem;
+            font-weight: 200;
+            color: $white;
             @include respond-below(md){
                 font-size: 1.125rem;
                 line-height: 1.75rem;
@@ -169,6 +171,7 @@
                         height: auto;
                         margin-right: 8px;
                         display: block;
+                        padding-top: 3px;
                     }
                 }
             }
@@ -218,14 +221,12 @@
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-                        height: 50px;
+                        height: 70px;
                         width:70px;
-                        padding-bottom: 6px;
                     }
                     
                     svg{
-                        max-height: 50px;
-                        max-width: 70px;
+                        height: 100%;
                         width: auto;
                         display: block;
                         margin: 0 auto;
@@ -397,7 +398,7 @@
                     }
                     &.big{
                         grid-column: span 3; /* Full width */
-                        grid-row: span 24;   /* Adjust height as needed */
+                        grid-row: span 34;   /* Adjust height as needed */
                         @include respond-below(md){
                             grid-row: span 16;   /* Adjust height as needed */
                         }

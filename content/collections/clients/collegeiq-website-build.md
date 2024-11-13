@@ -1,7 +1,7 @@
 ---
 id: 08aff8b9-a424-4307-be89-335407e7676d
 blueprint: client
-title: 'CollegeIQ Website Build'
+title: 'CollegeIQ <Br>Website Build'
 big_statement: 'Comprehensive college search site built to include a diverse set of data giving prospective students and their families a way to find colleges that fit their needs.'
 one_image: false
 tags:
@@ -48,7 +48,7 @@ seo:
   description: 'CollegeIQ is a custom built Laravel application focussed on helping students and parents find colleges.'
   image: '@seo:social_share_image'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1731531731
+updated_at: 1731532969
 logo: collegeiq_logo_rgb_reverse_f.svg
 client_body:
   -
