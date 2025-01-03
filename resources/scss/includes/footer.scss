@@ -1,4 +1,4 @@
-footer {
+#app footer {
 	position: relative;
 	z-index: 110;
 	background: $dkGreen;
@@ -12,10 +12,18 @@ footer {
 		}
 	}
 	.footer-social{
+		margin-left: -13px;
+		
 		svg{
 			width: 60px;
 			height: 60px;
 			margin-right: 14px;
+			opacity: 1;
+			transition: all 0.3s;
+			&:hover{
+				opacity: 0.8;
+				transition: all 0.3s;
+			}
 		}
 	}
 
@@ -29,7 +37,13 @@ footer {
 		a{
 			color: $white !important;
 			text-decoration: none;
+			&:hover{
+				color: $purple !important;
+			}
 
 		}
+	}
+	.copyright{
+		color: $ltGrey;
 	}
 }
