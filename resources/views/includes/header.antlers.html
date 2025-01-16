@@ -20,12 +20,12 @@
             </div>
             <ul>
                 {{ nav:main_nav max_depth="1" }}
-                    <li class="{{ nav_class }}"><a href="{{ url }}" title="{{ title }}">{{ title }}</a>
+                    <li class="{{ nav_class }}"><a href="{{ url }}" class="nav-href"  title="{{ title }}">{{ title }}</a>
                         {{ if children }}
                             <ul>
                                 {{ children }}
                                     <li >
-                                        <a href="{{ url }}" title="{{ title }}">{{ title }}</a>
+                                        <a href="{{ url }}" class="nav-href" title="{{ title }}">{{ title }}</a>
                                     </li>
                                 {{ /children }}
                             </ul>
