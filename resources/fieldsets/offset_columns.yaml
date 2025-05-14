@@ -5,9 +5,6 @@ fields:
   -
     handle: title
     field:
-      collapse: false
-      always_show_set_button: false
-      previews: true
       buttons:
         - h2
         - h3
@@ -22,76 +19,75 @@ fields:
         - table
         - seafoam
         - btn
-      save_html: false
-      toolbar_mode: fixed
-      link_noopener: false
-      link_noreferrer: false
-      target_blank: false
-      reading_time: false
-      fullscreen: true
-      allow_source: true
-      enable_input_rules: true
-      enable_paste_rules: true
-      antlers: false
       remove_empty_nodes: false
       display: Title
       type: bard
-      icon: bard
-      listable: hidden
-      instructions_position: above
-      visibility: visible
       always_save: false
   -
     handle: boxes
     field:
-      collapse: false
-      previews: true
-      sets:
-        box:
-          display: Box
-          fields:
-            -
-              handle: content
-              field:
-                collapse: true
-                always_show_set_button: false
-                previews: true
-                buttons:
-                  - h2
-                  - h3
-                  - bold
-                  - italic
-                  - unorderedlist
-                  - orderedlist
-                  - removeformat
-                  - anchor
-                  - image
-                  - seafoam
-                  - btn
-                save_html: false
-                toolbar_mode: fixed
-                link_noopener: false
-                link_noreferrer: false
-                target_blank: false
-                reading_time: false
-                fullscreen: true
-                allow_source: true
-                enable_input_rules: true
-                enable_paste_rules: true
-                antlers: false
-                remove_empty_nodes: false
-                display: Content
-                type: bard
-                icon: bard
-                listable: hidden
-                instructions_position: above
-                visibility: visible
-                always_save: false
-                container: assets
       display: Boxes
       type: replicator
-      icon: replicator
-      listable: hidden
-      instructions_position: above
-      visibility: visible
       always_save: false
+      sets:
+        main:
+          display: Main
+          sets:
+            box:
+              display: Box
+              fields:
+                -
+                  handle: content
+                  field:
+                    collapse: true
+                    buttons:
+                      - h2
+                      - h3
+                      - bold
+                      - italic
+                      - unorderedlist
+                      - orderedlist
+                      - removeformat
+                      - anchor
+                      - image
+                      - seafoam
+                      - btn
+                    remove_empty_nodes: false
+                    display: Content
+                    type: bard
+                    always_save: false
+                    container: assets
+                    sets:
+                      icon:
+                        display: Icon
+                        icon: edit-pin
+                        sets:
+                          icon:
+                            display: Icon
+                            fields:
+                              -
+                                handle: icon_output
+                                field:
+                                  options:
+                                    -
+                                      key: screen
+                                      value: Screen
+                                    -
+                                      key: nodes
+                                      value: API
+                                    -
+                                      key: moeny
+                                      value: Money
+                                    -
+                                      key: building
+                                      value: Building
+                                    -
+                                      key: gears-people
+                                      value: 'Gears People'
+                                  type: select
+                                  display: 'Icon Output'
+  -
+    handle: link
+    field:
+      type: text
+      display: Link

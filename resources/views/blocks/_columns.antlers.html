@@ -9,33 +9,49 @@
                 </div>  
             {{ /if }}
 
-            <div class="row">
-                {{ if narrow }}
-                    <div class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2">
-                        <div class="row">
-                {{ endif }}
 
-                {{ columns }}
-                <div class="col-12 {{ if columns_per_row == '2' }} col-md-6 {{ elseif columns_per_row == 3 }} col-md-4 {{ elseif columns_per_row == 4 }} col-md-3 {{ /if }} mb-5">
+            {{ if narrow }}
+                <div class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+                    <div class="row">
+            {{ endif }}
+
+            {{ columns }}
+                <div class="col-12 {{ if columns_per_row == '2' }} col-md-6 {{ elseif columns_per_row == 3 }} col-md-4 {{ elseif columns_per_row == 4 }} col-md-3 {{ /if }}">
                     {{ if use_image_instead }}
                         <img src="{{ column_image:url }}" alt="{{ column_image:alt }}" class="img-fluid" />
                     {{ else }}
-                        {{ content }}
+                      {{ content as="sets"}}
+                            {{ sets }} 
+                                {{ if type == "included_image" }}
+                                    <div class="image">
+                                        {{ if image }}
+                                            <img src="{{ image }}" alt="Case Study" class="img-fluid" />
+                                        {{ /if }}
+                                    </div>   
+                                {{ else }}
+                                    {{ text | raw | bard_html }}
+                                {{ /if }}
+                            {{ /sets }}
+                        {{ /content }}
                     {{ /if }}
                 </div>
-                {{ /columns }}
-            
-                {{ if narrow }}
-                        </div>
+            {{ /columns }}
+        
+            {{ if narrow }}
                     </div>
-                {{ endif }}
-            </div>
+                </div>
+            {{ endif }}
+
 
             {{ if outro }}
-                <div class="col-12 col-md-8 offset-md-2 mt-5">
-                    {{ outro }}
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-md-8 offset-md-2 mt-5">
+                        {{ outro }}
+                        </div>
+                    </div>
                 </div>
-        {{ /if }}
+            {{ /if }}
         </div>
     </div>
 </div>

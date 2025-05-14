@@ -9,6 +9,7 @@ tabs:
             handle: title
             field:
               type: text
+              required: true
               validate:
                 - required
           -
@@ -17,17 +18,15 @@ tabs:
             handle: blocks
             field:
               collapse: true
-              previews: true
+              display: Blocks
+              type: replicator
+              always_save: false
               sets:
                 main:
                   display: Main
-                  instructions: null
-                  icon: null
                   sets:
                     columns:
                       display: Columns
-                      instructions: null
-                      icon: null
                       fields:
                         -
                           import: block_settings
@@ -35,8 +34,6 @@ tabs:
                           import: colums
                     expand:
                       display: Expand
-                      instructions: null
-                      icon: null
                       fields:
                         -
                           import: block_settings
@@ -44,8 +41,6 @@ tabs:
                           import: faqs
                     full_width:
                       display: 'Full Width'
-                      instructions: null
-                      icon: null
                       fields:
                         -
                           import: block_settings
@@ -53,8 +48,6 @@ tabs:
                           import: copy
                     hero:
                       display: Hero
-                      instructions: null
-                      icon: null
                       fields:
                         -
                           import: block_settings
@@ -62,59 +55,39 @@ tabs:
                           import: hero
                     quiz:
                       display: Quiz
-                      instructions: null
-                      icon: null
                       fields:
                         -
                           import: quiz
                     offset_boxes:
                       display: 'Offset Boxes'
-                      instructions: null
-                      icon: null
                       fields:
                         -
                           import: offset_columns
                     image_break:
                       display: 'Image Break'
-                      instructions: null
-                      icon: null
                       fields:
                         -
                           import: image_break
                     form:
                       display: Form
-                      instructions: null
-                      icon: null
                       fields:
                         -
                           import: form
                     quote:
                       display: Quote
-                      instructions: null
-                      icon: null
                       fields:
                         -
                           import: quote
                     contained_image:
                       display: 'Contained Image'
-                      instructions: null
-                      icon: null
                       fields:
                         -
                           handle: image
                           field:
-                            mode: list
                             container: assets
-                            restrict: false
-                            allow_uploads: true
-                            show_filename: true
                             display: Image
                             type: assets
-                            icon: assets
                             width: 50
-                            listable: hidden
-                            instructions_position: above
-                            visibility: visible
                             always_save: false
                             max_files: 1
                         -
@@ -124,62 +97,31 @@ tabs:
                               6: half
                               8: three-quarters
                               12: full
-                            multiple: false
-                            clearable: false
-                            searchable: true
-                            taggable: false
-                            push_tags: false
-                            cast_booleans: false
                             display: Width
                             type: select
-                            icon: select
                             width: 50
-                            listable: hidden
-                            instructions_position: above
-                            visibility: visible
                             always_save: false
                     articles:
                       display: Articles
-                      instructions: null
-                      icon: null
                       fields:
                         -
                           handle: articles_listing
                           field:
                             type: section
                             display: 'Articles Listing'
-                            icon: section
-                            listable: hidden
-                            instructions_position: above
-                            visibility: visible
-                            replicator_preview: true
-                            hide_display: false
                     careers:
                       display: Careers
-                      instructions: null
-                      icon: null
                       fields:
                         -
                           handle: careers
                           field:
                             type: section
                             display: Careers
-                            icon: section
-                            listable: hidden
-                            instructions_position: above
-                            visibility: visible
-                            replicator_preview: true
-                            hide_display: false
-              display: Blocks
-              type: replicator
-              icon: replicator
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              always_save: false
-              replicator_preview: true
-              fullscreen: true
-              hide_display: false
+                    logo_wall:
+                      display: 'Logo Wall'
+                      fields:
+                        -
+                          import: logo_wall
   sidebar:
     display: Sidebar
     sections:
@@ -190,6 +132,7 @@ tabs:
             field:
               type: slug
               localizable: true
+              validate: 'max:200'
           -
             handle: parent
             field:
@@ -205,37 +148,16 @@ tabs:
               options:
                 block-page: 'Block Page'
                 'null': null
-              multiple: false
-              clearable: false
-              searchable: true
-              taggable: false
-              push_tags: false
-              cast_booleans: false
               display: Template
               type: select
-              icon: select
-              listable: hidden
-              instructions_position: above
-              visibility: visible
               always_save: false
           -
             handle: social_share_image
             field:
               max_files: 1
-              mode: list
               container: assets
-              restrict: false
-              allow_uploads: true
-              show_filename: true
-              show_set_alt: true
               type: assets
               display: 'Social Image'
-              icon: assets
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
   SEO:
     display: SEO
     sections:
@@ -250,11 +172,6 @@ tabs:
           -
             handle: json_citation_data
             field:
-              antlers: false
               display: 'JSON Citation Data'
               type: textarea
-              icon: textarea
-              listable: hidden
-              instructions_position: above
-              visibility: visible
               always_save: false

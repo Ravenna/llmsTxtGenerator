@@ -2,4 +2,55 @@
     {{ blocks }}
         {{ partial src="blocks/_{type}" }}
     {{ /blocks }}
+
+    {{ if faqs }}
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-12 col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <h3>You have questions<br><span class="seafoam">We have answers</span></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div x-data="{ 
+                        active: 0,
+                        expand(i){
+                            this.active = i;
+                        }
+                    }" class="faqs">
+                        {{ faqs }}
+                            <div class="accordion" role="region">
+                                <button @click="expand({{ index }})" :class="active === {{index}} ? 'active' : ''">
+                                    <span>{{ question }}</span> {{ partial src="includes.icons.xmark" }}
+                                </button>
+                                <div class="answer" x-show="active === {{ index }}" x-collapse >
+                                    {{ answer }}
+                                
+                                </div>
+                            </div>
+                        {{ /faqs }}
+                    </div>
+
+                    <script type="application/ld+json">
+                        {
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {{ faqs }}
+                                {
+                                "@type": "Question",
+                                "name": "{{ question }}",
+                                "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "{{ answer | strip_tags | decode }}"
+                                }
+                            }{{ if !last }},{{ /if }}
+                            {{ /faqs }}
+                        ]
+                        }
+                        </script>
+                </div>
+            </div>
+        </div>
+    {{ /if}}
 </div>

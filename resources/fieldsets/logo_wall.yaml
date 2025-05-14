@@ -1,0 +1,28 @@
+title: 'Logo Wall'
+fields:
+  -
+    handle: logo_wall
+    field:
+      type: replicator
+      display: 'Logo Wall'
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: logo
+                  field:
+                    max_files: 1
+                    container: assets
+                    type: assets
+                    display: Logo
+                -
+                  handle: client_link
+                  field:
+                    collections:
+                      - clients
+                    type: link
+                    display: 'Client Link'

@@ -5,34 +5,23 @@ fields:
     field:
       type: section
       display: Content
-      icon: section
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-      replicator_preview: true
-      hide_display: false
   -
     handle: columns
     field:
       collapse: true
-      previews: true
+      display: Columns
+      type: replicator
+      always_save: false
       sets:
         main:
           display: Main
-          instructions: null
-          icon: null
           sets:
             column:
               display: Column
-              instructions: null
-              icon: null
               fields:
                 -
                   handle: content
                   field:
-                    collapse: false
-                    always_show_set_button: false
-                    previews: true
                     buttons:
                       - h2
                       - h3
@@ -41,96 +30,53 @@ fields:
                       - unorderedlist
                       - orderedlist
                       - removeformat
-                      - quote
                       - anchor
-                      - table
                       - h4
                       - h5
                       - seafoam
+                      - btn
                       - image
-                    save_html: false
-                    toolbar_mode: fixed
-                    link_noopener: false
-                    link_noreferrer: false
-                    target_blank: false
-                    reading_time: false
-                    fullscreen: true
-                    allow_source: true
-                    enable_input_rules: true
-                    enable_paste_rules: true
-                    antlers: false
                     remove_empty_nodes: false
                     display: Content
                     type: bard
-                    icon: bard
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
                     always_save: false
-                    replicator_preview: true
-                    smart_typography: false
-                    inline: false
-                    word_count: false
-                    hide_display: false
+                    container: assets
                     unless:
                       use_image_instead: 'equals true'
+                    sets:
+                      included_image:
+                        display: 'Included Image'
+                        sets:
+                          included_image:
+                            display: 'Included Image'
+                            fields:
+                              -
+                                handle: image
+                                field:
+                                  max_files: 1
+                                  container: assets
+                                  type: assets
+                                  display: Image
                 -
                   handle: use_image_instead
                   field:
-                    default: false
                     type: toggle
                     display: 'Use image instead'
-                    icon: toggle
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    replicator_preview: true
-                    hide_display: false
                 -
                   handle: column_image
                   field:
                     max_files: 1
-                    mode: list
                     container: assets
-                    restrict: false
-                    allow_uploads: true
-                    show_filename: true
-                    show_set_alt: true
                     type: assets
                     display: 'Column Image'
-                    icon: assets
-                    listable: hidden
-                    instructions_position: above
-                    visibility: visible
-                    replicator_preview: true
-                    hide_display: false
-      display: Columns
-      type: replicator
-      icon: replicator
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-      always_save: false
-      replicator_preview: true
-      fullscreen: true
-      hide_display: false
   -
     handle: intro_outro
     field:
       type: section
       display: 'Intro / Outro'
-      icon: section
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-      replicator_preview: true
-      hide_display: false
   -
     handle: intro
     field:
-      collapse: false
-      always_show_set_button: false
-      previews: true
       buttons:
         - h2
         - h3
@@ -151,36 +97,13 @@ fields:
         - seafoam
         - alignleft
         - aligncenter
-      save_html: false
-      toolbar_mode: fixed
-      link_noopener: false
-      link_noreferrer: false
-      target_blank: false
-      reading_time: false
-      fullscreen: true
-      allow_source: true
-      enable_input_rules: true
-      enable_paste_rules: true
-      antlers: false
       remove_empty_nodes: false
       display: Intro
       type: bard
-      icon: bard
-      listable: hidden
-      instructions_position: above
-      visibility: visible
       always_save: false
-      replicator_preview: true
-      smart_typography: false
-      inline: false
-      word_count: false
-      hide_display: false
   -
     handle: outro
     field:
-      collapse: false
-      always_show_set_button: false
-      previews: true
       buttons:
         - h2
         - h3
@@ -196,58 +119,25 @@ fields:
         - seafoam
         - btn
         - center
-      save_html: false
-      toolbar_mode: fixed
-      link_noopener: false
-      link_noreferrer: false
-      target_blank: false
-      reading_time: false
-      fullscreen: true
-      allow_source: true
-      enable_input_rules: true
-      enable_paste_rules: true
-      antlers: false
       remove_empty_nodes: false
       display: Outro
       type: bard
-      icon: bard
-      listable: hidden
-      instructions_position: above
-      visibility: visible
       always_save: false
   -
     handle: presentation
     field:
       type: section
       display: Presentation
-      icon: section
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-      replicator_preview: true
-      hide_display: false
   -
     handle: columns_per_row
     field:
       min: 1
       max: 4
-      step: 1
       display: 'Columns Per Row'
       type: range
-      icon: range
-      listable: hidden
-      instructions_position: above
-      visibility: visible
       always_save: false
   -
     handle: narrow
     field:
-      default: false
       type: toggle
       display: Narrow
-      icon: toggle
-      listable: hidden
-      instructions_position: above
-      visibility: visible
-      replicator_preview: true
-      hide_display: false
