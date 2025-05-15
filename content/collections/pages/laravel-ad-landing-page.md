@@ -141,7 +141,7 @@ blocks:
     narrow: false
     type: columns
     enabled: true
-    block_padding: medium
+    block_padding: small
   -
     id: mao6jvm3
     logo_wall:
@@ -191,7 +191,7 @@ blocks:
         content:
           -
             type: text
-            text: 'Custom, feature-rich web applicatons tailored for business goals'
+            text: 'Custom, feature-rich web applications built with scalability, security, and performance in mind — tailored to support your business goals and grow with you.'
     boxes:
       -
         id: man19wia
@@ -218,7 +218,7 @@ blocks:
             content:
               -
                 type: text
-                text: 'From Saas to e-commerce to membership and subscription sites.'
+                text: "From SaaS to E-Commerce to Membership Platforms. We design and build robust Laravel-based web applications that power online businesses, communities, and platforms. Whether you're launching a new SaaS product or scaling your subscription model, we create flexible solutions that are intuitive for users and maintainable for teams."
         type: box
         enabled: true
       -
@@ -246,7 +246,16 @@ blocks:
             content:
               -
                 type: text
-                text: 'Secure RESTful APIs & 3rd-party integrations'
+                text: 'Secure RESTful APIs & 3rd-Party Integrations.'
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: ' '
+              -
+                type: text
+                text: "We architect reliable Laravel APIs that serve as the backbone of modern applications. Whether it's integrating with payment gateways, CRMs, analytics tools, or mobile frontends, we ensure your data flows securely and efficiently across platforms."
         type: box
         enabled: true
       -
@@ -274,7 +283,7 @@ blocks:
             content:
               -
                 type: text
-                text: 'Powerful admin panels for Android/iOS apps'
+                text: 'Powerful Admin Panels for Android/iOS Apps. Give your mobile app a rock-solid backend. We build feature-rich Laravel dashboards that manage content, users, and analytics — all while supporting your frontend teams with clean, well-documented APIs and real-time capabilities.'
         type: box
         enabled: true
       -
@@ -302,7 +311,16 @@ blocks:
             content:
               -
                 type: text
-                text: 'Legacy app upgrades, project rescue & continuous support'
+                text: 'Legacy Upgrades, Project Rescue & Ongoing Support.'
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: ' '
+              -
+                type: text
+                text: 'If your Laravel app is struggling with performance, outdated code, or developer turnover, we step in to diagnose, modernize, and stabilize. From upgrading Laravel versions to implementing CI/CD, we provide long-term support and technical leadership.'
         type: box
         enabled: true
     type: offset_boxes
@@ -396,7 +414,7 @@ blocks:
     type: columns
     enabled: true
     copy_color: white
-    block_padding: medium
+    block_padding: small
     outro:
       -
         type: paragraph
@@ -472,5 +490,7 @@ template: block-page
 seo:
   image: '@seo:social_share_image'
 updated_by: 1d1068ab-208d-480d-a677-dda65fe0f490
-updated_at: 1747244291
+updated_at: 1747339045
+alt_header: true
+min_footer: true
 ---

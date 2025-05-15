@@ -4,6 +4,7 @@
             <img src="{{ config:app:url }}assets/img/ravenna.png" alt="Ravenna">
         </a>
     </div>
+    {{ if !alt_header }}
 
     <div class="hamburglar-wrapper" x-data="nav">
         <div class="hamburglar" @click="open = ! open" :class="open ? 'open' : 'closed'">
@@ -35,4 +36,6 @@
             </ul>
         </div>
     </div>
+
+    {{ /if }}
 </div>

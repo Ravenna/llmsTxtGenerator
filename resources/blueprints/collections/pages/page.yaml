@@ -158,6 +158,16 @@ tabs:
               container: assets
               type: assets
               display: 'Social Image'
+          -
+            handle: alt_header
+            field:
+              type: toggle
+              display: 'Alt Header'
+          -
+            handle: min_footer
+            field:
+              type: toggle
+              display: 'Min Footer'
   SEO:
     display: SEO
     sections:

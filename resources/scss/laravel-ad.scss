@@ -1,10 +1,22 @@
 .laravel-ad-landing-page #app{
 
     .block-section{
+        &.hero{
+            h1{
+                font-weight: 700;
+                font-size: 6rem !important;
+                line-height: 6rem;
+                margin-bottom: 20px;
+            }
+        }
+
         &.offset-boxes.small-padding{
             padding-top: 40px;
             h3{
                 font-size: 2.5rem;
+            }
+            .service-types{
+                margin-top: 20px;
             }
         }
         &.columns{
@@ -67,7 +79,14 @@
 
             .client-box{
                 border: 0;
+                width: 33%;
+                margin: 0;
+                padding: 0 40px
             }
+        }
+
+        &.quote{
+            padding: 40px 0;
         }
     }
 }
