@@ -1,8 +1,12 @@
 <div class="container-fluid header" id="header">
     <div class="ravenna-logo" id="logo">
+            {{ if !alt_header }}
         <a href="{{ config:app:url }}" title="Ravenna Interactive">
             <img src="{{ config:app:url }}assets/img/ravenna.png" alt="Ravenna">
         </a>
+        {{ else }}
+ <img src="{{ config:app:url }}assets/img/ravenna.png" alt="Ravenna">
+        {{ /if }}
     </div>
     {{ if !alt_header }}
 
