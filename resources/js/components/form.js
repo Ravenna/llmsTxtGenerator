@@ -2,7 +2,7 @@ import '@kingshott/iodine';
 import axios from 'axios'
 window.axios = axios;
 
-function form() {
+function form(redirect = null) {
 	return {
 		inputElements: [],
 		success: false,
@@ -12,6 +12,7 @@ function form() {
         formPartial: null,
         contact_method: null,
 		loading: false,
+		redirect: redirect,
 		init() {
 			this.inputElements = [...this.$el.querySelectorAll("[data-rules]")];
 	  	},
@@ -82,6 +83,10 @@ function form() {
                     self.error = false;
                     self.success = true;
                     self.submitting = false;
+					if(self.redirect != null){
+						console.log('redirecting');
+						window.location.href = self.redirect;	
+					}
 
 					gtag('event', 'submit', {
 						'event_category': 'Forms',

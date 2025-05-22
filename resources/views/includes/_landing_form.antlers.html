@@ -1,8 +1,10 @@
-<div x-data="form" x-cloak>
+<section class="natural-scroll white-bg auto-height" id="section-4" data-scroll="1" style="z-index: 100;">
+    <div class="container-fluid form-wrapper">
+<div x-data="form('thank-you')" x-cloak>
 
     {{ form:create 
-        in="contact"
-        id="form-contact"
+        in="landing_form"
+        id="landing-form"
         csrf="false"
         @submit.prevent="submit()"
         js="alpine:dynamic_form"
@@ -125,3 +127,5 @@
 {{ /form:create }}
 
 </div>
+    </div>
+</section>
