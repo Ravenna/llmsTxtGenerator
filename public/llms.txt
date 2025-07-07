@@ -1,0 +1,58 @@
+# Ravenna
+
+> Overview of collections and entries on Ravenna
+
+This llms.txt file lists all collections and their entries in Markdown format for LLM consumption.
+
+## Articles
+- [A Beautiful and Accessible Typeahead](http://ravenna.test/our-thinking/a-beautiful-and-accessible-typeahead): Entry in collection “articles”
+- [AI-Powered SEO: Enhancing Traditional Techniques for Better Website Performance](http://ravenna.test/our-thinking/ai-powered-seo-enhancing-traditional-techniques-for-better-website-performance): Entry in collection “articles”
+- [Google Map Pack: What is it, and 4 Strategies to Use it for Your Local Business](http://ravenna.test/our-thinking/google-map-pack-what-is-it-and-4-strategies-to-use-it-for-your-local-business): Entry in collection “articles”
+- [Great reasons to use Laravel for your SaaS applications](http://ravenna.test/our-thinking/great-reasons-to-use-laravel-for-your-saas-applications): Entry in collection “articles”
+- [How much does it cost to make an app in 2023](http://ravenna.test/our-thinking/how-much-does-it-cost-to-make-an-app-in-2023): Entry in collection “articles”
+- [How to budget for web and mobile application development outside of dev costs?](http://ravenna.test/our-thinking/budgeting-web-and-mobile-application-development): Entry in collection “articles”
+- [Larabelles Sponsor: Empowering Underrepresented Laravel Developers in Tech](http://ravenna.test/our-thinking/ravenna-sponsors-larabelles-empowering-underrepresented-laravel-developers-in-tech): Entry in collection “articles”
+- [Laravel: The Supercharged Framework for Replacing Your Legacy Systems.](http://ravenna.test/our-thinking/laravel-the-supercharged-framework-for-replacing-your-legacy-systems): Entry in collection “articles”
+- [Let’s Build a Min-Max Range Slider with Alpine](http://ravenna.test/our-thinking/lets-build-a-min-max-range-slider-with-alpine): Entry in collection “articles”
+- [Multi-tenancy, the Laravel Way!](http://ravenna.test/our-thinking/multi-tenancy-the-laravel-way): Entry in collection “articles”
+- [Reasons to Hire a Certified Statamic Agency for Your Next Web Development Project](http://ravenna.test/our-thinking/hire-a-certified-statamic-agency): Entry in collection “articles”
+- [Statamic vs. WordPress](http://ravenna.test/our-thinking/statamic-vs-wordpress): Entry in collection “articles”
+- [The Importance of Technical SEO](http://ravenna.test/our-thinking/the-importance-of-technical-seo): Entry in collection “articles”
+- [Unleashing the Power of Digital Innovation: Discover the Top Seattle Web Design Company for Your Business Success](http://ravenna.test/our-thinking/unleashing-the-power-of-digital-innovation): Entry in collection “articles”
+- [Unlocking Success: The Power of Custom Web Application Development](http://ravenna.test/our-thinking/unlocking-success-the-power-of-custom-web-application-development): Entry in collection “articles”
+- [Use php enums to manage permissions in Laravel.](http://ravenna.test/our-thinking/use-php-enums-to-manage-permissions-in-laravel): Entry in collection “articles”
+- [Username? Email? Both? Yes!](http://ravenna.test/our-thinking/username-email-both-yes): Entry in collection “articles”
+- [Using Laravel's Model Events to Auto-increment Fields](http://ravenna.test/our-thinking/using-laravels-model-events-to-auto-increment-fields): Entry in collection “articles”
+- [What's new in Laravel: Folio and Herd](http://ravenna.test/our-thinking/whats-new-in-laravel-folio-and-herd): Entry in collection “articles”
+- [WordPress at odds: Matt Mullenweg vs. WP Engine](http://ravenna.test/our-thinking/wordpress-at-odds-matt-mullenweg-vs-wp-engine): Entry in collection “articles”
+
+## Clients
+- [Amazon](http://ravenna.test/clients/amazon): Entry in collection “clients”
+- [Bank of Hawaii](http://ravenna.test/clients/bank-of-hawaii): Entry in collection “clients”
+- [Bartells](http://ravenna.test/clients/bartells): Entry in collection “clients”
+- [Blue Origin](http://ravenna.test/clients/blue-origin): Entry in collection “clients”
+- [CollegeIQ <Br>Website Build](http://ravenna.test/clients/collegeiq-website-build): Entry in collection “clients”
+- [Compete To Create](http://ravenna.test/clients/compete-to-create): Entry in collection “clients”
+- [HuntFund](http://ravenna.test/clients/huntfund): Entry in collection “clients”
+- [Space Angels](http://ravenna.test/clients/space-angels): Entry in collection “clients”
+- [Sun Mountain Lodge](http://ravenna.test/clients/sun-mountain-lodge): Entry in collection “clients”
+
+## Jobs
+- [Junior Laravel Developer](http://ravenna.test/careers/junior-laravel-developer): Entry in collection “jobs”
+- [Mid to Senior Level Laravel Developer](http://ravenna.test/careers/mid-level-laravel-developer): Entry in collection “jobs”
+- [React Native Developer](http://ravenna.test/careers/react-native-developer): Entry in collection “jobs”
+
+## Pages
+- [Articles](http://ravenna.test/our-thinking): Entry in collection “pages”
+- [Bellevue, Wa Website Development](http://ravenna.test/bellevue-wa-web-design-company): Entry in collection “pages”
+- [Careers](http://ravenna.test/careers): Entry in collection “pages”
+- [Clients](http://ravenna.test/clients): Entry in collection “pages”
+- [Contact](http://ravenna.test/contact): Entry in collection “pages”
+- [Home](http://ravenna.test): Entry in collection “pages”
+- [Laravel Ad Landing Page](http://ravenna.test/laravel-ad-landing-page): Entry in collection “pages”
+- [Laravel Development Services](http://ravenna.test/laravel-web-application-development-services): Entry in collection “pages”
+- [Mobile App Development](http://ravenna.test/mobile-app-development): Entry in collection “pages”
+- [SEO](http://ravenna.test/search-engine-optimization): Entry in collection “pages”
+- [Seattle, WA Website Development](http://ravenna.test/seattle-wa-website-development): Entry in collection “pages”
+- [Statamic Development Services](http://ravenna.test/statamic-development-services): Entry in collection “pages”
+- [Thank you](http://ravenna.test/thank-you): Entry in collection “pages”
