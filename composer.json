@@ -1,0 +1,38 @@
+{
+    "name": "ravenna/llms-generator",
+    "autoload": {
+        "psr-4": {
+            "Ravenna\\LlmsGenerator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ravenna\\LlmsGenerator\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "statamic/cms": "^5.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Llms Generator",
+            "description": "LLMS.txt generator"
+        },
+        "laravel": {
+            "providers": [
+                "Ravenna\\LlmsGenerator\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
