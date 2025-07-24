@@ -2,21 +2,43 @@
 
 namespace Ravenna\LlmsGenerator;
 
-use Statamic\Providers\AddonServiceProvider;
-use Illuminate\Support\Facades\Event;
-use Statamic\Events\EntrySaved;
+use Error;
+use routes;
+use Statamic\Statamic;
+use Statamic\Events\Booted;
 use Statamic\Facades\Entry;
+use Statamic\Facades\CP\Nav;
+use Statamic\Events\EntrySaved;
+use Illuminate\Support\Facades\Event;
+use Statamic\Providers\AddonServiceProvider;
+use Illuminate\Support\Facades\Log;
 
 class ServiceProvider extends AddonServiceProvider
 {
-    public function bootAddon()
-    {
-        parent::boot();
 
-         Event::listen(EntrySaved::class, function ($event) {
-                $this->generateLLMSTxt();
-            });
-    }
+  public function bootAddon()
+  {
+      parent::boot();
+
+      $this->loadRoutesFrom(__DIR__ . '/../routes/cp.php');
+      $this->loadViewsFrom(__DIR__ . '/../resources/views', 'llms-generator');
+      $this->bootNav();
+
+      \Illuminate\Support\Facades\Event::listen(
+          \Statamic\Events\EntrySaved::class,
+          fn ($event) => $this->generateLLMSTxt()
+      );
+  }
+
+
+  protected function bootNav()
+  {
+      Nav::extend(function ($nav) {
+          $nav->tool('LLMs Generator')->section('Tools')
+            ->route('llms-generator.index')
+            ->icon('code');//crane coolest, file-code, filter-lines,group,
+      });
+  }
 
   protected function generateLLMSTxt()
     {
@@ -26,7 +48,7 @@ class ServiceProvider extends AddonServiceProvider
 
         $entries = Entry::all()
             ->sortBy(fn($entry) => $entry->collectionHandle().' '.$entry->get('title')
-);
+        );
 
         // Group entries by collection
         $groups = $entries->groupBy(fn($entry) => $entry->collectionHandle());
