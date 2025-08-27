@@ -19,4 +19,4 @@ composer require ravenna/llmsgenerator
 
 ## How to Use
 
-After successful install of the add-on into your Statamic website, in you Statamic sites control panel go to `Tools > LLMs Generator`. Then select `Generate` if you wish to include all collections in your llms.txt file, OR go to `Collections` view to select which specific collections you wish to include in your llms.txt data. Then save your selections and go back to `Generate` to generate a new llms.txt file. The file will be found in `public/llms.txt` and is now ready to be parsed by AI bots.
+After successful install of the add-on into your Statamic website, in your Statamic sites control panel go to `Tools > LLMs Generator`. Then select `Generate` if you wish to include all collections in your llms.txt file, OR go to `Collections` view to select which specific collections you wish to include in your llms.txt data. Then save your selections and go back to `Generate` to generate a new llms.txt file. The file will be found in `public/llms.txt` and is now ready to be parsed by AI bots.
