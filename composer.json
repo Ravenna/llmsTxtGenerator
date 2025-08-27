@@ -1,5 +1,6 @@
 {
-    "name": "ravenna/llms-generator",
+    "name": "ravenna/llmsgenerator",
+    "type": "statamic-addon",
     "autoload": {
         "psr-4": {
             "Ravenna\\LlmsGenerator\\": "src"
@@ -23,15 +24,16 @@
         }
     },
     "extra": {
-        "statamic": {
-            "name": "Llms Generator",
-            "description": "LLMS.txt generator"
-        },
-        "laravel": {
-            "providers": [
-                "Ravenna\\LlmsGenerator\\ServiceProvider"
-            ]
-        }
+      "statamic": {
+        "name": "Llms Generator",
+        "description": "LLMS.txt generator for Statamic 5+",
+        "namespace": "Ravenna\\LlmsGenerator"
+      },
+      "laravel": {
+        "providers": [
+          "Ravenna\\LlmsGenerator\\ServiceProvider"
+        ]
+      }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
